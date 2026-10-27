@@ -4,46 +4,46 @@
 @import "fumadocs-ui/css/preset.css";
 @source "../node_modules/fumadocs-ui/dist/**/*.js";
 :root {
-  --color-fd-primary: #0b7668;
+  --color-fd-primary: #2563eb;
   --color-fd-primary-foreground: #fff;
   --color-fd-background: #fff;
-  --color-fd-foreground: #142923;
-  --color-fd-muted: #f2f7f4;
-  --color-fd-muted-foreground: #53685f;
-  --color-fd-secondary: #edf7f3;
-  --color-fd-secondary-foreground: #142923;
-  --color-fd-border: #d9e5de;
+  --color-fd-foreground: #172133;
+  --color-fd-muted: #f6f7f9;
+  --color-fd-muted-foreground: #596375;
+  --color-fd-secondary: #f1f6ff;
+  --color-fd-secondary-foreground: #172133;
+  --color-fd-border: #dde2ea;
   --color-fd-card: #fff;
-  --color-fd-card-foreground: #142923;
+  --color-fd-card-foreground: #172133;
   --color-fd-popover: #fff;
-  --color-fd-popover-foreground: #142923;
-  --color-fd-accent: #edf7f3;
-  --color-fd-accent-foreground: #142923;
-  --color-fd-ring: #0b7668;
+  --color-fd-popover-foreground: #172133;
+  --color-fd-accent: #f1f6ff;
+  --color-fd-accent-foreground: #172133;
+  --color-fd-ring: #2563eb;
   --font-sans: "Geist Variable", "Geist", "Segoe UI", sans-serif;
 }
 .dark {
-  --color-fd-primary: #8ee3c4;
-  --color-fd-primary-foreground: #102c22;
-  --color-fd-background: #101c18;
-  --color-fd-foreground: #e6f0e9;
-  --color-fd-muted: #172820;
-  --color-fd-muted-foreground: #abc1b4;
-  --color-fd-secondary: #20382c;
-  --color-fd-secondary-foreground: #e6f0e9;
-  --color-fd-border: #304b3c;
-  --color-fd-card: #172820;
-  --color-fd-card-foreground: #e6f0e9;
-  --color-fd-popover: #172820;
-  --color-fd-popover-foreground: #e6f0e9;
-  --color-fd-accent: #20382c;
-  --color-fd-accent-foreground: #e6f0e9;
-  --color-fd-ring: #8ee3c4;
+  --color-fd-primary: #82aaff;
+  --color-fd-primary-foreground: #0d1933;
+  --color-fd-background: #17181b;
+  --color-fd-foreground: #e9eaed;
+  --color-fd-muted: #202226;
+  --color-fd-muted-foreground: #b4b8c2;
+  --color-fd-secondary: #25282e;
+  --color-fd-secondary-foreground: #e9eaed;
+  --color-fd-border: #343840;
+  --color-fd-card: #202226;
+  --color-fd-card-foreground: #e9eaed;
+  --color-fd-popover: #202226;
+  --color-fd-popover-foreground: #e9eaed;
+  --color-fd-accent: #25282e;
+  --color-fd-accent-foreground: #e9eaed;
+  --color-fd-ring: #82aaff;
 }
 .dark #nd-sidebar {
-  --color-fd-muted: #172820;
-  --color-fd-secondary: #20382c;
-  --color-fd-muted-foreground: #abc1b4;
+  --color-fd-muted: #202226;
+  --color-fd-secondary: #25282e;
+  --color-fd-muted-foreground: #b4b8c2;
 }
 body {
   display: flex;
@@ -310,15 +310,15 @@ body {
   align-items: center;
   justify-content: center;
   gap: 14px;
-  background-color: #edf7f3;
-  color: #142923;
-  background-image: radial-gradient(#c7dbd0 0.7px, transparent 0.7px);
+  background-color: #f1f6ff;
+  color: #172133;
+  background-image: radial-gradient(#dae3ef 0.7px, transparent 0.7px);
   background-size: 16px 16px;
 }
 .playground-canvas[data-dark="true"] {
-  background-color: #14291f;
-  background-image: radial-gradient(#355344 0.7px, transparent 0.7px);
-  color: #e6f0e9;
+  background-color: #181f2a;
+  background-image: radial-gradient(#303a4c 0.7px, transparent 0.7px);
+  color: #e9eaed;
 }
 .preview-grid {
   width: 96px;
@@ -337,8 +337,11 @@ body {
   display: block;
   font-size: 11px;
   font-weight: 400;
-  opacity: 0.6;
+  color: #596375;
   margin-top: 3px;
+}
+.playground-canvas[data-dark="true"] small {
+  color: #b4b8c2;
 }
 .snippet {
   position: relative;

@@ -30,6 +30,14 @@ Keep the resulting lockfile. To pin this release, install `solite-icons@0.2.1`. 
 
 React components need React 18.2 or React 19. Install React if your project does not already use it. React is an optional peer dependency, so projects using only SVGs or raw geometry do not need it.
 
+## Bundle benchmark
+
+Production icon-only JavaScript for the same 1, 10, and 50 icon purposes. Named ES-module imports, React excluded. Measured on 27 October 2026 against the versions shown.
+
+![Benchmark of gzipped icon JavaScript and unpacked npm packages for Solite, Lucide React, Heroicons, and React Icons. All three bundle scenarios and package versions are shown.](https://raw.githubusercontent.com/Nikola-Limpet/solite-icons/main/assets/benchmark-2026-10-27.png)
+
+[Methodology, accessible tables, and raw data](https://github.com/Nikola-Limpet/solite-icons/blob/main/docs/benchmarks/2026-10-27.md). Package collections and component features differ; install footprint is separate from browser payload. This is a size comparison, not a page-load or FPS test.
+
 ## React: import an icon by name
 
 ```tsx

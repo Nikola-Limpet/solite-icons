@@ -22,7 +22,7 @@ export function IconPlayground() {
   const [choice, setChoice] = useState("ShopIcon");
   const [size, setSize] = useState(32);
   const [stroke, setStroke] = useState(1.75);
-  const [color, setColor] = useState("#0b7668");
+  const [color, setColor] = useState("#2563eb");
   const [dark, setDark] = useState(false);
   const { Icon } = choices.find((item) => item.name === choice) ?? choices[0];
   const code = `import { ${choice} } from "solite-icons";\n\n<${choice} size={${size}} strokeWidth={${stroke}} color="${color}" />`;
