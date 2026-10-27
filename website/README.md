@@ -55,7 +55,7 @@ Then deploy `website/out/` at `https://YOUR-ACCOUNT.github.io/solite-icons/`. Th
 
 For Vercel, select `website` as the project's root directory. The standard Next.js framework configuration uses its build command. Leave `DOCS_BASE_PATH` empty for a normal Vercel domain. No API keys or hosted search service are needed.
 
-The CI workflow builds the docs and uploads the output as the `solite-icons-docs` artifact. The production Vercel project is `solite-icons` in the Aurra account, using root directory `website`, build command `npm run build`, and output directory `out`. Its custom domain is `solite-icons.nikola33.dev`.
+The CI workflow builds the docs and uploads the output as the `solite-icons-docs` artifact. The production Vercel project is `solite-icons` in the Aurra account, using root directory `website`, build command `npm run build`, and automatic output detection. Its custom domain is `solite-icons.nikola33.dev`.
 
 ## README preview
 
