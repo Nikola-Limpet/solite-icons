@@ -4,50 +4,39 @@ import {
   PackageIcon,
   UsersIcon,
   QrCodeIcon,
-  ReceiptIcon,
+  CodeIcon,
   CreditCardIcon,
-  ChartBarIcon,
-  CalendarIcon,
-  BellIcon,
+  TerminalIcon,
+  AccessibilityIcon,
+  SparklesIcon,
   SettingsIcon,
-  CashRegisterIcon,
-  ArrowRightIcon,
-  CheckCircleIcon,
-  PlusIcon,
+  WrenchIcon,
 } from "solite-icons";
+
 const samples = [
   [ShopIcon, "Shop"],
   [CoffeeIcon, "Coffee"],
+  [CodeIcon, "Code"],
   [PackageIcon, "Package"],
   [UsersIcon, "Users"],
   [QrCodeIcon, "QR code"],
-  [ReceiptIcon, "Receipt"],
-  [CreditCardIcon, "Payment"],
-  [ChartBarIcon, "Reports"],
-  [CalendarIcon, "Calendar"],
-  [BellIcon, "Notification"],
+  [CreditCardIcon, "Credit card"],
+  [TerminalIcon, "Terminal"],
+  [AccessibilityIcon, "Accessibility"],
+  [SparklesIcon, "Sparkles"],
   [SettingsIcon, "Settings"],
-  [CashRegisterIcon, "Register"],
+  [WrenchIcon, "Wrench"],
 ] as const;
+
 export function ExampleBoard() {
   return (
-    <div className="example-board not-prose">
-      <div className="board-topline">
-        <span className="board-dot" />
-        <span>SOLITE ICONS</span>
-        <span className="board-meta">24 × 24 · 1.75 stroke</span>
-      </div>
+    <figure
+      className="example-board not-prose"
+      aria-label="Sample icons from the Solite collection"
+    >
       <div className="board-heading">
-        <h2>
-          A little clarity.
-          <br />
-          In every interaction.
-        </h2>
-        <p>
-          Rounded outlines for the
-          <br />
-          places your work happens.
-        </p>
+        <h2>One consistent line.</h2>
+        <span className="board-meta">A sample of the collection</span>
       </div>
       <div className="board-icons">
         {samples.map(([Icon, label]) => (
@@ -57,14 +46,11 @@ export function ExampleBoard() {
           </div>
         ))}
       </div>
-      <div className="board-bottom">
-        <span className="board-pill">
-          <CheckCircleIcon size={15} /> Payment received
-        </span>
-        <span className="board-action">
-          <PlusIcon size={16} /> Add product <ArrowRightIcon size={16} />
-        </span>
-      </div>
-    </div>
+      <figcaption className="board-bottom">
+        <span>24 × 24 grid</span>
+        <span>1.75px stroke</span>
+        <span>Rounded caps &amp; joins</span>
+      </figcaption>
+    </figure>
   );
 }

@@ -20,7 +20,8 @@ Add an `.mdx` file in `website/content/docs/`, with `title` and `description` fr
 
 The MDX component mapping in `components/mdx.tsx` exposes:
 
-- `<ExampleBoard />`: actual named React components in a small sample interface.
+- `<DocsIntro />`: the React-first introduction, install command, source links, and license.
+- `<ExampleBoard />`: a specimen of actual named React components.
 - `<IconPlayground />`: size, stroke, color, and canvas controls, with copyable JSX.
 - `<IconBrowser />`: all icons, name/category filters, size controls, React imports, and SVG downloads.
 
@@ -75,3 +76,11 @@ google-chrome --headless=new --no-sandbox --disable-gpu --hide-scrollbars \
 ```
 
 The image lives at `assets/react-preview.png` and is included in the package so the README image also resolves after installation. `output/` is temporary and ignored.
+
+## Brand assets
+
+The approved S mark was developed with the built-in ImageGen tool. Concepts, the refined PNG, and exact prompts are in `assets/brand/` at the repository root. The clean SVG, Apple icon, and social image served by the website are in `public/brand/`. `components/solite-logo.tsx` uses the same SVG path with `currentColor` for theme support. Keep that path synchronized when changing the mark.
+
+`DESIGN.md` at the repository root records the teal drawing-specimen identity. The README uses an absolute logo URL so the image also resolves on npm without depending on a local package asset.
+
+The root metadata prefixes favicon and sharing-image paths with `DOCS_BASE_PATH`. For an alternate host, set `DOCS_SITE_URL` as well, for example `DOCS_SITE_URL=https://nikola-limpet.github.io DOCS_BASE_PATH=/solite-icons npm --prefix website run build`.

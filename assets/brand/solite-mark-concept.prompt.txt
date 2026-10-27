@@ -1,0 +1,13 @@
+Tool: built-in image_gen.imagegen
+Mode: generate, transparent_background=true
+Status: proposed logo concept, pending design approval
+
+Use case: logo-brand
+Asset type: original Solite Icons brand mark, ready to use as a logo and favicon.
+Primary request: one precisely drawn flat monoline symbol that reads as an S, constructed from two open rounded-square bracket forms facing opposite directions. Geometric rather than calligraphic: horizontal and vertical runs joined by generous quarter-circle corners. The two forms interlock optically but do not touch. A deliberately clear small gap through the middle creates a continuous negative-space passage. Confident, compact, memorable silhouette. This is the new identity of an open-source outline icon library.
+Color palette: one single flat dark teal #0B7668, no variation within the stroke.
+Scene/backdrop: genuine transparent background.
+Composition: square canvas, one centered mark filling 78 percent of canvas, generous transparent padding. No surrounding container. No presentation board.
+Style/medium: perfectly crisp vector-like geometry with uniform thick strokes and rounded caps; a thoughtful technical drawing mark. No texture.
+Text: no wordmark, no captions, no other characters.
+Constraints: legible as a symbol at 24px, simple enough to reproduce in editable SVG. No gradients, shadows, depth, texture, extra dots, stars, or generic app icon tile. Do not mimic another existing logo.

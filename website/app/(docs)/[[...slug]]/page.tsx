@@ -9,8 +9,12 @@ export default async function Page({ params }: { params: Promise<{ slug?: string
   const Content = page.data.body;
   return (
     <DocsPage toc={page.data.toc} full={page.data.full}>
-      <DocsTitle>{page.data.title}</DocsTitle>
-      <DocsDescription>{page.data.description}</DocsDescription>
+      {slug?.length ? (
+        <>
+          <DocsTitle>{page.data.title}</DocsTitle>
+          <DocsDescription>{page.data.description}</DocsDescription>
+        </>
+      ) : null}
       <DocsBody>
         <Content components={getMDXComponents()} />
       </DocsBody>
@@ -24,5 +28,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug?: st
   const { slug } = await params;
   const page = source.getPage(slug);
   if (!page) notFound();
-  return { title: page.data.title, description: page.data.description };
+  return {
+    title: slug?.length
+      ? page.data.title
+      : { absolute: "Solite Icons · Open-source outline icons for React and SVG" },
+    description: page.data.description,
+  };
 }

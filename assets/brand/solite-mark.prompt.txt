@@ -1,0 +1,8 @@
+Tool: built-in image_gen.imagegen
+Mode: edit, transparent_background=true
+Reference: assets/brand/solite-mark-concept.png
+Purpose: refined PNG logo; the production SVG is a clean geometric rendition of the approved silhouette.
+
+Use case: logo-brand. Edit the provided approved Solite logo concept into a clean final raster asset.
+Preserve its precise S silhouette, orientation, rounded terminals, horizontal top and bottom, proportions, negative space, optical weight, centered position, and transparent padding. The logo has two open terminals facing inward at upper right and lower left.
+Make the teal stroke completely uniform flat #0b7668, with crisp smooth edges. Remove all shading, gradients, speckling, texture, stray colored pixels, and edge noise. Keep real alpha transparency, no backdrop. Do not add text, border, container, new shapes, shadows, or depth. This is a final flat logo for an open-source icon library.

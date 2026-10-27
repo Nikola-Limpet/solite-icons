@@ -3,6 +3,10 @@ title: Contributing
 description: Add a glyph, improve a guide, or run the project locally.
 ---
 
+Solite Icons is an [MIT-licensed](/license) open-source project. You can contribute a new icon, report a problem, improve accessibility, or make the guides clearer.
+
+Before starting a large change, [open an issue](https://github.com/Nikola-Limpet/solite-icons/issues) to describe it. For a small fix, open a pull request with the change and the checks you ran.
+
 ## Library development
 
 ```bash
@@ -30,7 +34,7 @@ npm --prefix website ci
 npm --prefix website run dev
 ```
 
-The icon package used by this site is pinned to the initial package commit in `website/package.json`. When changing the library, update that dependency to the new library commit before updating the previews.
+The site pins the published npm package `solite-icons@0.2.1` in `website/package.json` and its lockfile. After publishing a new library version, update that dependency and lockfile before updating the previews. The build copies SVG downloads from the installed package, so examples and downloads stay on the same release.
 
 Write guides in `website/content/docs/`. Register their order in `meta.json`. The live demos are React components in `website/components/`.
 

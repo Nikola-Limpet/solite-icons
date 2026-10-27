@@ -1,8 +1,14 @@
+<p align="left">
+  <img src="https://solite-icons.nikola33.dev/brand/solite-mark.svg" width="56" height="56" alt="Solite Icons logo" />
+</p>
+
 # Solite Icons
 
-[Documentation and live React examples](https://solite-icons.nikola33.dev)
+Original outline icons. Open by design.
 
-253 original SVG outline icons for dashboards, point of sale, cafés, restaurants, retail, payments, and everyday app controls.
+[Documentation](https://solite-icons.nikola33.dev) · [Browse 253 icons](https://solite-icons.nikola33.dev/icons/) · [npm v0.2.1](https://www.npmjs.com/package/solite-icons) · [Releases](https://github.com/Nikola-Limpet/solite-icons/releases) · [MIT license](LICENSE)
+
+253 original SVG outline icons for dashboards, commerce, developer tools, media, accessibility, and everyday app controls. Open source and MIT licensed, with React components and standalone SVGs.
 
 Every icon uses a 24 × 24 grid, a 1.75px stroke, rounded caps and joins, and `currentColor`. Use React components or the SVG files directly. No stylesheet, icon font, or external icon service is required.
 
@@ -244,6 +250,14 @@ npm pack --dry-run
 
 To publish a new release, update the version and changelog, rebuild, run all checks, inspect the package artifact, and run `npm publish --access public` with an authorized npm account. No automatic publishing is configured.
 
+## Contribute
+
+Icon drawings, documentation fixes, accessibility improvements, and bug reports are welcome. Read the [contribution guide](https://solite-icons.nikola33.dev/contributing/) for the geometry conventions and local workflow. [Open an issue](https://github.com/Nikola-Limpet/solite-icons/issues) before starting a large change.
+
+## Releases and registries
+
+Install from [npm](https://www.npmjs.com/package/solite-icons). [GitHub Releases](https://github.com/Nikola-Limpet/solite-icons/releases) contains version notes and downloadable archives. The repository's Packages panel is for the separate GitHub Packages registry, so it does not show this npm publication.
+
 ## License and origin
 
 [MIT](LICENSE). Copyright 2026 Nikola-Limpet.
@@ -252,7 +266,7 @@ The initial 229 SVG drawings were created for Solite POS and extracted from `Nik
 
 ## Documentation website
 
-The `website/` directory contains the Next.js and [Fumadocs](https://fumadocs.dev) documentation app. Zod uses the same documentation framework. It includes MDX guides, documentation search, a live React playground, and a searchable browser of all 253 icons. Its dependencies are separate from the icon package.
+The `website/` directory contains the Next.js and [Fumadocs](https://fumadocs.dev) documentation app. It includes MDX guides, documentation search, a live React playground, and a searchable browser of all 253 icons. Its dependencies are separate from the icon package.
 
 ```sh
 npm ci
