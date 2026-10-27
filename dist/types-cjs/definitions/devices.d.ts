@@ -1,0 +1,22 @@
+export declare const deviceIcons: {
+    readonly printer: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly monitor: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly laptop: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly tablet: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly smartphone: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly scan: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly scanner: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly camera: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly image: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly images: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly crop: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "zoom-in": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "zoom-out": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly wifi: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "wifi-off": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly bluetooth: readonly [import("../geometry.js").IconNode];
+    readonly usb: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly plug: readonly [import("../geometry.js").IconNode];
+    readonly power: readonly [import("../geometry.js").IconNode];
+    readonly battery: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+};

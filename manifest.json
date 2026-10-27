@@ -1,0 +1,1410 @@
+{
+  "name": "solite-icons",
+  "version": "0.1.0",
+  "count": 229,
+  "viewBox": "0 0 24 24",
+  "strokeWidth": 1.75,
+  "provenance": "Original SVG geometry authored for Solite POS and extracted into solite-icons. Initial source: Nikola-Limpet/hang-pos commit 07d7a83c9d2b98bb8449ea7b2a58ca055f8aecd1.",
+  "categories": {
+    "Navigation": [
+      "home",
+      "dashboard",
+      "shop",
+      "building",
+      "package",
+      "grid",
+      "menu",
+      "search",
+      "filter",
+      "sliders",
+      "settings",
+      "globe",
+      "compass",
+      "map-pin",
+      "map",
+      "route",
+      "link",
+      "external-link",
+      "sidebar",
+      "layout"
+    ],
+    "People & access": [
+      "user",
+      "users",
+      "user-add",
+      "user-check",
+      "user-remove",
+      "user-lock",
+      "id-card",
+      "contact",
+      "handshake",
+      "shield",
+      "shield-check",
+      "shield-lock",
+      "key",
+      "lock",
+      "unlock",
+      "eye",
+      "eye-off",
+      "fingerprint",
+      "login",
+      "logout"
+    ],
+    "Sales": [
+      "cash-register",
+      "shopping-cart",
+      "shopping-bag",
+      "basket",
+      "barcode",
+      "qr-code",
+      "tag",
+      "tags",
+      "discount",
+      "percent",
+      "coupon",
+      "gift",
+      "receipt",
+      "receipt-check",
+      "receipt-refund",
+      "order",
+      "order-check",
+      "order-cancel",
+      "order-history",
+      "calculator"
+    ],
+    "Payments & time": [
+      "wallet",
+      "credit-card",
+      "cash",
+      "coins",
+      "bank",
+      "bank-transfer",
+      "dollar",
+      "riel",
+      "currency-exchange",
+      "payment-check",
+      "payment-pending",
+      "payment-failed",
+      "invoice",
+      "billing-cycle",
+      "subscription",
+      "calendar",
+      "calendar-check",
+      "calendar-clock",
+      "clock",
+      "alarm"
+    ],
+    "Business operations": [
+      "coffee",
+      "tea",
+      "cup",
+      "restaurant",
+      "utensils",
+      "chef-hat",
+      "cooking-pot",
+      "bakery",
+      "bread",
+      "bottle",
+      "retail",
+      "box",
+      "boxes",
+      "warehouse",
+      "inventory",
+      "truck",
+      "delivery",
+      "pickup",
+      "table",
+      "seating"
+    ],
+    "Files": [
+      "file",
+      "files",
+      "file-add",
+      "file-check",
+      "file-remove",
+      "file-search",
+      "file-lock",
+      "file-text",
+      "file-export",
+      "file-import",
+      "folder",
+      "folder-open",
+      "folder-add",
+      "archive",
+      "clipboard",
+      "clipboard-check",
+      "clipboard-list",
+      "book",
+      "notebook",
+      "paperclip"
+    ],
+    "Actions": [
+      "plus",
+      "minus",
+      "check",
+      "x",
+      "arrow-left",
+      "arrow-right",
+      "arrow-up",
+      "arrow-down",
+      "chevron-left",
+      "chevron-right",
+      "chevron-up",
+      "chevron-down",
+      "undo",
+      "redo",
+      "refresh",
+      "rotate",
+      "expand",
+      "collapse",
+      "move",
+      "sort"
+    ],
+    "Communication & status": [
+      "bell",
+      "bell-off",
+      "mail",
+      "mail-open",
+      "mail-send",
+      "message",
+      "messages",
+      "message-check",
+      "phone",
+      "phone-call",
+      "headphones",
+      "help",
+      "info",
+      "alert-circle",
+      "alert-triangle",
+      "check-circle",
+      "x-circle",
+      "minus-circle",
+      "plus-circle",
+      "activity"
+    ],
+    "Data": [
+      "chart-bar",
+      "chart-line",
+      "chart-pie",
+      "chart-donut",
+      "trend-up",
+      "trend-down",
+      "report",
+      "table-data",
+      "database",
+      "server",
+      "cloud",
+      "cloud-upload",
+      "cloud-download",
+      "upload",
+      "download",
+      "import",
+      "export",
+      "save",
+      "copy",
+      "edit"
+    ],
+    "Devices": [
+      "printer",
+      "monitor",
+      "laptop",
+      "tablet",
+      "smartphone",
+      "scan",
+      "scanner",
+      "camera",
+      "image",
+      "images",
+      "crop",
+      "zoom-in",
+      "zoom-out",
+      "wifi",
+      "wifi-off",
+      "bluetooth",
+      "usb",
+      "plug",
+      "power",
+      "battery"
+    ],
+    "Interface essentials": [
+      "sun",
+      "moon",
+      "loading",
+      "more-horizontal",
+      "more-vertical",
+      "trash",
+      "trash-restore",
+      "edit-square",
+      "check-square",
+      "x-square",
+      "heart",
+      "star",
+      "flag",
+      "pin",
+      "bookmark",
+      "history",
+      "repeat",
+      "shuffle",
+      "pause",
+      "play"
+    ],
+    "Workflow": [
+      "cash-drawer",
+      "cash-in",
+      "cash-out",
+      "cloud-sync",
+      "sunrise",
+      "drag-handle",
+      "package-add",
+      "archive-restore",
+      "palette"
+    ]
+  },
+  "icons": [
+    {
+      "name": "home",
+      "component": "HomeIcon",
+      "file": "svg/home.svg"
+    },
+    {
+      "name": "dashboard",
+      "component": "DashboardIcon",
+      "file": "svg/dashboard.svg"
+    },
+    {
+      "name": "shop",
+      "component": "ShopIcon",
+      "file": "svg/shop.svg"
+    },
+    {
+      "name": "building",
+      "component": "BuildingIcon",
+      "file": "svg/building.svg"
+    },
+    {
+      "name": "package",
+      "component": "PackageIcon",
+      "file": "svg/package.svg"
+    },
+    {
+      "name": "grid",
+      "component": "GridIcon",
+      "file": "svg/grid.svg"
+    },
+    {
+      "name": "menu",
+      "component": "MenuIcon",
+      "file": "svg/menu.svg"
+    },
+    {
+      "name": "search",
+      "component": "SearchIcon",
+      "file": "svg/search.svg"
+    },
+    {
+      "name": "filter",
+      "component": "FilterIcon",
+      "file": "svg/filter.svg"
+    },
+    {
+      "name": "sliders",
+      "component": "SlidersIcon",
+      "file": "svg/sliders.svg"
+    },
+    {
+      "name": "settings",
+      "component": "SettingsIcon",
+      "file": "svg/settings.svg"
+    },
+    {
+      "name": "globe",
+      "component": "GlobeIcon",
+      "file": "svg/globe.svg"
+    },
+    {
+      "name": "compass",
+      "component": "CompassIcon",
+      "file": "svg/compass.svg"
+    },
+    {
+      "name": "map-pin",
+      "component": "MapPinIcon",
+      "file": "svg/map-pin.svg"
+    },
+    {
+      "name": "map",
+      "component": "MapIcon",
+      "file": "svg/map.svg"
+    },
+    {
+      "name": "route",
+      "component": "RouteIcon",
+      "file": "svg/route.svg"
+    },
+    {
+      "name": "link",
+      "component": "LinkIcon",
+      "file": "svg/link.svg"
+    },
+    {
+      "name": "external-link",
+      "component": "ExternalLinkIcon",
+      "file": "svg/external-link.svg"
+    },
+    {
+      "name": "sidebar",
+      "component": "SidebarIcon",
+      "file": "svg/sidebar.svg"
+    },
+    {
+      "name": "layout",
+      "component": "LayoutIcon",
+      "file": "svg/layout.svg"
+    },
+    {
+      "name": "user",
+      "component": "UserIcon",
+      "file": "svg/user.svg"
+    },
+    {
+      "name": "users",
+      "component": "UsersIcon",
+      "file": "svg/users.svg"
+    },
+    {
+      "name": "user-add",
+      "component": "UserAddIcon",
+      "file": "svg/user-add.svg"
+    },
+    {
+      "name": "user-check",
+      "component": "UserCheckIcon",
+      "file": "svg/user-check.svg"
+    },
+    {
+      "name": "user-remove",
+      "component": "UserRemoveIcon",
+      "file": "svg/user-remove.svg"
+    },
+    {
+      "name": "user-lock",
+      "component": "UserLockIcon",
+      "file": "svg/user-lock.svg"
+    },
+    {
+      "name": "id-card",
+      "component": "IdCardIcon",
+      "file": "svg/id-card.svg"
+    },
+    {
+      "name": "contact",
+      "component": "ContactIcon",
+      "file": "svg/contact.svg"
+    },
+    {
+      "name": "handshake",
+      "component": "HandshakeIcon",
+      "file": "svg/handshake.svg"
+    },
+    {
+      "name": "shield",
+      "component": "ShieldIcon",
+      "file": "svg/shield.svg"
+    },
+    {
+      "name": "shield-check",
+      "component": "ShieldCheckIcon",
+      "file": "svg/shield-check.svg"
+    },
+    {
+      "name": "shield-lock",
+      "component": "ShieldLockIcon",
+      "file": "svg/shield-lock.svg"
+    },
+    {
+      "name": "key",
+      "component": "KeyIcon",
+      "file": "svg/key.svg"
+    },
+    {
+      "name": "lock",
+      "component": "LockIcon",
+      "file": "svg/lock.svg"
+    },
+    {
+      "name": "unlock",
+      "component": "UnlockIcon",
+      "file": "svg/unlock.svg"
+    },
+    {
+      "name": "eye",
+      "component": "EyeIcon",
+      "file": "svg/eye.svg"
+    },
+    {
+      "name": "eye-off",
+      "component": "EyeOffIcon",
+      "file": "svg/eye-off.svg"
+    },
+    {
+      "name": "fingerprint",
+      "component": "FingerprintIcon",
+      "file": "svg/fingerprint.svg"
+    },
+    {
+      "name": "login",
+      "component": "LoginIcon",
+      "file": "svg/login.svg"
+    },
+    {
+      "name": "logout",
+      "component": "LogoutIcon",
+      "file": "svg/logout.svg"
+    },
+    {
+      "name": "cash-register",
+      "component": "CashRegisterIcon",
+      "file": "svg/cash-register.svg"
+    },
+    {
+      "name": "shopping-cart",
+      "component": "ShoppingCartIcon",
+      "file": "svg/shopping-cart.svg"
+    },
+    {
+      "name": "shopping-bag",
+      "component": "ShoppingBagIcon",
+      "file": "svg/shopping-bag.svg"
+    },
+    {
+      "name": "basket",
+      "component": "BasketIcon",
+      "file": "svg/basket.svg"
+    },
+    {
+      "name": "barcode",
+      "component": "BarcodeIcon",
+      "file": "svg/barcode.svg"
+    },
+    {
+      "name": "qr-code",
+      "component": "QrCodeIcon",
+      "file": "svg/qr-code.svg"
+    },
+    {
+      "name": "tag",
+      "component": "TagIcon",
+      "file": "svg/tag.svg"
+    },
+    {
+      "name": "tags",
+      "component": "TagsIcon",
+      "file": "svg/tags.svg"
+    },
+    {
+      "name": "discount",
+      "component": "DiscountIcon",
+      "file": "svg/discount.svg"
+    },
+    {
+      "name": "percent",
+      "component": "PercentIcon",
+      "file": "svg/percent.svg"
+    },
+    {
+      "name": "coupon",
+      "component": "CouponIcon",
+      "file": "svg/coupon.svg"
+    },
+    {
+      "name": "gift",
+      "component": "GiftIcon",
+      "file": "svg/gift.svg"
+    },
+    {
+      "name": "receipt",
+      "component": "ReceiptIcon",
+      "file": "svg/receipt.svg"
+    },
+    {
+      "name": "receipt-check",
+      "component": "ReceiptCheckIcon",
+      "file": "svg/receipt-check.svg"
+    },
+    {
+      "name": "receipt-refund",
+      "component": "ReceiptRefundIcon",
+      "file": "svg/receipt-refund.svg"
+    },
+    {
+      "name": "order",
+      "component": "OrderIcon",
+      "file": "svg/order.svg"
+    },
+    {
+      "name": "order-check",
+      "component": "OrderCheckIcon",
+      "file": "svg/order-check.svg"
+    },
+    {
+      "name": "order-cancel",
+      "component": "OrderCancelIcon",
+      "file": "svg/order-cancel.svg"
+    },
+    {
+      "name": "order-history",
+      "component": "OrderHistoryIcon",
+      "file": "svg/order-history.svg"
+    },
+    {
+      "name": "calculator",
+      "component": "CalculatorIcon",
+      "file": "svg/calculator.svg"
+    },
+    {
+      "name": "wallet",
+      "component": "WalletIcon",
+      "file": "svg/wallet.svg"
+    },
+    {
+      "name": "credit-card",
+      "component": "CreditCardIcon",
+      "file": "svg/credit-card.svg"
+    },
+    {
+      "name": "cash",
+      "component": "CashIcon",
+      "file": "svg/cash.svg"
+    },
+    {
+      "name": "coins",
+      "component": "CoinsIcon",
+      "file": "svg/coins.svg"
+    },
+    {
+      "name": "bank",
+      "component": "BankIcon",
+      "file": "svg/bank.svg"
+    },
+    {
+      "name": "bank-transfer",
+      "component": "BankTransferIcon",
+      "file": "svg/bank-transfer.svg"
+    },
+    {
+      "name": "dollar",
+      "component": "DollarIcon",
+      "file": "svg/dollar.svg"
+    },
+    {
+      "name": "riel",
+      "component": "RielIcon",
+      "file": "svg/riel.svg"
+    },
+    {
+      "name": "currency-exchange",
+      "component": "CurrencyExchangeIcon",
+      "file": "svg/currency-exchange.svg"
+    },
+    {
+      "name": "payment-check",
+      "component": "PaymentCheckIcon",
+      "file": "svg/payment-check.svg"
+    },
+    {
+      "name": "payment-pending",
+      "component": "PaymentPendingIcon",
+      "file": "svg/payment-pending.svg"
+    },
+    {
+      "name": "payment-failed",
+      "component": "PaymentFailedIcon",
+      "file": "svg/payment-failed.svg"
+    },
+    {
+      "name": "invoice",
+      "component": "InvoiceIcon",
+      "file": "svg/invoice.svg"
+    },
+    {
+      "name": "billing-cycle",
+      "component": "BillingCycleIcon",
+      "file": "svg/billing-cycle.svg"
+    },
+    {
+      "name": "subscription",
+      "component": "SubscriptionIcon",
+      "file": "svg/subscription.svg"
+    },
+    {
+      "name": "calendar",
+      "component": "CalendarIcon",
+      "file": "svg/calendar.svg"
+    },
+    {
+      "name": "calendar-check",
+      "component": "CalendarCheckIcon",
+      "file": "svg/calendar-check.svg"
+    },
+    {
+      "name": "calendar-clock",
+      "component": "CalendarClockIcon",
+      "file": "svg/calendar-clock.svg"
+    },
+    {
+      "name": "clock",
+      "component": "ClockIcon",
+      "file": "svg/clock.svg"
+    },
+    {
+      "name": "alarm",
+      "component": "AlarmIcon",
+      "file": "svg/alarm.svg"
+    },
+    {
+      "name": "coffee",
+      "component": "CoffeeIcon",
+      "file": "svg/coffee.svg"
+    },
+    {
+      "name": "tea",
+      "component": "TeaIcon",
+      "file": "svg/tea.svg"
+    },
+    {
+      "name": "cup",
+      "component": "CupIcon",
+      "file": "svg/cup.svg"
+    },
+    {
+      "name": "restaurant",
+      "component": "RestaurantIcon",
+      "file": "svg/restaurant.svg"
+    },
+    {
+      "name": "utensils",
+      "component": "UtensilsIcon",
+      "file": "svg/utensils.svg"
+    },
+    {
+      "name": "chef-hat",
+      "component": "ChefHatIcon",
+      "file": "svg/chef-hat.svg"
+    },
+    {
+      "name": "cooking-pot",
+      "component": "CookingPotIcon",
+      "file": "svg/cooking-pot.svg"
+    },
+    {
+      "name": "bakery",
+      "component": "BakeryIcon",
+      "file": "svg/bakery.svg"
+    },
+    {
+      "name": "bread",
+      "component": "BreadIcon",
+      "file": "svg/bread.svg"
+    },
+    {
+      "name": "bottle",
+      "component": "BottleIcon",
+      "file": "svg/bottle.svg"
+    },
+    {
+      "name": "retail",
+      "component": "RetailIcon",
+      "file": "svg/retail.svg"
+    },
+    {
+      "name": "box",
+      "component": "BoxIcon",
+      "file": "svg/box.svg"
+    },
+    {
+      "name": "boxes",
+      "component": "BoxesIcon",
+      "file": "svg/boxes.svg"
+    },
+    {
+      "name": "warehouse",
+      "component": "WarehouseIcon",
+      "file": "svg/warehouse.svg"
+    },
+    {
+      "name": "inventory",
+      "component": "InventoryIcon",
+      "file": "svg/inventory.svg"
+    },
+    {
+      "name": "truck",
+      "component": "TruckIcon",
+      "file": "svg/truck.svg"
+    },
+    {
+      "name": "delivery",
+      "component": "DeliveryIcon",
+      "file": "svg/delivery.svg"
+    },
+    {
+      "name": "pickup",
+      "component": "PickupIcon",
+      "file": "svg/pickup.svg"
+    },
+    {
+      "name": "table",
+      "component": "TableIcon",
+      "file": "svg/table.svg"
+    },
+    {
+      "name": "seating",
+      "component": "SeatingIcon",
+      "file": "svg/seating.svg"
+    },
+    {
+      "name": "file",
+      "component": "FileIcon",
+      "file": "svg/file.svg"
+    },
+    {
+      "name": "files",
+      "component": "FilesIcon",
+      "file": "svg/files.svg"
+    },
+    {
+      "name": "file-add",
+      "component": "FileAddIcon",
+      "file": "svg/file-add.svg"
+    },
+    {
+      "name": "file-check",
+      "component": "FileCheckIcon",
+      "file": "svg/file-check.svg"
+    },
+    {
+      "name": "file-remove",
+      "component": "FileRemoveIcon",
+      "file": "svg/file-remove.svg"
+    },
+    {
+      "name": "file-search",
+      "component": "FileSearchIcon",
+      "file": "svg/file-search.svg"
+    },
+    {
+      "name": "file-lock",
+      "component": "FileLockIcon",
+      "file": "svg/file-lock.svg"
+    },
+    {
+      "name": "file-text",
+      "component": "FileTextIcon",
+      "file": "svg/file-text.svg"
+    },
+    {
+      "name": "file-export",
+      "component": "FileExportIcon",
+      "file": "svg/file-export.svg"
+    },
+    {
+      "name": "file-import",
+      "component": "FileImportIcon",
+      "file": "svg/file-import.svg"
+    },
+    {
+      "name": "folder",
+      "component": "FolderIcon",
+      "file": "svg/folder.svg"
+    },
+    {
+      "name": "folder-open",
+      "component": "FolderOpenIcon",
+      "file": "svg/folder-open.svg"
+    },
+    {
+      "name": "folder-add",
+      "component": "FolderAddIcon",
+      "file": "svg/folder-add.svg"
+    },
+    {
+      "name": "archive",
+      "component": "ArchiveIcon",
+      "file": "svg/archive.svg"
+    },
+    {
+      "name": "clipboard",
+      "component": "ClipboardIcon",
+      "file": "svg/clipboard.svg"
+    },
+    {
+      "name": "clipboard-check",
+      "component": "ClipboardCheckIcon",
+      "file": "svg/clipboard-check.svg"
+    },
+    {
+      "name": "clipboard-list",
+      "component": "ClipboardListIcon",
+      "file": "svg/clipboard-list.svg"
+    },
+    {
+      "name": "book",
+      "component": "BookIcon",
+      "file": "svg/book.svg"
+    },
+    {
+      "name": "notebook",
+      "component": "NotebookIcon",
+      "file": "svg/notebook.svg"
+    },
+    {
+      "name": "paperclip",
+      "component": "PaperclipIcon",
+      "file": "svg/paperclip.svg"
+    },
+    {
+      "name": "plus",
+      "component": "PlusIcon",
+      "file": "svg/plus.svg"
+    },
+    {
+      "name": "minus",
+      "component": "MinusIcon",
+      "file": "svg/minus.svg"
+    },
+    {
+      "name": "check",
+      "component": "CheckIcon",
+      "file": "svg/check.svg"
+    },
+    {
+      "name": "x",
+      "component": "XIcon",
+      "file": "svg/x.svg"
+    },
+    {
+      "name": "arrow-left",
+      "component": "ArrowLeftIcon",
+      "file": "svg/arrow-left.svg"
+    },
+    {
+      "name": "arrow-right",
+      "component": "ArrowRightIcon",
+      "file": "svg/arrow-right.svg"
+    },
+    {
+      "name": "arrow-up",
+      "component": "ArrowUpIcon",
+      "file": "svg/arrow-up.svg"
+    },
+    {
+      "name": "arrow-down",
+      "component": "ArrowDownIcon",
+      "file": "svg/arrow-down.svg"
+    },
+    {
+      "name": "chevron-left",
+      "component": "ChevronLeftIcon",
+      "file": "svg/chevron-left.svg"
+    },
+    {
+      "name": "chevron-right",
+      "component": "ChevronRightIcon",
+      "file": "svg/chevron-right.svg"
+    },
+    {
+      "name": "chevron-up",
+      "component": "ChevronUpIcon",
+      "file": "svg/chevron-up.svg"
+    },
+    {
+      "name": "chevron-down",
+      "component": "ChevronDownIcon",
+      "file": "svg/chevron-down.svg"
+    },
+    {
+      "name": "undo",
+      "component": "UndoIcon",
+      "file": "svg/undo.svg"
+    },
+    {
+      "name": "redo",
+      "component": "RedoIcon",
+      "file": "svg/redo.svg"
+    },
+    {
+      "name": "refresh",
+      "component": "RefreshIcon",
+      "file": "svg/refresh.svg"
+    },
+    {
+      "name": "rotate",
+      "component": "RotateIcon",
+      "file": "svg/rotate.svg"
+    },
+    {
+      "name": "expand",
+      "component": "ExpandIcon",
+      "file": "svg/expand.svg"
+    },
+    {
+      "name": "collapse",
+      "component": "CollapseIcon",
+      "file": "svg/collapse.svg"
+    },
+    {
+      "name": "move",
+      "component": "MoveIcon",
+      "file": "svg/move.svg"
+    },
+    {
+      "name": "sort",
+      "component": "SortIcon",
+      "file": "svg/sort.svg"
+    },
+    {
+      "name": "bell",
+      "component": "BellIcon",
+      "file": "svg/bell.svg"
+    },
+    {
+      "name": "bell-off",
+      "component": "BellOffIcon",
+      "file": "svg/bell-off.svg"
+    },
+    {
+      "name": "mail",
+      "component": "MailIcon",
+      "file": "svg/mail.svg"
+    },
+    {
+      "name": "mail-open",
+      "component": "MailOpenIcon",
+      "file": "svg/mail-open.svg"
+    },
+    {
+      "name": "mail-send",
+      "component": "MailSendIcon",
+      "file": "svg/mail-send.svg"
+    },
+    {
+      "name": "message",
+      "component": "MessageIcon",
+      "file": "svg/message.svg"
+    },
+    {
+      "name": "messages",
+      "component": "MessagesIcon",
+      "file": "svg/messages.svg"
+    },
+    {
+      "name": "message-check",
+      "component": "MessageCheckIcon",
+      "file": "svg/message-check.svg"
+    },
+    {
+      "name": "phone",
+      "component": "PhoneIcon",
+      "file": "svg/phone.svg"
+    },
+    {
+      "name": "phone-call",
+      "component": "PhoneCallIcon",
+      "file": "svg/phone-call.svg"
+    },
+    {
+      "name": "headphones",
+      "component": "HeadphonesIcon",
+      "file": "svg/headphones.svg"
+    },
+    {
+      "name": "help",
+      "component": "HelpIcon",
+      "file": "svg/help.svg"
+    },
+    {
+      "name": "info",
+      "component": "InfoIcon",
+      "file": "svg/info.svg"
+    },
+    {
+      "name": "alert-circle",
+      "component": "AlertCircleIcon",
+      "file": "svg/alert-circle.svg"
+    },
+    {
+      "name": "alert-triangle",
+      "component": "AlertTriangleIcon",
+      "file": "svg/alert-triangle.svg"
+    },
+    {
+      "name": "check-circle",
+      "component": "CheckCircleIcon",
+      "file": "svg/check-circle.svg"
+    },
+    {
+      "name": "x-circle",
+      "component": "XCircleIcon",
+      "file": "svg/x-circle.svg"
+    },
+    {
+      "name": "minus-circle",
+      "component": "MinusCircleIcon",
+      "file": "svg/minus-circle.svg"
+    },
+    {
+      "name": "plus-circle",
+      "component": "PlusCircleIcon",
+      "file": "svg/plus-circle.svg"
+    },
+    {
+      "name": "activity",
+      "component": "ActivityIcon",
+      "file": "svg/activity.svg"
+    },
+    {
+      "name": "chart-bar",
+      "component": "ChartBarIcon",
+      "file": "svg/chart-bar.svg"
+    },
+    {
+      "name": "chart-line",
+      "component": "ChartLineIcon",
+      "file": "svg/chart-line.svg"
+    },
+    {
+      "name": "chart-pie",
+      "component": "ChartPieIcon",
+      "file": "svg/chart-pie.svg"
+    },
+    {
+      "name": "chart-donut",
+      "component": "ChartDonutIcon",
+      "file": "svg/chart-donut.svg"
+    },
+    {
+      "name": "trend-up",
+      "component": "TrendUpIcon",
+      "file": "svg/trend-up.svg"
+    },
+    {
+      "name": "trend-down",
+      "component": "TrendDownIcon",
+      "file": "svg/trend-down.svg"
+    },
+    {
+      "name": "report",
+      "component": "ReportIcon",
+      "file": "svg/report.svg"
+    },
+    {
+      "name": "table-data",
+      "component": "TableDataIcon",
+      "file": "svg/table-data.svg"
+    },
+    {
+      "name": "database",
+      "component": "DatabaseIcon",
+      "file": "svg/database.svg"
+    },
+    {
+      "name": "server",
+      "component": "ServerIcon",
+      "file": "svg/server.svg"
+    },
+    {
+      "name": "cloud",
+      "component": "CloudIcon",
+      "file": "svg/cloud.svg"
+    },
+    {
+      "name": "cloud-upload",
+      "component": "CloudUploadIcon",
+      "file": "svg/cloud-upload.svg"
+    },
+    {
+      "name": "cloud-download",
+      "component": "CloudDownloadIcon",
+      "file": "svg/cloud-download.svg"
+    },
+    {
+      "name": "upload",
+      "component": "UploadIcon",
+      "file": "svg/upload.svg"
+    },
+    {
+      "name": "download",
+      "component": "DownloadIcon",
+      "file": "svg/download.svg"
+    },
+    {
+      "name": "import",
+      "component": "ImportIcon",
+      "file": "svg/import.svg"
+    },
+    {
+      "name": "export",
+      "component": "ExportIcon",
+      "file": "svg/export.svg"
+    },
+    {
+      "name": "save",
+      "component": "SaveIcon",
+      "file": "svg/save.svg"
+    },
+    {
+      "name": "copy",
+      "component": "CopyIcon",
+      "file": "svg/copy.svg"
+    },
+    {
+      "name": "edit",
+      "component": "EditIcon",
+      "file": "svg/edit.svg"
+    },
+    {
+      "name": "printer",
+      "component": "PrinterIcon",
+      "file": "svg/printer.svg"
+    },
+    {
+      "name": "monitor",
+      "component": "MonitorIcon",
+      "file": "svg/monitor.svg"
+    },
+    {
+      "name": "laptop",
+      "component": "LaptopIcon",
+      "file": "svg/laptop.svg"
+    },
+    {
+      "name": "tablet",
+      "component": "TabletIcon",
+      "file": "svg/tablet.svg"
+    },
+    {
+      "name": "smartphone",
+      "component": "SmartphoneIcon",
+      "file": "svg/smartphone.svg"
+    },
+    {
+      "name": "scan",
+      "component": "ScanIcon",
+      "file": "svg/scan.svg"
+    },
+    {
+      "name": "scanner",
+      "component": "ScannerIcon",
+      "file": "svg/scanner.svg"
+    },
+    {
+      "name": "camera",
+      "component": "CameraIcon",
+      "file": "svg/camera.svg"
+    },
+    {
+      "name": "image",
+      "component": "ImageIcon",
+      "file": "svg/image.svg"
+    },
+    {
+      "name": "images",
+      "component": "ImagesIcon",
+      "file": "svg/images.svg"
+    },
+    {
+      "name": "crop",
+      "component": "CropIcon",
+      "file": "svg/crop.svg"
+    },
+    {
+      "name": "zoom-in",
+      "component": "ZoomInIcon",
+      "file": "svg/zoom-in.svg"
+    },
+    {
+      "name": "zoom-out",
+      "component": "ZoomOutIcon",
+      "file": "svg/zoom-out.svg"
+    },
+    {
+      "name": "wifi",
+      "component": "WifiIcon",
+      "file": "svg/wifi.svg"
+    },
+    {
+      "name": "wifi-off",
+      "component": "WifiOffIcon",
+      "file": "svg/wifi-off.svg"
+    },
+    {
+      "name": "bluetooth",
+      "component": "BluetoothIcon",
+      "file": "svg/bluetooth.svg"
+    },
+    {
+      "name": "usb",
+      "component": "UsbIcon",
+      "file": "svg/usb.svg"
+    },
+    {
+      "name": "plug",
+      "component": "PlugIcon",
+      "file": "svg/plug.svg"
+    },
+    {
+      "name": "power",
+      "component": "PowerIcon",
+      "file": "svg/power.svg"
+    },
+    {
+      "name": "battery",
+      "component": "BatteryIcon",
+      "file": "svg/battery.svg"
+    },
+    {
+      "name": "sun",
+      "component": "SunIcon",
+      "file": "svg/sun.svg"
+    },
+    {
+      "name": "moon",
+      "component": "MoonIcon",
+      "file": "svg/moon.svg"
+    },
+    {
+      "name": "loading",
+      "component": "LoadingIcon",
+      "file": "svg/loading.svg"
+    },
+    {
+      "name": "more-horizontal",
+      "component": "MoreHorizontalIcon",
+      "file": "svg/more-horizontal.svg"
+    },
+    {
+      "name": "more-vertical",
+      "component": "MoreVerticalIcon",
+      "file": "svg/more-vertical.svg"
+    },
+    {
+      "name": "trash",
+      "component": "TrashIcon",
+      "file": "svg/trash.svg"
+    },
+    {
+      "name": "trash-restore",
+      "component": "TrashRestoreIcon",
+      "file": "svg/trash-restore.svg"
+    },
+    {
+      "name": "edit-square",
+      "component": "EditSquareIcon",
+      "file": "svg/edit-square.svg"
+    },
+    {
+      "name": "check-square",
+      "component": "CheckSquareIcon",
+      "file": "svg/check-square.svg"
+    },
+    {
+      "name": "x-square",
+      "component": "XSquareIcon",
+      "file": "svg/x-square.svg"
+    },
+    {
+      "name": "heart",
+      "component": "HeartIcon",
+      "file": "svg/heart.svg"
+    },
+    {
+      "name": "star",
+      "component": "StarIcon",
+      "file": "svg/star.svg"
+    },
+    {
+      "name": "flag",
+      "component": "FlagIcon",
+      "file": "svg/flag.svg"
+    },
+    {
+      "name": "pin",
+      "component": "PinIcon",
+      "file": "svg/pin.svg"
+    },
+    {
+      "name": "bookmark",
+      "component": "BookmarkIcon",
+      "file": "svg/bookmark.svg"
+    },
+    {
+      "name": "history",
+      "component": "HistoryIcon",
+      "file": "svg/history.svg"
+    },
+    {
+      "name": "repeat",
+      "component": "RepeatIcon",
+      "file": "svg/repeat.svg"
+    },
+    {
+      "name": "shuffle",
+      "component": "ShuffleIcon",
+      "file": "svg/shuffle.svg"
+    },
+    {
+      "name": "pause",
+      "component": "PauseIcon",
+      "file": "svg/pause.svg"
+    },
+    {
+      "name": "play",
+      "component": "PlayIcon",
+      "file": "svg/play.svg"
+    },
+    {
+      "name": "cash-drawer",
+      "component": "CashDrawerIcon",
+      "file": "svg/cash-drawer.svg"
+    },
+    {
+      "name": "cash-in",
+      "component": "CashInIcon",
+      "file": "svg/cash-in.svg"
+    },
+    {
+      "name": "cash-out",
+      "component": "CashOutIcon",
+      "file": "svg/cash-out.svg"
+    },
+    {
+      "name": "cloud-sync",
+      "component": "CloudSyncIcon",
+      "file": "svg/cloud-sync.svg"
+    },
+    {
+      "name": "sunrise",
+      "component": "SunriseIcon",
+      "file": "svg/sunrise.svg"
+    },
+    {
+      "name": "drag-handle",
+      "component": "DragHandleIcon",
+      "file": "svg/drag-handle.svg"
+    },
+    {
+      "name": "package-add",
+      "component": "PackageAddIcon",
+      "file": "svg/package-add.svg"
+    },
+    {
+      "name": "archive-restore",
+      "component": "ArchiveRestoreIcon",
+      "file": "svg/archive-restore.svg"
+    },
+    {
+      "name": "palette",
+      "component": "PaletteIcon",
+      "file": "svg/palette.svg"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+export declare const interfaceIcons: {
+    readonly sun: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly moon: readonly [import("../geometry.js").IconNode];
+    readonly loading: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "more-horizontal": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "more-vertical": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly trash: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "trash-restore": readonly [import("../geometry.js").IconNode];
+    readonly "edit-square": readonly [import("../geometry.js").IconNode];
+    readonly "check-square": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "x-square": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly heart: readonly [import("../geometry.js").IconNode];
+    readonly star: readonly [import("../geometry.js").IconNode];
+    readonly flag: readonly [import("../geometry.js").IconNode];
+    readonly pin: readonly [import("../geometry.js").IconNode];
+    readonly bookmark: readonly [import("../geometry.js").IconNode];
+    readonly history: readonly [import("../geometry.js").IconNode];
+    readonly repeat: readonly [import("../geometry.js").IconNode];
+    readonly shuffle: readonly [import("../geometry.js").IconNode];
+    readonly pause: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly play: readonly [import("../geometry.js").IconNode];
+};

@@ -1,0 +1,22 @@
+export declare const communicationIcons: {
+    readonly bell: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "bell-off": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly mail: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "mail-open": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "mail-send": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly message: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly messages: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "message-check": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly phone: readonly [import("../geometry.js").IconNode];
+    readonly "phone-call": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly headphones: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly help: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly info: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "alert-circle": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "alert-triangle": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "check-circle": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "x-circle": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "minus-circle": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "plus-circle": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly activity: readonly [import("../geometry.js").IconNode];
+};

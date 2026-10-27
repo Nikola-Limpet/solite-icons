@@ -1,0 +1,6 @@
+dist/
+svg/
+sprite.svg
+catalog/
+src/icons/
+src/index.ts

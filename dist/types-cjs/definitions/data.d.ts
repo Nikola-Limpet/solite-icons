@@ -1,0 +1,22 @@
+export declare const dataIcons: {
+    readonly "chart-bar": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "chart-line": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "chart-pie": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "chart-donut": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "trend-up": readonly [import("../geometry.js").IconNode];
+    readonly "trend-down": readonly [import("../geometry.js").IconNode];
+    readonly report: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "table-data": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly database: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly server: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly cloud: readonly [import("../geometry.js").IconNode];
+    readonly "cloud-upload": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "cloud-download": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly upload: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly download: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly import: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly export: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly save: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly copy: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly edit: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+};

@@ -1,0 +1,8 @@
+"use client";
+import { createSoliteIcon } from "../create-icon.js";
+const SettingsIcon = /* @__PURE__ */ createSoliteIcon("settings", [["path", { "d": "M9.5 3H14.5L15.2 5.65L17.2 6.8L19.85 6.1L22.1 10L20.15 12L20.1 14.2L21.95 16.15L19.65 20.1L17 19.4L15.1 20.5L14.5 22H9.5L8.9 20.5L7 19.4L4.35 20.1L2.05 16.15L3.9 14.2L3.85 12L1.9 10L4.15 6.1L6.8 6.8L8.8 5.65Z" }], ["circle", { "cx": 12, "cy": 12.5, "r": 3.25 }]]);
+var settings_default = SettingsIcon;
+export {
+  SettingsIcon,
+  settings_default as default
+};

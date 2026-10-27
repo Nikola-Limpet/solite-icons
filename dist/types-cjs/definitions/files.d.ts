@@ -1,0 +1,22 @@
+export declare const fileIcons: {
+    readonly file: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly files: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "file-add": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "file-check": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "file-remove": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "file-search": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "file-lock": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "file-text": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "file-export": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "file-import": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly folder: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "folder-open": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "folder-add": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly archive: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly clipboard: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "clipboard-check": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly "clipboard-list": readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly book: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly notebook: readonly [import("../geometry.js").IconNode, import("../geometry.js").IconNode, import("../geometry.js").IconNode];
+    readonly paperclip: readonly [import("../geometry.js").IconNode];
+};
