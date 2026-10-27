@@ -10,7 +10,7 @@
     "svg",
     "typescript"
   ],
-  "homepage": "https://github.com/Nikola-Limpet/solite-icons#readme",
+  "homepage": "https://solite-icons.nikola33.dev",
   "bugs": "https://github.com/Nikola-Limpet/solite-icons/issues",
   "license": "MIT",
   "author": "Nikola-Limpet",
@@ -27,7 +27,8 @@
     "README.md",
     "LICENSE",
     "docs/icons.md",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "assets/react-preview.png"
   ],
   "type": "module",
   "sideEffects": false,
@@ -86,7 +87,8 @@
     "test": "node --test test/*.test.mjs",
     "format": "oxfmt .",
     "format:check": "oxfmt --check .",
-    "prepack": "npm run build"
+    "prepack": "npm run build",
+    "preview:render": "node scripts/render-preview.mjs"
   },
   "devDependencies": {
     "@types/node": "22.20.1",

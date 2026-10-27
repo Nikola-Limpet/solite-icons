@@ -1,0 +1,70 @@
+---
+title: Styling
+description: Match the icon to your interface with size, stroke, and color.
+---
+
+<IconPlayground />
+
+## Inherit text color
+
+The default stroke is `currentColor`. An icon follows the color of its parent text.
+
+```tsx
+import { ShopIcon } from "solite-icons";
+
+<span style={{ color: "#2563eb" }}>
+  <ShopIcon size={24} />
+</span>;
+```
+
+Use `color` when you need an explicit stroke color:
+
+```tsx
+<ShopIcon size={24} color="#2563eb" />
+```
+
+## Tailwind CSS
+
+```tsx
+<ShopIcon className="size-5 shrink-0 text-blue-600 dark:text-blue-400" />
+```
+
+The icon has no dependency on Tailwind. The class names work when Tailwind is already configured in your app.
+
+## Plain CSS
+
+```css
+.toolbar-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+```
+
+```tsx
+<ShopIcon className="toolbar-icon" />
+```
+
+## Keep a consistent outline
+
+Use the default `strokeWidth={1.75}` across a screen. A heavier stroke can help at small sizes:
+
+```tsx
+<ShopIcon size={16} strokeWidth={2} />
+```
+
+The stroke scales with the SVG viewBox. The default 24px drawing grid does not change when you resize the rendered element.
+
+## Layout and spacing
+
+Pair the icon with a text label using flex or inline-flex. Let the parent control the gap.
+
+```tsx
+<button className="inline-flex items-center gap-2">
+  <ShopIcon size={18} />
+  Manage shops
+</button>
+```
+
+Avoid putting fixed margins inside a reusable icon component. The same glyph should work in buttons, navigation, and tables.

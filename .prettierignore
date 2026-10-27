@@ -4,3 +4,8 @@ sprite.svg
 catalog/
 src/icons/
 src/index.ts
+
+website/.next/
+website/.source/
+website/out/
+website/public/svg/

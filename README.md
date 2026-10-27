@@ -1,8 +1,12 @@
 # Solite Icons
 
+[Documentation and live React examples](https://solite-icons.nikola33.dev)
+
 229 original SVG outline icons for dashboards, point of sale, cafés, restaurants, retail, payments, and everyday app controls.
 
 Every icon uses a 24 × 24 grid, a 1.75px stroke, rounded caps and joins, and `currentColor`. Use React components or the SVG files directly. No stylesheet, icon font, or external icon service is required.
+
+![Solite Icons rendered as React components, with shop, coffee, package, payment, and navigation icons](assets/react-preview.png)
 
 ## Install from GitHub
 
@@ -245,3 +249,23 @@ The package is prepared for a future npm release. Before publishing, confirm the
 [MIT](LICENSE). Copyright 2026 Nikola-Limpet.
 
 These are original SVG drawings created for Solite POS, extracted from `Nikola-Limpet/hang-pos` at commit `07d7a83c9d2b98bb8449ea7b2a58ca055f8aecd1`. Their outline style follows the approved Solite admin design references. Brand logos and product photography are not part of this icon library.
+
+## Documentation website
+
+The `website/` directory contains the Next.js and [Fumadocs](https://fumadocs.dev) documentation app. Zod uses the same documentation framework. It includes MDX guides, documentation search, a live React playground, and a searchable browser of all 229 icons. Its dependencies are separate from the icon package.
+
+```sh
+npm ci
+npm --prefix website ci
+npm --prefix website run dev
+```
+
+Open `http://localhost:3000`. To build the static site:
+
+```sh
+npm --prefix website run build
+```
+
+Deploy `website/out/` on a static host. For GitHub Pages at `/solite-icons/`, build with `DOCS_BASE_PATH=/solite-icons`. For a root domain, leave the base path empty. Search runs in the browser using a generated index, so hosting does not require an API server.
+
+Write guides in `website/content/docs/` and edit examples in `website/components/`. The site consumes the package at the pinned initial commit in `website/package.json`; update that revision when publishing new icons. See [website/README.md](website/README.md) for authoring, preview images, and deployment details.

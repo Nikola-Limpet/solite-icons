@@ -1,0 +1,52 @@
+---
+title: Accessibility
+description: Give meaningful controls a name and keep decorative icons quiet.
+---
+
+## Decorative icons
+
+Every component has `aria-hidden="true"` and `focusable="false"` by default. That is appropriate when nearby text already explains the action.
+
+```tsx
+import { DownloadIcon } from "solite-icons";
+
+<button type="button">
+  <DownloadIcon size={18} />
+  Download report
+</button>;
+```
+
+## Icon-only controls
+
+Put the accessible name on the interactive element, not the decorative icon inside it.
+
+```tsx
+import { XIcon } from "solite-icons";
+
+<button type="button" aria-label="Close dialog">
+  <XIcon size={20} />
+</button>;
+```
+
+A tooltip is helpful for some users, but it does not replace the button's accessible name.
+
+## Informative icons
+
+If the icon itself supplies information, use `title` or `aria-label`.
+
+```tsx
+import { PaymentCheckIcon } from "solite-icons";
+
+<PaymentCheckIcon title="Payment received" />;
+<PaymentCheckIcon aria-label="Payment received" />;
+```
+
+These props enable `role="img"` and remove the default hidden state. A title receives a unique ID and `aria-labelledby`, so repeated icons do not share title IDs.
+
+## Do not rely on color alone
+
+A green check and a red cross should also have text labels or accessible names. Color differences may not be visible to everyone.
+
+## Standalone SVG images
+
+For a decorative `<img>`, use `alt=""`. For an informative image, give it a useful `alt` value. See [SVG usage](/svg).

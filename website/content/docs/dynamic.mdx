@@ -1,0 +1,47 @@
+---
+title: Dynamic names
+description: Render an icon when its name comes from configuration or data.
+---
+
+## The dynamic component
+
+```tsx
+import { SoliteIcon, type SoliteIconName } from "solite-icons/dynamic";
+
+const name: SoliteIconName = "cash-register";
+
+<SoliteIcon name={name} size={20} />;
+```
+
+The names match the SVG filenames, without `.svg`. `cash-register` maps to the named component `CashRegisterIcon`.
+
+The dynamic entry includes the full collection. Prefer [named imports](/react) when the icon is known in your source code.
+
+## Validate external values
+
+Unknown names throw an error at runtime. Check strings from an API, database, or user input before rendering them.
+
+```tsx
+import { icons } from "solite-icons/data";
+import { SoliteIcon, type SoliteIconName } from "solite-icons/dynamic";
+
+function isIconName(value: string): value is SoliteIconName {
+  return Object.hasOwn(icons, value);
+}
+
+export function ConfiguredIcon({ value }: { value: string }) {
+  return isIconName(value) ? <SoliteIcon name={value} /> : null;
+}
+```
+
+## Read the collection data
+
+```ts
+import { icons, iconCategories } from "solite-icons/data";
+
+const names = Object.keys(icons);
+const navigationNames = iconCategories.Navigation;
+const shopGeometry = icons.shop;
+```
+
+This entry has no React imports. Each geometry node is an SVG tag name and an attributes object. It is suitable for custom framework adapters and catalog tooling.

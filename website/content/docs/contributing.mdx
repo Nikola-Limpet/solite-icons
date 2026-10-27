@@ -1,0 +1,49 @@
+---
+title: Contributing
+description: Add a glyph, improve a guide, or run the project locally.
+---
+
+## Library development
+
+```bash
+git clone https://github.com/Nikola-Limpet/solite-icons.git
+cd solite-icons
+npm ci
+npm run build
+npm test
+npm run check
+```
+
+Edit the original geometry in `src/definitions/`, using the shared helpers in `src/geometry.ts`. Keep the 24px grid, rounded caps and joins, and one consistent outline thickness.
+
+Run `npm run build` and commit the regenerated files. `npm run check` catches stale generated code and assets.
+
+Removing or renaming an icon is a breaking API change. Add new names without changing existing meanings.
+
+## Documentation development
+
+The docs use Next.js, Fumadocs, and MDX in `website/`. Use Node.js 22 or newer.
+
+```bash
+npm ci
+npm --prefix website ci
+npm --prefix website run dev
+```
+
+The icon package used by this site is pinned to the initial package commit in `website/package.json`. When changing the library, update that dependency to the new library commit before updating the previews.
+
+Write guides in `website/content/docs/`. Register their order in `meta.json`. The live demos are React components in `website/components/`.
+
+## Build a static site
+
+```bash
+npm --prefix website run build
+```
+
+The output is `website/out/`. It can be hosted by a static file host. For a repository subdirectory such as GitHub Pages:
+
+```bash
+DOCS_BASE_PATH=/solite-icons npm --prefix website run build
+```
+
+This adds the base path to application links, search, and downloadable SVGs. Set the correct base path before building, then serve the output at that path.
