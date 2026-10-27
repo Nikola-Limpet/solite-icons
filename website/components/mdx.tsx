@@ -3,12 +3,14 @@ import type { MDXComponents } from "mdx/types";
 import { IconPlayground } from "./icon-playground";
 import { IconBrowser } from "./icon-browser";
 import { ExampleBoard } from "./example-board";
+import { DocsIntro } from "./docs-intro";
 export function getMDXComponents(components?: MDXComponents) {
   return {
     ...defaultMdxComponents,
     IconPlayground,
     IconBrowser,
     ExampleBoard,
+    DocsIntro,
     ...components,
   } satisfies MDXComponents;
 }

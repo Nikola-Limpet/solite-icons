@@ -1,45 +1,49 @@
 ---
 title: Solite Icons
-description: Rounded outlines, ready for your app. 253 original icons for React and SVG projects.
+description: 253 original, open-source outline icons for React and SVG. MIT licensed and ready to make your own.
 ---
+
+<DocsIntro />
 
 <ExampleBoard />
 
-Solite Icons gives your navigation, buttons, checkout screens, and dashboards one consistent visual language. Every glyph uses a **24 × 24 grid**, **1.75px stroke**, and **rounded caps and joins**.
-
-Import only the icons you use. Control their size and color with React props or CSS. No icon font or stylesheet is required.
-
 ## Start with one icon
 
-```bash
-npm install solite-icons
-```
+Import a component, set its size, and let it inherit your text color. Named imports support tree shaking, so your bundle includes the icons you use.
 
 ```tsx
-import { ShopIcon } from "solite-icons";
+import { CoffeeIcon } from "solite-icons";
 
-<ShopIcon size={24} className="text-blue-600" />;
+export function CoffeeLabel() {
+  return (
+    <span className="inline-flex items-center gap-2">
+      <CoffeeIcon size={20} />
+      Coffee
+    </span>
+  );
+}
 ```
 
-The package includes React components, standalone SVGs, and TypeScript declarations.
+The package includes React components, standalone SVGs, and TypeScript declarations. No icon font or stylesheet is required. [Read the installation guide](/installation) for npm, pnpm, and Bun.
 
-## See it in React
+## Make it yours
 
 <IconPlayground />
 
-These previews render the actual package components. Adjust the controls and copy the resulting JSX into your project.
+These are the actual package components. Adjust the size, color, and stroke, then copy the resulting JSX. The defaults use a **24 × 24 grid**, a **1.75px stroke**, and **rounded caps and joins**.
 
-## Find your next icon
+## Find your way
 
-[Browse all 253 icons](/icons) for navigation, people and access, sales, payments, restaurants, cafés, retail, devices, and everyday controls.
+- [Browse all 253 icons](/icons) for app controls, commerce, developer tools, media, accessibility, and everyday interfaces.
+- [React usage](/react) covers named imports, refs, and buttons.
+- [Styling](/styling) explains size, stroke, CSS, Tailwind, and dark mode.
+- [Accessibility](/accessibility) helps you label meaningful icons and keep decorative ones quiet.
+- [Plain SVG](/svg) works in HTML, Vue, Svelte, Laravel, and projects without React.
 
-- [Installation](/installation): add the library to an existing project.
-- [React usage](/react): named imports, refs, and buttons.
-- [Styling](/styling): size, stroke, color, Tailwind, and dark mode.
-- [SVG usage](/svg): use the files in HTML, Vue, Svelte, or Laravel.
+React components support **React 18.2 and 19**. The package includes ESM and CommonJS. React is optional when using only SVG files or geometry data.
 
-## Requirements
+## Open source, from the first stroke
 
-React components support React **18.2 and 19**. SVG files and the data entry work without React. The package includes ESM, CommonJS, and TypeScript declarations.
+Solite Icons is [MIT licensed](/license). Use it in personal and commercial projects, adapt the drawings, and contribute improvements. Keep the license notice with copies or substantial portions of the software.
 
-The icon drawings are original and [MIT licensed](https://github.com/Nikola-Limpet/solite-icons/blob/main/LICENSE). This documentation uses [Fumadocs](https://fumadocs.dev), the same documentation framework used by Zod.
+[Explore the source](https://github.com/Nikola-Limpet/solite-icons), [contribute an icon or a guide](/contributing), or [read the release notes](/releases). The package is published on [npm](https://www.npmjs.com/package/solite-icons).

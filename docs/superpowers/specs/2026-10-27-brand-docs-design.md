@@ -1,6 +1,6 @@
 # Solite identity and documentation refresh
 
-Status: proposed for review. The maintainer chose a different visual identity, the teal drawing-specimen direction, and React-first documentation with a clear SVG path.
+Status: approved on 2026-10-27 for implementation, PR, merge after passing checks, and deployment. The maintainer chose a different visual identity, the teal drawing-specimen direction, and React-first documentation with a clear SVG path.
 
 ## Intent
 
