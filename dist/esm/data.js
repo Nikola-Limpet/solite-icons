@@ -10,6 +10,9 @@ import { dataIcons } from "./definitions/data.js";
 import { deviceIcons } from "./definitions/devices.js";
 import { interfaceIcons } from "./definitions/interface.js";
 import { workflowIcons } from "./definitions/workflow.js";
+import { developerIcons } from "./definitions/developer.js";
+import { mediaIcons } from "./definitions/media.js";
+import { discoveryIcons } from "./definitions/discovery.js";
 const icons = {
   ...navigationIcons,
   ...peopleIcons,
@@ -22,7 +25,10 @@ const icons = {
   ...dataIcons,
   ...deviceIcons,
   ...interfaceIcons,
-  ...workflowIcons
+  ...workflowIcons,
+  ...developerIcons,
+  ...mediaIcons,
+  ...discoveryIcons
 };
 const names = (group) => Object.keys(group);
 const iconCategories = {
@@ -37,7 +43,10 @@ const iconCategories = {
   Data: names(dataIcons),
   Devices: names(deviceIcons),
   "Interface essentials": names(interfaceIcons),
-  Workflow: names(workflowIcons)
+  Workflow: names(workflowIcons),
+  "Developer tools": names(developerIcons),
+  "Media & sharing": names(mediaIcons),
+  "Discovery & learning": names(discoveryIcons)
 };
 export {
   iconCategories,

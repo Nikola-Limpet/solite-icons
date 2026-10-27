@@ -227,7 +227,32 @@ import { DragHandleIcon } from "./icons/drag-handle.js";
 import { PackageAddIcon } from "./icons/package-add.js";
 import { ArchiveRestoreIcon } from "./icons/archive-restore.js";
 import { PaletteIcon } from "./icons/palette.js";
+import { CodeIcon } from "./icons/code.js";
+import { TerminalIcon } from "./icons/terminal.js";
+import { CommandIcon } from "./icons/command.js";
+import { BracesIcon } from "./icons/braces.js";
+import { GitBranchIcon } from "./icons/git-branch.js";
+import { BotIcon } from "./icons/bot.js";
+import { ShareIcon } from "./icons/share.js";
+import { VolumeIcon } from "./icons/volume.js";
+import { VolumeOffIcon } from "./icons/volume-off.js";
+import { MicrophoneIcon } from "./icons/microphone.js";
+import { MicrophoneOffIcon } from "./icons/microphone-off.js";
+import { VideoIcon } from "./icons/video.js";
+import { VideoOffIcon } from "./icons/video-off.js";
+import { SparklesIcon } from "./icons/sparkles.js";
+import { WandIcon } from "./icons/wand.js";
+import { LightbulbIcon } from "./icons/lightbulb.js";
+import { RocketIcon } from "./icons/rocket.js";
+import { AccessibilityIcon } from "./icons/accessibility.js";
+import { LanguagesIcon } from "./icons/languages.js";
+import { TrophyIcon } from "./icons/trophy.js";
+import { GraduationCapIcon } from "./icons/graduation-cap.js";
+import { WrenchIcon } from "./icons/wrench.js";
+import { PuzzleIcon } from "./icons/puzzle.js";
+import { TargetIcon } from "./icons/target.js";
 export {
+  AccessibilityIcon,
   ActivityIcon,
   AlarmIcon,
   AlertCircleIcon,
@@ -250,9 +275,11 @@ export {
   BluetoothIcon,
   BookIcon,
   BookmarkIcon,
+  BotIcon,
   BottleIcon,
   BoxIcon,
   BoxesIcon,
+  BracesIcon,
   BreadIcon,
   BuildingIcon,
   CalculatorIcon,
@@ -285,9 +312,11 @@ export {
   CloudIcon,
   CloudSyncIcon,
   CloudUploadIcon,
+  CodeIcon,
   CoffeeIcon,
   CoinsIcon,
   CollapseIcon,
+  CommandIcon,
   CompassIcon,
   ContactIcon,
   CookingPotIcon,
@@ -328,7 +357,9 @@ export {
   FolderIcon,
   FolderOpenIcon,
   GiftIcon,
+  GitBranchIcon,
   GlobeIcon,
+  GraduationCapIcon,
   GridIcon,
   HandshakeIcon,
   HeadphonesIcon,
@@ -344,8 +375,10 @@ export {
   InventoryIcon,
   InvoiceIcon,
   KeyIcon,
+  LanguagesIcon,
   LaptopIcon,
   LayoutIcon,
+  LightbulbIcon,
   LinkIcon,
   LoadingIcon,
   LockIcon,
@@ -360,6 +393,8 @@ export {
   MessageCheckIcon,
   MessageIcon,
   MessagesIcon,
+  MicrophoneIcon,
+  MicrophoneOffIcon,
   MinusCircleIcon,
   MinusIcon,
   MonitorIcon,
@@ -391,6 +426,7 @@ export {
   PlusIcon,
   PowerIcon,
   PrinterIcon,
+  PuzzleIcon,
   QrCodeIcon,
   ReceiptCheckIcon,
   ReceiptIcon,
@@ -402,6 +438,7 @@ export {
   RestaurantIcon,
   RetailIcon,
   RielIcon,
+  RocketIcon,
   RotateIcon,
   RouteIcon,
   SaveIcon,
@@ -411,6 +448,7 @@ export {
   SeatingIcon,
   ServerIcon,
   SettingsIcon,
+  ShareIcon,
   ShieldCheckIcon,
   ShieldIcon,
   ShieldLockIcon,
@@ -422,6 +460,7 @@ export {
   SlidersIcon,
   SmartphoneIcon,
   SortIcon,
+  SparklesIcon,
   StarIcon,
   SubscriptionIcon,
   SunIcon,
@@ -431,11 +470,14 @@ export {
   TabletIcon,
   TagIcon,
   TagsIcon,
+  TargetIcon,
   TeaIcon,
+  TerminalIcon,
   TrashIcon,
   TrashRestoreIcon,
   TrendDownIcon,
   TrendUpIcon,
+  TrophyIcon,
   TruckIcon,
   UndoIcon,
   UnlockIcon,
@@ -448,10 +490,16 @@ export {
   UserRemoveIcon,
   UsersIcon,
   UtensilsIcon,
+  VideoIcon,
+  VideoOffIcon,
+  VolumeIcon,
+  VolumeOffIcon,
   WalletIcon,
+  WandIcon,
   WarehouseIcon,
   WifiIcon,
   WifiOffIcon,
+  WrenchIcon,
   XCircleIcon,
   XIcon,
   XSquareIcon,

@@ -34,6 +34,9 @@ var import_data = require("./definitions/data.js");
 var import_devices = require("./definitions/devices.js");
 var import_interface = require("./definitions/interface.js");
 var import_workflow = require("./definitions/workflow.js");
+var import_developer = require("./definitions/developer.js");
+var import_media = require("./definitions/media.js");
+var import_discovery = require("./definitions/discovery.js");
 const icons = {
   ...import_navigation.navigationIcons,
   ...import_people.peopleIcons,
@@ -46,7 +49,10 @@ const icons = {
   ...import_data.dataIcons,
   ...import_devices.deviceIcons,
   ...import_interface.interfaceIcons,
-  ...import_workflow.workflowIcons
+  ...import_workflow.workflowIcons,
+  ...import_developer.developerIcons,
+  ...import_media.mediaIcons,
+  ...import_discovery.discoveryIcons
 };
 const names = (group) => Object.keys(group);
 const iconCategories = {
@@ -61,5 +67,8 @@ const iconCategories = {
   Data: names(import_data.dataIcons),
   Devices: names(import_devices.deviceIcons),
   "Interface essentials": names(import_interface.interfaceIcons),
-  Workflow: names(import_workflow.workflowIcons)
+  Workflow: names(import_workflow.workflowIcons),
+  "Developer tools": names(import_developer.developerIcons),
+  "Media & sharing": names(import_media.mediaIcons),
+  "Discovery & learning": names(import_discovery.discoveryIcons)
 };

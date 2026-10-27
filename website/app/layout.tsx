@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     template: "%s · Solite Icons",
   },
   description:
-    "229 original outline icons for React and SVG projects. Browse the collection, try live examples, and learn how to use Solite Icons.",
+    "253 original outline icons for React and SVG projects. Browse the collection, try live examples, and learn how to use Solite Icons.",
 };
 export default function Layout({ children }: { children: ReactNode }) {
   return (

@@ -1,6 +1,7 @@
 dist/
 svg/
 sprite.svg
+manifest.json
 catalog/
 src/icons/
 src/index.ts

@@ -6,3 +6,8 @@ icons.HomeIcon;
 data.icons.shop;
 dynamic.SoliteIcon;
 home.default;
+icons.CodeIcon;
+icons.MicrophoneOffIcon;
+data.icons["git-branch"];
+import terminal = require("solite-icons/icons/terminal");
+terminal.default;

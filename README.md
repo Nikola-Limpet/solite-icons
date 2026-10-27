@@ -2,25 +2,25 @@
 
 [Documentation and live React examples](https://solite-icons.nikola33.dev)
 
-229 original SVG outline icons for dashboards, point of sale, cafés, restaurants, retail, payments, and everyday app controls.
+253 original SVG outline icons for dashboards, point of sale, cafés, restaurants, retail, payments, and everyday app controls.
 
 Every icon uses a 24 × 24 grid, a 1.75px stroke, rounded caps and joins, and `currentColor`. Use React components or the SVG files directly. No stylesheet, icon font, or external icon service is required.
 
 ![Solite Icons rendered as React components, with shop, coffee, package, payment, and navigation icons](assets/react-preview.png)
 
-## Install from GitHub
+## Install
 
-The package is available from this repository. It has not been published to npm.
+Install the package from npm:
 
 ```sh
-npm install github:Nikola-Limpet/solite-icons#main
+npm install solite-icons
 # or
-pnpm add github:Nikola-Limpet/solite-icons#main
+pnpm add solite-icons
 # or
-bun add github:Nikola-Limpet/solite-icons#main
+bun add solite-icons
 ```
 
-Keep the resulting lockfile. For a reproducible version, replace `main` with a commit SHA. The repository includes the built package, so installation does not run a build in your project.
+Keep the resulting lockfile. To pin this release, install `solite-icons@0.2.0`. The package includes built JavaScript and types, so installation does not run a build in your project.
 
 React components need React 18.2 or React 19. Install React if your project does not already use it. React is an optional peer dependency, so projects using only SVGs or raw geometry do not need it.
 
@@ -131,7 +131,7 @@ const iconName: SoliteIconName = "cash-register";
 <SoliteIcon name={iconName} size={20} />;
 ```
 
-This entry includes all 229 glyphs. Prefer named imports when the icons are known in code. Unknown names throw an error at runtime. Validate external strings before rendering:
+This entry includes all 253 glyphs. Prefer named imports when the icons are known in code. Unknown names throw an error at runtime. Validate external strings before rendering:
 
 ```tsx
 import { icons } from "solite-icons/data";
@@ -234,7 +234,7 @@ Edit the original geometry in `src/definitions/`, then run `npm run build`. Keep
 
 Commit the regenerated `src/icons/`, `src/index.ts`, `dist/`, `svg/`, `sprite.svg`, `manifest.json`, and `catalog/` files. `npm run check` detects stale or unexpected generated files. To remove an icon, remove its old generated files before rebuilding. Removing or renaming a public icon is a breaking API change.
 
-The tests check all 229 export names, SVG geometry safety, accessible rendering, dynamic validation, CommonJS imports, and tree shaking. Keep the count assertion in sync when adding icons.
+The tests check all 253 export names, SVG geometry safety, accessible rendering, dynamic validation, CommonJS imports, and tree shaking. Keep the count assertion in sync when adding icons.
 
 To inspect the package artifact:
 
@@ -242,17 +242,17 @@ To inspect the package artifact:
 npm pack --dry-run
 ```
 
-The package is prepared for a future npm release. Before publishing, confirm the npm package name is available, update the version and changelog, rebuild, run all checks, and publish with your own npm account. No automatic publishing is configured.
+To publish a new release, update the version and changelog, rebuild, run all checks, inspect the package artifact, and run `npm publish --access public` with an authorized npm account. No automatic publishing is configured.
 
 ## License and origin
 
 [MIT](LICENSE). Copyright 2026 Nikola-Limpet.
 
-These are original SVG drawings created for Solite POS, extracted from `Nikola-Limpet/hang-pos` at commit `07d7a83c9d2b98bb8449ea7b2a58ca055f8aecd1`. Their outline style follows the approved Solite admin design references. Brand logos and product photography are not part of this icon library.
+The initial 229 SVG drawings were created for Solite POS and extracted from `Nikola-Limpet/hang-pos` at commit `07d7a83c9d2b98bb8449ea7b2a58ca055f8aecd1`. The 24 additional essentials extend the same outline style, using original geometry based on the approved Solite design references. Brand logos and product photography are not part of this icon library.
 
 ## Documentation website
 
-The `website/` directory contains the Next.js and [Fumadocs](https://fumadocs.dev) documentation app. Zod uses the same documentation framework. It includes MDX guides, documentation search, a live React playground, and a searchable browser of all 229 icons. Its dependencies are separate from the icon package.
+The `website/` directory contains the Next.js and [Fumadocs](https://fumadocs.dev) documentation app. Zod uses the same documentation framework. It includes MDX guides, documentation search, a live React playground, and a searchable browser of all 253 icons. Its dependencies are separate from the icon package.
 
 ```sh
 npm ci
@@ -268,4 +268,4 @@ npm --prefix website run build
 
 Deploy `website/out/` on a static host. For GitHub Pages at `/solite-icons/`, build with `DOCS_BASE_PATH=/solite-icons`. For a root domain, leave the base path empty. Search runs in the browser using a generated index, so hosting does not require an API server.
 
-Write guides in `website/content/docs/` and edit examples in `website/components/`. The site consumes the package at the pinned initial commit in `website/package.json`; update that revision when publishing new icons. See [website/README.md](website/README.md) for authoring, preview images, and deployment details.
+Write guides in `website/content/docs/` and edit examples in `website/components/`. The site consumes the npm release pinned in `website/package.json`; update that version when publishing new icons. See [website/README.md](website/README.md) for authoring, preview images, and deployment details.

@@ -1,7 +1,7 @@
 {
   "name": "solite-icons",
-  "version": "0.1.0",
-  "count": 229,
+  "version": "0.2.0",
+  "count": 253,
   "viewBox": "0 0 24 24",
   "strokeWidth": 1.75,
   "provenance": "Original SVG geometry authored for Solite POS and extracted into solite-icons. Initial source: Nikola-Limpet/hang-pos commit 07d7a83c9d2b98bb8449ea7b2a58ca055f8aecd1.",
@@ -258,6 +258,36 @@
       "package-add",
       "archive-restore",
       "palette"
+    ],
+    "Developer tools": [
+      "code",
+      "terminal",
+      "command",
+      "braces",
+      "git-branch",
+      "bot"
+    ],
+    "Media & sharing": [
+      "share",
+      "volume",
+      "volume-off",
+      "microphone",
+      "microphone-off",
+      "video",
+      "video-off"
+    ],
+    "Discovery & learning": [
+      "sparkles",
+      "wand",
+      "lightbulb",
+      "rocket",
+      "accessibility",
+      "languages",
+      "trophy",
+      "graduation-cap",
+      "wrench",
+      "puzzle",
+      "target"
     ]
   },
   "icons": [
@@ -1405,6 +1435,126 @@
       "name": "palette",
       "component": "PaletteIcon",
       "file": "svg/palette.svg"
+    },
+    {
+      "name": "code",
+      "component": "CodeIcon",
+      "file": "svg/code.svg"
+    },
+    {
+      "name": "terminal",
+      "component": "TerminalIcon",
+      "file": "svg/terminal.svg"
+    },
+    {
+      "name": "command",
+      "component": "CommandIcon",
+      "file": "svg/command.svg"
+    },
+    {
+      "name": "braces",
+      "component": "BracesIcon",
+      "file": "svg/braces.svg"
+    },
+    {
+      "name": "git-branch",
+      "component": "GitBranchIcon",
+      "file": "svg/git-branch.svg"
+    },
+    {
+      "name": "bot",
+      "component": "BotIcon",
+      "file": "svg/bot.svg"
+    },
+    {
+      "name": "share",
+      "component": "ShareIcon",
+      "file": "svg/share.svg"
+    },
+    {
+      "name": "volume",
+      "component": "VolumeIcon",
+      "file": "svg/volume.svg"
+    },
+    {
+      "name": "volume-off",
+      "component": "VolumeOffIcon",
+      "file": "svg/volume-off.svg"
+    },
+    {
+      "name": "microphone",
+      "component": "MicrophoneIcon",
+      "file": "svg/microphone.svg"
+    },
+    {
+      "name": "microphone-off",
+      "component": "MicrophoneOffIcon",
+      "file": "svg/microphone-off.svg"
+    },
+    {
+      "name": "video",
+      "component": "VideoIcon",
+      "file": "svg/video.svg"
+    },
+    {
+      "name": "video-off",
+      "component": "VideoOffIcon",
+      "file": "svg/video-off.svg"
+    },
+    {
+      "name": "sparkles",
+      "component": "SparklesIcon",
+      "file": "svg/sparkles.svg"
+    },
+    {
+      "name": "wand",
+      "component": "WandIcon",
+      "file": "svg/wand.svg"
+    },
+    {
+      "name": "lightbulb",
+      "component": "LightbulbIcon",
+      "file": "svg/lightbulb.svg"
+    },
+    {
+      "name": "rocket",
+      "component": "RocketIcon",
+      "file": "svg/rocket.svg"
+    },
+    {
+      "name": "accessibility",
+      "component": "AccessibilityIcon",
+      "file": "svg/accessibility.svg"
+    },
+    {
+      "name": "languages",
+      "component": "LanguagesIcon",
+      "file": "svg/languages.svg"
+    },
+    {
+      "name": "trophy",
+      "component": "TrophyIcon",
+      "file": "svg/trophy.svg"
+    },
+    {
+      "name": "graduation-cap",
+      "component": "GraduationCapIcon",
+      "file": "svg/graduation-cap.svg"
+    },
+    {
+      "name": "wrench",
+      "component": "WrenchIcon",
+      "file": "svg/wrench.svg"
+    },
+    {
+      "name": "puzzle",
+      "component": "PuzzleIcon",
+      "file": "svg/puzzle.svg"
+    },
+    {
+      "name": "target",
+      "component": "TargetIcon",
+      "file": "svg/target.svg"
     }
   ]
 }

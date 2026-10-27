@@ -1,6 +1,6 @@
 # Solite Icons docs
 
-A Next.js 16 and Fumadocs site with MDX guides, static documentation search, rendered React examples, and an interactive 229-icon gallery.
+A Next.js 16 and Fumadocs site with MDX guides, static documentation search, rendered React examples, and an interactive 253-icon gallery.
 
 ## Run locally
 
@@ -24,7 +24,7 @@ The MDX component mapping in `components/mdx.tsx` exposes:
 - `<IconPlayground />`: size, stroke, color, and canvas controls, with copyable JSX.
 - `<IconBrowser />`: all icons, name/category filters, size controls, React imports, and SVG downloads.
 
-The package dependency is pinned to commit `6034053bcbd847da27ddbb81f38c71c59296c459`. When changing icon geometry, update `solite-icons` in this app's package and lockfile to the new library revision. `scripts/sync-assets.mjs` copies downloads from the installed icon package before each build, so the rendered icons and downloads use the same revision.
+The package dependency is pinned to npm version `0.2.0`. After publishing new icons, update `solite-icons` in this app's package and lockfile to the new npm version. `scripts/sync-assets.mjs` copies downloads from the installed icon package before each build, so the rendered icons and downloads use the same release.
 
 ## Build and check
 

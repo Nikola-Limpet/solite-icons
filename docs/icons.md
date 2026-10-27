@@ -1,6 +1,6 @@
 # Icon list
 
-229 icons. Import each React component from `solite-icons`, or use its name with `SoliteIcon` from `solite-icons/dynamic`.
+253 icons. Import each React component from `solite-icons`, or use its name with `SoliteIcon` from `solite-icons/dynamic`.
 
 ## Navigation
 
@@ -290,3 +290,42 @@
 | `package-add`     | `PackageAddIcon`     |
 | `archive-restore` | `ArchiveRestoreIcon` |
 | `palette`         | `PaletteIcon`        |
+
+## Developer tools
+
+| Name         | React import    |
+| ------------ | --------------- |
+| `code`       | `CodeIcon`      |
+| `terminal`   | `TerminalIcon`  |
+| `command`    | `CommandIcon`   |
+| `braces`     | `BracesIcon`    |
+| `git-branch` | `GitBranchIcon` |
+| `bot`        | `BotIcon`       |
+
+## Media & sharing
+
+| Name             | React import        |
+| ---------------- | ------------------- |
+| `share`          | `ShareIcon`         |
+| `volume`         | `VolumeIcon`        |
+| `volume-off`     | `VolumeOffIcon`     |
+| `microphone`     | `MicrophoneIcon`    |
+| `microphone-off` | `MicrophoneOffIcon` |
+| `video`          | `VideoIcon`         |
+| `video-off`      | `VideoOffIcon`      |
+
+## Discovery & learning
+
+| Name             | React import        |
+| ---------------- | ------------------- |
+| `sparkles`       | `SparklesIcon`      |
+| `wand`           | `WandIcon`          |
+| `lightbulb`      | `LightbulbIcon`     |
+| `rocket`         | `RocketIcon`        |
+| `accessibility`  | `AccessibilityIcon` |
+| `languages`      | `LanguagesIcon`     |
+| `trophy`         | `TrophyIcon`        |
+| `graduation-cap` | `GraduationCapIcon` |
+| `wrench`         | `WrenchIcon`        |
+| `puzzle`         | `PuzzleIcon`        |
+| `target`         | `TargetIcon`        |

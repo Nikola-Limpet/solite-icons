@@ -1,6 +1,6 @@
 ---
 title: Installation
-description: Add Solite Icons to your project from GitHub.
+description: Add Solite Icons to your project from npm.
 ---
 
 ## Install the package
@@ -8,20 +8,18 @@ description: Add Solite Icons to your project from GitHub.
 Choose the package manager your project already uses.
 
 ```bash tab="npm"
-npm install github:Nikola-Limpet/solite-icons#main
+npm install solite-icons
 ```
 
 ```bash tab="pnpm"
-pnpm add github:Nikola-Limpet/solite-icons#main
+pnpm add solite-icons
 ```
 
 ```bash tab="Bun"
-bun add github:Nikola-Limpet/solite-icons#main
+bun add solite-icons
 ```
 
-Solite Icons is not yet published to npm. Installing with `npm install solite-icons` alone will not work until an npm release exists.
-
-The repository includes built JavaScript and types. Your application does not need to compile the icon library.
+The package includes built JavaScript and types. Your application does not need to compile the icon library.
 
 ## Render your first icon
 
@@ -44,13 +42,13 @@ React 18.2 and 19 are supported. Install React separately if your project does n
 
 ## Pin a version
 
-Keep the generated lockfile. To install an exact revision, replace `main` with a full commit SHA:
+Keep the generated lockfile. To install an exact release, include the version:
 
 ```bash
-npm install github:Nikola-Limpet/solite-icons#6034053bcbd847da27ddbb81f38c71c59296c459
+npm install solite-icons@0.2.0
 ```
 
-That commit is the initial 229-icon package release. A pinned revision stays unchanged when the repository receives new commits.
+Version 0.2.0 contains 253 icons, including 24 new essentials. An exact version stays unchanged when new releases are published.
 
 ## Use without React
 
