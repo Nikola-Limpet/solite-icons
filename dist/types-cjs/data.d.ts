@@ -1,4 +1,28 @@
 export declare const icons: {
+    readonly sparkles: readonly [import("./geometry.js").IconNode, import("./geometry.js").IconNode];
+    readonly wand: readonly [import("./geometry.js").IconNode];
+    readonly lightbulb: readonly [import("./geometry.js").IconNode, import("./geometry.js").IconNode];
+    readonly rocket: readonly [import("./geometry.js").IconNode, import("./geometry.js").IconNode, import("./geometry.js").IconNode];
+    readonly accessibility: readonly [import("./geometry.js").IconNode, import("./geometry.js").IconNode, import("./geometry.js").IconNode];
+    readonly languages: readonly [import("./geometry.js").IconNode];
+    readonly trophy: readonly [import("./geometry.js").IconNode];
+    readonly "graduation-cap": readonly [import("./geometry.js").IconNode, import("./geometry.js").IconNode, import("./geometry.js").IconNode];
+    readonly wrench: readonly [import("./geometry.js").IconNode];
+    readonly puzzle: readonly [import("./geometry.js").IconNode];
+    readonly target: readonly [import("./geometry.js").IconNode, import("./geometry.js").IconNode, import("./geometry.js").IconNode];
+    readonly share: readonly [import("./geometry.js").IconNode, import("./geometry.js").IconNode, import("./geometry.js").IconNode, import("./geometry.js").IconNode];
+    readonly volume: readonly [import("./geometry.js").IconNode, import("./geometry.js").IconNode];
+    readonly "volume-off": readonly [import("./geometry.js").IconNode, import("./geometry.js").IconNode];
+    readonly microphone: readonly [import("./geometry.js").IconNode, import("./geometry.js").IconNode];
+    readonly "microphone-off": readonly [import("./geometry.js").IconNode, import("./geometry.js").IconNode];
+    readonly video: readonly [import("./geometry.js").IconNode, import("./geometry.js").IconNode];
+    readonly "video-off": readonly [import("./geometry.js").IconNode, import("./geometry.js").IconNode];
+    readonly code: readonly [import("./geometry.js").IconNode];
+    readonly terminal: readonly [import("./geometry.js").IconNode, import("./geometry.js").IconNode, import("./geometry.js").IconNode];
+    readonly command: readonly [import("./geometry.js").IconNode];
+    readonly braces: readonly [import("./geometry.js").IconNode];
+    readonly "git-branch": readonly [import("./geometry.js").IconNode, import("./geometry.js").IconNode, import("./geometry.js").IconNode, import("./geometry.js").IconNode, import("./geometry.js").IconNode];
+    readonly bot: readonly [import("./geometry.js").IconNode, import("./geometry.js").IconNode, import("./geometry.js").IconNode, import("./geometry.js").IconNode, import("./geometry.js").IconNode, import("./geometry.js").IconNode];
     readonly "cash-drawer": readonly [import("./geometry.js").IconNode, import("./geometry.js").IconNode, import("./geometry.js").IconNode, import("./geometry.js").IconNode];
     readonly "cash-in": readonly [import("./geometry.js").IconNode, import("./geometry.js").IconNode, import("./geometry.js").IconNode];
     readonly "cash-out": readonly [import("./geometry.js").IconNode, import("./geometry.js").IconNode, import("./geometry.js").IconNode];
@@ -243,4 +267,7 @@ export declare const iconCategories: {
     readonly Devices: ("image" | "printer" | "monitor" | "laptop" | "tablet" | "smartphone" | "scan" | "scanner" | "camera" | "images" | "crop" | "zoom-in" | "zoom-out" | "wifi" | "wifi-off" | "bluetooth" | "usb" | "plug" | "power" | "battery")[];
     readonly "Interface essentials": ("sun" | "moon" | "loading" | "more-horizontal" | "more-vertical" | "trash" | "trash-restore" | "edit-square" | "check-square" | "x-square" | "heart" | "star" | "flag" | "pin" | "bookmark" | "history" | "repeat" | "shuffle" | "pause" | "play")[];
     readonly Workflow: ("cash-drawer" | "cash-in" | "cash-out" | "cloud-sync" | "sunrise" | "drag-handle" | "package-add" | "archive-restore" | "palette")[];
+    readonly "Developer tools": ("code" | "terminal" | "command" | "braces" | "git-branch" | "bot")[];
+    readonly "Media & sharing": ("video" | "share" | "volume" | "volume-off" | "microphone" | "microphone-off" | "video-off")[];
+    readonly "Discovery & learning": ("target" | "sparkles" | "wand" | "lightbulb" | "rocket" | "accessibility" | "languages" | "trophy" | "graduation-cap" | "wrench" | "puzzle")[];
 };

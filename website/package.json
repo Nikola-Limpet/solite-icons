@@ -19,7 +19,7 @@
     "next": "16.4.3",
     "react": "19.2.8",
     "react-dom": "19.2.8",
-    "solite-icons": "github:Nikola-Limpet/solite-icons#6034053bcbd847da27ddbb81f38c71c59296c459",
+    "solite-icons": "0.2.1",
     "tailwindcss": "4.2.4"
   },
   "devDependencies": {

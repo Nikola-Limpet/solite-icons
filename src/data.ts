@@ -10,6 +10,9 @@ import { dataIcons } from "./definitions/data.js";
 import { deviceIcons } from "./definitions/devices.js";
 import { interfaceIcons } from "./definitions/interface.js";
 import { workflowIcons } from "./definitions/workflow.js";
+import { developerIcons } from "./definitions/developer.js";
+import { mediaIcons } from "./definitions/media.js";
+import { discoveryIcons } from "./definitions/discovery.js";
 import type { IconGroup } from "./geometry.js";
 
 export const icons = {
@@ -25,6 +28,9 @@ export const icons = {
   ...deviceIcons,
   ...interfaceIcons,
   ...workflowIcons,
+  ...developerIcons,
+  ...mediaIcons,
+  ...discoveryIcons,
 } as const;
 export type SoliteIconName = keyof typeof icons;
 const names = <T extends IconGroup>(group: T) => Object.keys(group) as (keyof T & string)[];
@@ -41,4 +47,7 @@ export const iconCategories = {
   Devices: names(deviceIcons),
   "Interface essentials": names(interfaceIcons),
   Workflow: names(workflowIcons),
+  "Developer tools": names(developerIcons),
+  "Media & sharing": names(mediaIcons),
+  "Discovery & learning": names(discoveryIcons),
 } as const;

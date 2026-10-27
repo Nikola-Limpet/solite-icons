@@ -7,7 +7,7 @@ export function baseOptions(): BaseLayoutProps {
         <span className="solite-brand">
           <GridIcon size={23} />
           <span>Solite Icons</span>
-          <small>0.1</small>
+          <small>0.2</small>
         </span>
       ),
     },

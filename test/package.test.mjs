@@ -8,11 +8,11 @@ import { build } from "esbuild";
 
 const require = createRequire(import.meta.url);
 
-test("all 229 names have named and deep exports and matching safe SVG assets", async () => {
+test("all 253 names have named and deep exports and matching safe SVG assets", async () => {
   const { icons, iconCategories } = await import("solite-icons/data");
   const components = await import("solite-icons");
   const names = Object.keys(icons);
-  assert.equal(names.length, 229);
+  assert.equal(names.length, 253);
   assert.deepEqual(new Set(Object.values(iconCategories).flat()), new Set(names));
   for (const name of names) {
     const componentName =
@@ -75,10 +75,10 @@ test("CommonJS consumers can require named, dynamic and data exports", () => {
   const { HomeIcon } = require("solite-icons");
   assert.match(renderToStaticMarkup(createElement(HomeIcon)), /data-solite-icon="home"/);
   assert.equal(typeof require("solite-icons/dynamic").SoliteIcon, "object");
-  assert.equal(Object.keys(require("solite-icons/data").icons).length, 229);
+  assert.equal(Object.keys(require("solite-icons/data").icons).length, 253);
 });
 
-test("a named import excludes the other 228 glyphs from the browser bundle", async () => {
+test("a named import excludes the other 252 glyphs from the browser bundle", async () => {
   const bundled = await build({
     stdin: {
       contents: 'import { HomeIcon } from "solite-icons"; console.log(HomeIcon);',
@@ -109,4 +109,65 @@ test("TypeScript consumers resolve both ESM and CommonJS declarations", async ()
     ["node_modules/typescript/bin/tsc", "--project", "test/tsconfig.json"],
     { stdio: "pipe" },
   );
+});
+
+test("the 24 essentials render through named, deep, and dynamic imports with matching SVG assets", async () => {
+  const added = [
+    "code",
+    "terminal",
+    "command",
+    "braces",
+    "git-branch",
+    "bot",
+    "sparkles",
+    "wand",
+    "lightbulb",
+    "rocket",
+    "accessibility",
+    "languages",
+    "share",
+    "volume",
+    "volume-off",
+    "microphone",
+    "microphone-off",
+    "video",
+    "video-off",
+    "trophy",
+    "graduation-cap",
+    "wrench",
+    "puzzle",
+    "target",
+  ];
+  const components = await import("solite-icons");
+  const { SoliteIcon } = await import("solite-icons/dynamic");
+  for (const name of added) {
+    const exportName =
+      name
+        .split("-")
+        .map((part) => part[0].toUpperCase() + part.slice(1))
+        .join("") + "Icon";
+    assert.ok(components[exportName], `Missing named export: ${exportName}`);
+    const deep = await import(`solite-icons/icons/${name}`);
+    assert.equal(deep.default, components[exportName]);
+    const props = { size: 20, title: name, strokeWidth: 1.75 };
+    const named = renderToStaticMarkup(createElement(components[exportName], props));
+    const dynamic = renderToStaticMarkup(createElement(SoliteIcon, { ...props, name }));
+    assert.match(named, /width="20"/);
+    assert.match(named, /stroke-width="1.75"/);
+    assert.match(dynamic, new RegExp(`data-solite-icon="${name}"`));
+    const svg = await readFile(new URL(`../svg/${name}.svg`, import.meta.url), "utf8");
+    assert.match(svg, /fill="none" stroke="currentColor" stroke-width="1.75"/);
+    assert.match(svg, /stroke-linecap="round" stroke-linejoin="round"/);
+  }
+});
+
+test("catalog icon buttons hide duplicate decorative SVGs from assistive technology", async () => {
+  const catalog = await readFile(new URL("../catalog/index.html", import.meta.url), "utf8");
+  const glyphs = [...catalog.matchAll(/(<button[^>]*class="glyph"[^>]*>)(<svg\b[^>]*>)/g)];
+  assert.equal(glyphs.length, 253);
+  for (const [, button, svg] of glyphs) {
+    assert.match(button, /aria-label="Inspect [a-z-]+"/);
+    assert.match(svg, /aria-hidden="true"/);
+    assert.match(svg, /focusable="false"/);
+  }
 });
