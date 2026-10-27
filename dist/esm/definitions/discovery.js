@@ -1,4 +1,4 @@
-import { p, r, c, l, poly } from "../geometry.js";
+import { p, r, c, poly } from "../geometry.js";
 const discoveryIcons = {
   sparkles: [
     p("M9 3c.9 5 2 6.1 7 7-5 .9-6.1 2-7 7-.9-5-2-6.1-7-7 5-.9 6.1-2 7-7Z"),

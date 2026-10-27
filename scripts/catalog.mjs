@@ -1,9 +1,11 @@
 export function renderCatalog({ icons, iconCategories, svg, escape }) {
   const names = Object.keys(icons);
+  const decorativeSvg = (name) =>
+    svg(name).replace("<svg ", '<svg aria-hidden="true" focusable="false" ');
   const tiles = Object.entries(iconCategories)
     .map(
       ([category, icons]) =>
-        `<section data-category="${escape(category)}"><h2>${escape(category)} <span>${icons.length}</span></h2><div class="grid">${icons.map((name) => `<article data-name="${name}"><button type="button" class="glyph" data-inspect="${name}" aria-label="Inspect ${name}">${svg(name)}<span>${name}</span></button><a class="download" href="../svg/${name}.svg" download aria-label="Download ${name} SVG">SVG</a></article>`).join("")}</div></section>`,
+        `<section data-category="${escape(category)}"><h2>${escape(category)} <span>${icons.length}</span></h2><div class="grid">${icons.map((name) => `<article data-name="${name}"><button type="button" class="glyph" data-inspect="${name}" aria-label="Inspect ${name}">${decorativeSvg(name)}<span>${name}</span></button><a class="download" href="../svg/${name}.svg" download aria-label="Download ${name} SVG">SVG</a></article>`).join("")}</div></section>`,
     )
     .join("");
   const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Solite Icons</title><style>

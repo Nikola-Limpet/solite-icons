@@ -9,7 +9,7 @@ createElement(HomeIcon, { ...props, ref: createRef<SVGSVGElement>() });
 createElement(ShopIcon, { title: "Shop" });
 createElement(CashRegisterIcon, { className: "toolbar-icon" });
 createElement(SoliteIcon, { name });
-icons.shop;
+Object.keys(icons.shop);
 // @ts-expect-error Unknown dynamic names must fail TypeScript.
 createElement(SoliteIcon, { name: "does-not-exist" });
 
@@ -20,4 +20,4 @@ createElement(CodeIcon, props);
 createElement(AccessibilityIcon, { title: "Accessibility" });
 createElement(TerminalIcon, { size: 16 });
 createElement(SoliteIcon, { name: "microphone-off" });
-icons["git-branch"];
+Object.keys(icons["git-branch"]);

@@ -1,4 +1,4 @@
-import { p, r, c, l, poly, type IconGroup } from "../geometry.js";
+import { p, r, c, poly, type IconGroup } from "../geometry.js";
 
 /** Original discovery, learning, and utility glyphs from the approved concept sheet. */
 export const discoveryIcons = {

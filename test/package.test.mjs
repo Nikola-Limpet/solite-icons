@@ -160,3 +160,14 @@ test("the 24 essentials render through named, deep, and dynamic imports with mat
     assert.match(svg, /stroke-linecap="round" stroke-linejoin="round"/);
   }
 });
+
+test("catalog icon buttons hide duplicate decorative SVGs from assistive technology", async () => {
+  const catalog = await readFile(new URL("../catalog/index.html", import.meta.url), "utf8");
+  const glyphs = [...catalog.matchAll(/(<button[^>]*class="glyph"[^>]*>)(<svg\b[^>]*>)/g)];
+  assert.equal(glyphs.length, 253);
+  for (const [, button, svg] of glyphs) {
+    assert.match(button, /aria-label="Inspect [a-z-]+"/);
+    assert.match(svg, /aria-hidden="true"/);
+    assert.match(svg, /focusable="false"/);
+  }
+});

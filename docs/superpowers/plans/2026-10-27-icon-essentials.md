@@ -31,7 +31,7 @@
 - [x] Draw the six developer, seven media, and eleven discovery icons in the approved list. Add non-overlapping categories to data.ts and build the package.
 - [x] Run npm test, npm run check, npm run format:check; compare the original geometry to 0.1.0. Inspect a rendered 16/20/24/48px contact sheet.
 - [x] Bump to 0.2.0, update changelog and current counts, list the new icons, and regenerate the actual React README preview.
-- [ ] Commit the verified library, concepts, spec, and plan.
+- [x] Commit the verified library, concepts, spec, and plan.
 
 ### Task 2: Publish and verify the npm release
 
@@ -55,3 +55,5 @@
 ## Execution notes
 
 The docs were built against the packed 0.2.0 artifact before publication. Their lockfile records the expected public tarball URL and exact integrity; a fresh npm ci will verify it after publication. Generated manifests use deterministic generator output and are excluded from the formatter like the other generated assets.
+
+PR checks found type-only fixture expressions and decorative catalog SVG accessibility issues. Fixture imports now call their typed APIs, and catalog glyphs use aria-hidden and focusable attributes. A new regression test failed before the fix and passed afterward; the complete suite now passes all eight tests.
