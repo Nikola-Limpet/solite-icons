@@ -20,7 +20,7 @@ pnpm add solite-icons
 bun add solite-icons
 ```
 
-Keep the resulting lockfile. To pin this release, install `solite-icons@0.2.0`. The package includes built JavaScript and types, so installation does not run a build in your project.
+Keep the resulting lockfile. To pin this release, install `solite-icons@0.2.1`. The package includes built JavaScript and types, so installation does not run a build in your project.
 
 React components need React 18.2 or React 19. Install React if your project does not already use it. React is an optional peer dependency, so projects using only SVGs or raw geometry do not need it.
 

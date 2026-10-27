@@ -39,8 +39,8 @@
 **Interfaces:** consume the 0.2.0 artifact; produce a public npm release with latest=0.2.0.
 
 - [x] Pack and audit export files and package contents; smoke-test the tarball in a clean consumer.
-- [ ] Submit the artifact using private credentials; obtain maintainer 2FA approval if npm stages the release.
-- [ ] Install solite-icons from the public registry in a clean project and check new React/deep/dynamic/CJS imports and SVG files, with artifact integrity matching.
+- [x] Submit the artifact using private credentials; obtain maintainer 2FA approval if npm stages the release.
+- [x] Install solite-icons from the public registry in a clean project and check new React/deep/dynamic/CJS imports and SVG files, with artifact integrity matching.
 
 ### Task 3: Publish the documentation update
 
@@ -48,8 +48,8 @@
 **Interfaces:** consume npm solite-icons@0.2.0; produce docs with 253 icons and npm install instructions.
 
 - [x] Pin 0.2.0, update displayed counts and version, and preserve page structure and styling.
-- [ ] Run docs build and typecheck, package formatting and generated checks. Verify exported install text, manifest counts, and new SVG downloads.
-- [ ] Run one fresh whole-change review and fix substantive findings.
+- [x] Run docs build and typecheck, package formatting and generated checks. Verify exported install text, manifest counts, and new SVG downloads.
+- [x] Run one fresh whole-change review and fix substantive findings.
 - [ ] Commit, push the branch, integrate the approved work, and deploy the existing Vercel project. Verify live install instructions and new assets.
 
 ## Execution notes
@@ -57,3 +57,9 @@
 The docs were built against the packed 0.2.0 artifact before publication. Their lockfile records the expected public tarball URL and exact integrity; a fresh npm ci will verify it after publication. Generated manifests use deterministic generator output and are excluded from the formatter like the other generated assets.
 
 PR checks found type-only fixture expressions and decorative catalog SVG accessibility issues. Fixture imports now call their typed APIs, and catalog glyphs use aria-hidden and focusable attributes. A new regression test failed before the fix and passed afterward; the complete suite now passes all eight tests.
+
+## Release version adjustment
+
+The npm 0.2.0 version is reserved in staging. The provided publishing token authenticates as the owner but npm rejects staged approval and rejection requests. Publish the same reviewed release as 0.2.1 with direct token authentication, then pin the documentation app to 0.2.1. The approved 24-icon scope and original drawings are unchanged.
+
+Version 0.2.1 was published directly with the provided token. A fresh default npm install fetched 0.2.1 and passed React 19 named/deep/dynamic/CommonJS imports, 253-icon data, SVG assets, manifest version, and archive integrity. A fresh npm ci in the docs app fetched the same public archive; build and typecheck passed.

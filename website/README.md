@@ -24,7 +24,7 @@ The MDX component mapping in `components/mdx.tsx` exposes:
 - `<IconPlayground />`: size, stroke, color, and canvas controls, with copyable JSX.
 - `<IconBrowser />`: all icons, name/category filters, size controls, React imports, and SVG downloads.
 
-The package dependency is pinned to npm version `0.2.0`. After publishing new icons, update `solite-icons` in this app's package and lockfile to the new npm version. `scripts/sync-assets.mjs` copies downloads from the installed icon package before each build, so the rendered icons and downloads use the same release.
+The package dependency is pinned to npm version `0.2.1`. After publishing new icons, update `solite-icons` in this app's package and lockfile to the new npm version. `scripts/sync-assets.mjs` copies downloads from the installed icon package before each build, so the rendered icons and downloads use the same release.
 
 ## Build and check
 
