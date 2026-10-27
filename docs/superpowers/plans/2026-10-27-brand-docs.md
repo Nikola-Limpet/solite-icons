@@ -45,6 +45,6 @@
 
 **Interfaces:** consumes the checked static export and branch; produces a PR and merged production deployment.
 
-- [ ] Obtain one fresh read-only whole-branch review. Fix material findings and rerun affected checks.
+- [x] Obtain one fresh read-only whole-branch review. Fix material findings and rerun affected checks.
 - [ ] Push the branch, create and immediately link the PR. Review checks and comments; if pending, watch the PR and end the turn.
 - [ ] Merge only when checks pass and review has no blockers. Verify production assets and updated content, then stop watching before final handback.

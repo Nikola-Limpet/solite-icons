@@ -310,8 +310,8 @@ body {
   align-items: center;
   justify-content: center;
   gap: 14px;
-  background-color: var(--color-fd-secondary);
-  color: var(--color-fd-foreground);
+  background-color: #edf7f3;
+  color: #142923;
   background-image: radial-gradient(#c7dbd0 0.7px, transparent 0.7px);
   background-size: 16px 16px;
 }

@@ -86,6 +86,8 @@ The S mark uses rounded open geometry, with uniform strokes and generous negativ
 
 Primary buttons use teal with white text, or mint with dark text in dark mode. Secondary buttons use the page background and a border. All controls have visible keyboard focus. The install command includes the existing clipboard control and its copied/error announcements. Icon tiles preserve names and pressed state. Navigation shows the decorative mark beside a text wordmark.
 
+The playground canvas has its own light/dark control, independent of the page theme. Light canvas stays pale mint with dark text even when the surrounding documentation is dark.
+
 ## Do's and Don'ts
 
 - Do show the actual package components, published version, and MIT license.
