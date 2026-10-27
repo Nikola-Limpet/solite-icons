@@ -1,5 +1,7 @@
 # Solite Icons
 
+[Documentation and live React examples](https://solite-icons.nikola33.dev)
+
 229 original SVG outline icons for dashboards, point of sale, cafés, restaurants, retail, payments, and everyday app controls.
 
 Every icon uses a 24 × 24 grid, a 1.75px stroke, rounded caps and joins, and `currentColor`. Use React components or the SVG files directly. No stylesheet, icon font, or external icon service is required.

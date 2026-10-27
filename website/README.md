@@ -24,7 +24,7 @@ The MDX component mapping in `components/mdx.tsx` exposes:
 - `<IconPlayground />`: size, stroke, color, and canvas controls, with copyable JSX.
 - `<IconBrowser />`: all icons, name/category filters, size controls, React imports, and SVG downloads.
 
-The package dependency is pinned to commit `6034053bcbd847da27ddbb81f38c71c59296c459`. When changing icon geometry, update `solite-icons` in this app's package and lockfile to the new library revision. `scripts/sync-assets.mjs` copies downloads from the repository's generated SVG assets before each build. Keep the package pin and repository asset version aligned.
+The package dependency is pinned to commit `6034053bcbd847da27ddbb81f38c71c59296c459`. When changing icon geometry, update `solite-icons` in this app's package and lockfile to the new library revision. `scripts/sync-assets.mjs` copies downloads from the installed icon package before each build, so the rendered icons and downloads use the same revision.
 
 ## Build and check
 
@@ -55,7 +55,7 @@ Then deploy `website/out/` at `https://YOUR-ACCOUNT.github.io/solite-icons/`. Th
 
 For Vercel, select `website` as the project's root directory. The standard Next.js framework configuration uses its build command. Leave `DOCS_BASE_PATH` empty for a normal Vercel domain. No API keys or hosted search service are needed.
 
-The CI workflow builds the docs and uploads the output as the `solite-icons-docs` artifact. This change does not configure a domain or automatically publish the site to a hosting account.
+The CI workflow builds the docs and uploads the output as the `solite-icons-docs` artifact. The production Vercel project is `solite-icons` in the Aurra account, using root directory `website`, build command `npm run build`, and output directory `out`. Its custom domain is `solite-icons.nikola33.dev`.
 
 ## README preview
 

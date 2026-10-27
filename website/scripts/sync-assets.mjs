@@ -1,5 +1,9 @@
 import { cp, mkdir, copyFile } from "node:fs/promises";
-const root = new URL("../../", import.meta.url);
+import { createRequire } from "node:module";
+import { pathToFileURL } from "node:url";
+
+const require = createRequire(import.meta.url);
+const root = new URL("./", pathToFileURL(require.resolve("solite-icons/package.json")));
 const publicDir = new URL("../public/", import.meta.url);
 await mkdir(publicDir, { recursive: true });
 await cp(new URL("svg/", root), new URL("svg/", publicDir), { recursive: true });
