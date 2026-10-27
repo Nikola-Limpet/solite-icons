@@ -26,7 +26,7 @@ An open-source icon library with original rounded outline drawings and a browsab
 
 ## Brand Commitments
 
-The name remains Solite Icons. The maintainer requested a new logo and explicitly chose a different visual identity rather than retaining the existing blue style on 2026-10-27. Exact visual choices are being developed for review.
+The name remains Solite Icons. The maintainer requested a new logo and explicitly chose a different visual identity rather than retaining the existing blue style on 2026-10-27. The maintainer subsequently requested a return to the original blue accent and neutral page backgrounds. Retain the new S logo, documentation layout, and open-source content. This supersedes the earlier teal palette.
 
 ## Evidence on Hand
 

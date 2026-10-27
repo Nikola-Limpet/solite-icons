@@ -2,14 +2,14 @@
 name: Solite Icons
 description: Open-source outline icons, presented as a drawing specimen.
 colors:
-  primary: "#0b7668"
-  primary-dark: "#8ee3c4"
-  mint: "#edf7f3"
-  ink: "#142923"
-  muted-ink: "#53685f"
+  primary: "#2563eb"
+  primary-dark: "#82aaff"
+  specimen: "#f1f6ff"
+  ink: "#172133"
+  muted-ink: "#596375"
   paper: "#ffffff"
-  dark-paper: "#101c18"
-  dark-panel: "#172820"
+  dark-paper: "#17181b"
+  dark-panel: "#202226"
 typography:
   display:
     fontFamily: "Geist Variable, Geist, Segoe UI, sans-serif"
@@ -60,11 +60,11 @@ components:
 
 ## Overview
 
-The collection is a drawing specimen. Real glyphs, their names, and their geometry carry the identity. Teal open geometry and an S mark give Solite a recognizable signature while the documentation remains a reading tool.
+The collection is a drawing specimen. Real glyphs, their names, and their geometry carry the identity. Blue open geometry and an S mark give Solite a recognizable signature while the documentation remains a reading tool.
 
 ## Colors
 
-Use teal for actions and selection, mint for icon specimens, and white for reading. Dark mode uses green-black surfaces and a light mint accent. Secondary copy must maintain 4.5:1 contrast. Selected controls need a border or shape cue as well as color.
+Use the original blue accent for actions, selection, and icon specimens, with white reading space and neutral gray panels. Dark mode uses neutral charcoal surfaces and a light blue accent. Secondary copy must maintain 4.5:1 contrast. Selected controls need a border or shape cue as well as color.
 
 ## Typography
 
@@ -84,9 +84,9 @@ The S mark uses rounded open geometry, with uniform strokes and generous negativ
 
 ## Components
 
-Primary buttons use teal with white text, or mint with dark text in dark mode. Secondary buttons use the page background and a border. All controls have visible keyboard focus. The install command includes the existing clipboard control and its copied/error announcements. Icon tiles preserve names and pressed state. Navigation shows the decorative mark beside a text wordmark.
+Primary buttons use blue with white text, or light blue with dark text in dark mode. Secondary buttons use the page background and a border. All controls have visible keyboard focus. The install command includes the existing clipboard control and its copied/error announcements. Icon tiles preserve names and pressed state. Navigation shows the decorative mark beside a text wordmark.
 
-The playground canvas has its own light/dark control, independent of the page theme. Light canvas stays pale mint with dark text even when the surrounding documentation is dark.
+The playground canvas has its own light/dark control, independent of the page theme. Light canvas stays pale blue with dark text even when the surrounding documentation is dark.
 
 ## Do's and Don'ts
 

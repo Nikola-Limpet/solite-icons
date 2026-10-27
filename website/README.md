@@ -79,8 +79,8 @@ The image lives at `assets/react-preview.png` and is included in the package so 
 
 ## Brand assets
 
-The approved S mark was developed with the built-in ImageGen tool. Concepts, the refined PNG, and exact prompts are in `assets/brand/` at the repository root. The clean SVG, Apple icon, and social image served by the website are in `public/brand/`. `components/solite-logo.tsx` uses the same SVG path with `currentColor` for theme support. Keep that path synchronized when changing the mark.
+The approved S mark was developed with the built-in ImageGen tool. Historical teal concepts, the refined concept PNG, and exact prompts are in `assets/brand/` at the repository root. The clean SVG, Apple icon, and social image served by the website are in `public/brand/`. `components/solite-logo.tsx` uses the same SVG path with `currentColor` for theme support. Keep that path synchronized when changing the mark.
 
-`DESIGN.md` at the repository root records the teal drawing-specimen identity. The README uses an absolute logo URL so the image also resolves on npm without depending on a local package asset.
+`DESIGN.md` at the repository root records the blue drawing-specimen identity. The README uses an absolute logo URL so the image also resolves on npm without depending on a local package asset.
 
 The root metadata prefixes favicon and sharing-image paths with `DOCS_BASE_PATH`. For an alternate host, set `DOCS_SITE_URL` as well, for example `DOCS_SITE_URL=https://nikola-limpet.github.io DOCS_BASE_PATH=/solite-icons npm --prefix website run build`.

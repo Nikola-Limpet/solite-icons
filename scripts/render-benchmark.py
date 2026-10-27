@@ -15,9 +15,9 @@ DATA = ROOT / "docs/benchmarks/2026-10-27.json"
 OUTPUT = ROOT / "assets/benchmark-2026-10-27.png"
 snapshot = json.loads(DATA.read_text())
 libraries = snapshot["libraries"]
-colors = ["#0b7668", "#536a7f", "#b68735", "#a0aaa5"]
-ink = "#142923"
-muted = "#53685f"
+colors = ["#2563eb", "#64748b", "#b68735", "#a0a8b4"]
+ink = "#172133"
+muted = "#596375"
 
 plt.rcParams.update({
     "font.family": "DejaVu Sans",
@@ -48,14 +48,14 @@ for index, library in enumerate(libraries):
                   color=colors[index], zorder=3)
     ax.bar_label(bars, labels=[f"{value:.2f}" for value in values],
                  padding=5, fontsize=12.5, color=ink)
-    suffix = " · 24px outline" if library["name"] == "@heroicons/react" else " · Feather" if library["name"] == "react-icons" else ""
+    suffix = {"@heroicons/react": " · 24px outline", "react-icons": " · Feather"}.get(library["name"], "")
     handles.append((bars[0], f"{library['label']} {library['version']}{suffix}"))
 ax.set_xticks(x, [f"{count} icon" + ("s" if count != 1 else "") for count in snapshot["counts"]])
 ax.set_ylabel("Gzipped JavaScript (KiB)", labelpad=15)
 ax.set_ylim(0, 7.2)
 ax.set_yticks([0, 2, 4, 6])
 ax.tick_params(length=0, pad=9)
-ax.grid(axis="y", color="#dce5df", linewidth=0.8, zorder=0)
+ax.grid(axis="y", color="#e0e4eb", linewidth=0.8, zorder=0)
 fig.text(0.07, 0.783, "Browser bundle", fontsize=18, weight="bold")
 fig.legend([h[0] for h in handles], [h[1] for h in handles],
            loc="center", bbox_to_anchor=(0.52, 0.842), ncol=2,
@@ -71,7 +71,7 @@ storage.set_xlim(0, 94)
 storage.set_xticks([0, 30, 60, 90])
 storage.set_xlabel("Unpacked package (MiB)", labelpad=8)
 storage.tick_params(length=0, pad=9)
-storage.grid(axis="x", color="#dce5df", linewidth=0.8, zorder=0)
+storage.grid(axis="x", color="#e0e4eb", linewidth=0.8, zorder=0)
 storage.bar_label(bars, labels=[f"{value:.2f}" for value in values], padding=7, fontsize=12.5, color=ink)
 fig.text(0.07, 0.37, "Full install footprint", fontsize=18, weight="bold")
 fig.text(0.07, 0.085, "Packages contain different-sized collections. Disk footprint is not browser payload.", fontsize=12.5, color=muted)

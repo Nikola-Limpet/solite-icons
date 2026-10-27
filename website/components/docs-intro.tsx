@@ -4,7 +4,7 @@ import { CopyButton } from "./copy-button";
 import { SoliteLogo } from "./solite-logo";
 
 // THESIS: The drawings lead a practical, open-source introduction.
-// OWN-WORLD: Teal ink, mint specimens, white reading space, rounded open geometry.
+// OWN-WORLD: Blue accents, neutral surfaces, white reading space, rounded open geometry.
 // STORY: Find an icon, install from npm, and use it in a real interface.
 // FIRST VIEWPORT: Brand, large headline, install command, browse and source actions.
 // FORM: Drawing specimen, candidate 3, direction seed 6d4b93e5.
