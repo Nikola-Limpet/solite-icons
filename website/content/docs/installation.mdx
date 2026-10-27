@@ -1,0 +1,61 @@
+---
+title: Installation
+description: Add Solite Icons to your project from GitHub.
+---
+
+## Install the package
+
+Choose the package manager your project already uses.
+
+```bash tab="npm"
+npm install github:Nikola-Limpet/solite-icons#main
+```
+
+```bash tab="pnpm"
+pnpm add github:Nikola-Limpet/solite-icons#main
+```
+
+```bash tab="Bun"
+bun add github:Nikola-Limpet/solite-icons#main
+```
+
+Solite Icons is not yet published to npm. Installing with `npm install solite-icons` alone will not work until an npm release exists.
+
+The repository includes built JavaScript and types. Your application does not need to compile the icon library.
+
+## Render your first icon
+
+In an existing React project:
+
+```tsx
+import { CoffeeIcon } from "solite-icons";
+
+export function CoffeeLabel() {
+  return (
+    <span className="inline-flex items-center gap-2">
+      <CoffeeIcon size={20} />
+      Coffee
+    </span>
+  );
+}
+```
+
+React 18.2 and 19 are supported. Install React separately if your project does not already have it. TypeScript projects also need their usual `@types/react` dependency.
+
+## Pin a version
+
+Keep the generated lockfile. To install an exact revision, replace `main` with a full commit SHA:
+
+```bash
+npm install github:Nikola-Limpet/solite-icons#6034053bcbd847da27ddbb81f38c71c59296c459
+```
+
+That commit is the initial 229-icon package release. A pinned revision stays unchanged when the repository receives new commits.
+
+## Use without React
+
+Copy the standalone files from `node_modules/solite-icons/svg/` to your public assets directory. See [SVG usage](/svg) for examples. React is an optional peer dependency, so SVG-only projects do not need to install it.
+
+## Next steps
+
+[Learn the React API](/react) or [browse the collection](/icons).

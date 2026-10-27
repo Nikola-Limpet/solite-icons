@@ -1,0 +1,46 @@
+---
+title: SVG usage
+description: Use Solite Icons in HTML, Vue, Svelte, Laravel, or another framework.
+---
+
+## Copy a file
+
+Copy an icon from `node_modules/solite-icons/svg/` into your public directory, then use a normal image tag.
+
+```html
+<img src="/icons/shop.svg" width="20" height="20" alt="Shops" />
+```
+
+Use `alt=""` when adjacent text already describes the image.
+
+An SVG loaded through `<img>` does not inherit the page's text color. Use inline SVG or the sprite when CSS should control the stroke.
+
+## Import an asset URL
+
+With Vite's standard asset handling:
+
+```tsx
+import shopUrl from "solite-icons/svg/shop.svg?url";
+
+<img src={shopUrl} width={20} height={20} alt="Shops" />;
+```
+
+TypeScript needs Vite's usual `vite/client` declarations. Other bundlers may return source text or a component instead of a URL. The library does not install an SVG loader for you.
+
+## Use the sprite
+
+Copy `node_modules/solite-icons/sprite.svg` to your public directory. Every symbol ID starts with `solite-`.
+
+```html
+<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="color: #2563eb">
+  <use href="/icons/sprite.svg#solite-shop"></use>
+</svg>
+```
+
+For an informative SVG, add an accessible label and `role="img"` instead of `aria-hidden`.
+
+## Manifest
+
+`manifest.json` lists all icon names, React component names, SVG paths, categories, and default geometry settings.
+
+[Browse and download individual icons](/icons).

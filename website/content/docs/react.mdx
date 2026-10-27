@@ -1,0 +1,88 @@
+---
+title: React usage
+description: Import named icons and use them in real app components.
+---
+
+## Named imports
+
+Each icon has a PascalCase component name ending in `Icon`.
+
+```tsx
+import { HomeIcon, ShopIcon, CashRegisterIcon } from "solite-icons";
+
+export function Toolbar() {
+  return (
+    <nav aria-label="Main navigation">
+      <a href="/">
+        <HomeIcon size={20} /> Home
+      </a>
+      <a href="/shops">
+        <ShopIcon size={20} /> Shops
+      </a>
+      <a href="/pos">
+        <CashRegisterIcon size={20} /> Register
+      </a>
+    </nav>
+  );
+}
+```
+
+Named imports let your production bundler remove unused icons. A direct module import is also available:
+
+```tsx
+import ShopIcon from "solite-icons/icons/shop";
+```
+
+For a name stored in data or configuration, use the separate [dynamic renderer](/dynamic).
+
+## Component props
+
+| Prop                 | Default        | Purpose                                    |
+| -------------------- | -------------- | ------------------------------------------ |
+| `size`               | `24`           | Width and height as a number or CSS length |
+| `color`              | `currentColor` | Stroke color                               |
+| `strokeWidth`        | `1.75`         | Outline thickness                          |
+| `className`, `style` | none           | CSS styling                                |
+| `title`              | none           | Accessible title with a unique ID          |
+| `ref`                | none           | Reference to the root SVG                  |
+
+Standard SVG props and `aria-*` / `data-*` attributes are forwarded. Explicit `width` and `height` props override `size`.
+
+## An icon-only button
+
+Name the button so people using assistive technology can understand its action.
+
+```tsx
+import { SettingsIcon } from "solite-icons";
+
+<button type="button" aria-label="Open settings">
+  <SettingsIcon size={20} />
+</button>;
+```
+
+Icons are decorative by default. The button supplies the accessible name. Read the [accessibility guide](/accessibility) before using an icon as the only source of information.
+
+## Refs and reusable props
+
+```tsx
+import { useRef } from "react";
+import { ShopIcon, type SoliteIconProps } from "solite-icons";
+
+export function ShopMark(props: SoliteIconProps) {
+  const ref = useRef<SVGSVGElement>(null);
+  return <ShopIcon {...props} ref={ref} />;
+}
+```
+
+## Server rendering and Next.js
+
+Icons support server-rendered HTML. The published React modules preserve their `"use client"` boundary for Next.js. Import the components normally; add your own client boundary when your containing component uses hooks or event handlers.
+
+## CommonJS
+
+```js
+const { ShopIcon } = require("solite-icons");
+const { SoliteIcon } = require("solite-icons/dynamic");
+```
+
+Separate ESM and CommonJS type declarations are included.
