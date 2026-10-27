@@ -58,7 +58,7 @@ Docs-only changes with an existing stable version do not publish. The docs app r
 
 ## Inspect or retry a run
 
-Publishing is serialized across both branches. A run whose branch head advanced while it waited is rejected; the current commit's run can publish instead. GitHub concurrency keeps at most one waiting job, so rapid pushes may replace a waiting run. Not every superseded commit gets a prerelease.
+Publishing is serialized across both branches. A run whose branch head advanced while it waited is rejected; the current commit's run can publish instead. The helper also compares the candidate against the current `staging` tag before building and again before publication. It rejects an older target or run/attempt instead of moving that tag backward. A staging tag containing an unsupported version format fails closed for maintainer inspection. GitHub concurrency keeps at most one waiting job, so rapid pushes may replace a waiting run. Not every superseded commit gets a prerelease.
 
 In the GitHub Actions run, download the `npm-release-<run-id>-<attempt>` artifact. It contains `release.json` and, if packing succeeded, the inspected `.tgz`. The report records the commit, version, tag, status, and SHA-512 integrity. The workflow retains these artifacts for 14 days, including failed publication attempts. It packs once and publishes that exact archive, with publishing lifecycle scripts disabled.
 

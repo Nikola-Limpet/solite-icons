@@ -37,6 +37,30 @@ function compareVersions(left, right) {
   return 0;
 }
 
+function stagingOrder(version) {
+  const match = /^(\d+\.\d+\.\d+)(?:-staging\.([1-9]\d*)\.([1-9]\d*))?$/.exec(version ?? "");
+  if (!match) throw new Error("Unsupported staging tag version.");
+  const parts = [
+    ...stableVersion(match[1]),
+    match[2] ? 0 : 1,
+    Number(match[2] ?? 0),
+    Number(match[3] ?? 0),
+  ];
+  if (!parts.every(Number.isSafeInteger)) throw new Error("Invalid staging tag version.");
+  return parts;
+}
+
+function assertStagingOrder(candidate, current) {
+  if (current == null) return;
+  const next = stagingOrder(candidate);
+  const previous = stagingOrder(current);
+  for (let i = 0; i < next.length; i++) {
+    if (next[i] > previous[i]) return;
+    if (next[i] < previous[i])
+      throw new Error(`Candidate ${candidate} is older than the staging tag ${current}.`);
+  }
+}
+
 export function getReleasePlan(context) {
   if (!allowed(context))
     return { publish: false, reason: "This event, repository or branch cannot publish." };
@@ -57,6 +81,7 @@ export function getReleasePlan(context) {
         throw new Error("Invalid GitHub run identifier.");
     }
     candidate = `${version}-staging.${runNumber}.${runAttempt}`;
+    assertStagingOrder(candidate, context.stagingVersion);
   }
   if (existingVersion != null && existingVersion !== candidate)
     throw new Error("Unexpected existing registry version.");
@@ -72,7 +97,7 @@ export function getReleasePlan(context) {
 }
 
 export function createRegistry(fetcher = fetch) {
-  async function read(selector, optional) {
+  async function read(selector, optional, exact = false) {
     const response = await fetcher(
       `${registryUrl}/${packageName}/${encodeURIComponent(selector)}`,
       {
@@ -93,13 +118,17 @@ export function createRegistry(fetcher = fetch) {
       typeof data?.version !== "string" ||
       typeof data?.dist?.integrity !== "string" ||
       !data.dist.integrity.startsWith("sha512-") ||
-      (selector !== "latest" && data.version !== selector)
+      (exact && data.version !== selector)
     ) {
       throw new Error("Registry returned invalid package metadata.");
     }
     return data;
   }
-  return { latest: () => read("latest", false), version: (version) => read(version, true) };
+  return {
+    latest: () => read("latest", false),
+    staging: () => read("staging", true),
+    version: (version) => read(version, true, true),
+  };
 }
 
 const execute = promisify(execFile);
@@ -146,11 +175,13 @@ export async function runRelease({
     context.version = pkg.version;
     const plan = async () => {
       const latest = await registry.latest();
-      const proposed = getReleasePlan({ ...context, latestVersion: latest.version });
+      const staging = context.ref === "refs/heads/staging" ? await registry.staging() : null;
+      const publishedTags = { latestVersion: latest.version, stagingVersion: staging?.version };
+      const proposed = getReleasePlan({ ...context, ...publishedTags });
       const existing = await registry.version(proposed.version);
       return getReleasePlan({
         ...context,
-        latestVersion: latest.version,
+        ...publishedTags,
         existingVersion: existing?.version,
       });
     };

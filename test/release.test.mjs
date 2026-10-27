@@ -78,6 +78,51 @@ test("version ordering compares numeric components", () => {
   );
 });
 
+test("staging rejects a candidate behind the current staging tag", () => {
+  for (const overrides of [
+    { stagingVersion: "0.4.0-staging.41.1" },
+    { stagingVersion: "0.3.0-staging.43.1" },
+    { stagingVersion: "0.3.0-staging.42.2" },
+    { stagingVersion: "0.3.0" },
+  ])
+    assert.throws(
+      () => getReleasePlan({ ...context, ref: "refs/heads/staging", ...overrides }),
+      /staging tag/,
+    );
+  assert.equal(
+    getReleasePlan({ ...context, ref: "refs/heads/staging", stagingVersion: "0.3.0-staging.9.9" })
+      .publish,
+    true,
+  );
+  assert.equal(
+    getReleasePlan({
+      ...context,
+      ref: "refs/heads/staging",
+      stagingVersion: "0.3.0-staging.42.1",
+      existingVersion: "0.3.0-staging.42.1",
+    }).publish,
+    false,
+  );
+  assert.throws(
+    () => getReleasePlan({ ...context, ref: "refs/heads/staging", stagingVersion: "invalid" }),
+    /staging tag/,
+  );
+});
+
+test("registry can read the staging tag and treats its absence as optional", async () => {
+  const staged = { ...metadata, version: "0.3.0-staging.41.1" };
+  const registry = createRegistry(async (url) => {
+    assert.equal(url, "https://registry.npmjs.org/solite-icons/staging");
+    return new Response(JSON.stringify(staged));
+  });
+  assert.deepEqual(await registry.staging(), staged);
+  assert.equal(await createRegistry(async () => new Response("", { status: 404 })).staging(), null);
+  await assert.rejects(
+    () => createRegistry(async () => new Response("", { status: 503 })).staging(),
+    /Registry/,
+  );
+});
+
 test("invalid targets, malformed registry versions and unsafe run identifiers fail closed", () => {
   for (const version of [
     "0.3.0-beta.1",
@@ -206,6 +251,7 @@ async function releaseFixture(
       dist: { integrity: "sha512-previous" },
     }),
     version: async (candidate) => (published?.version === candidate ? published : null),
+    staging: async () => null,
   };
   const run = async (command, args) => {
     calls.push([command, ...args]);
@@ -299,6 +345,22 @@ test("disallowed events skip without reading the registry or running commands", 
 test("stale branch head prevents publication", async (t) => {
   const fixture = await releaseFixture(t, { stale: true });
   await assert.rejects(() => runRelease({ ...fixture, publish: true }), /head.*changed/);
+  assert.ok(!fixture.calls.some((call) => call[1] === "publish"));
+});
+
+test("a restored older run cannot move staging backward despite being the current head", async (t) => {
+  const fixture = await releaseFixture(t, { branch: "staging" });
+  fixture.registry.staging = async () => ({ version: "0.3.0-staging.43.1" });
+  await assert.rejects(() => runRelease({ ...fixture, publish: true }), /staging tag/);
+  assert.deepEqual(fixture.calls, []);
+});
+
+test("a staging tag that advances during packing is rechecked before publishing", async (t) => {
+  const fixture = await releaseFixture(t, { branch: "staging" });
+  let reads = 0;
+  fixture.registry.staging = async () => (++reads === 1 ? null : { version: "0.4.0-staging.43.1" });
+  await assert.rejects(() => runRelease({ ...fixture, publish: true }), /staging tag/);
+  assert.ok(fixture.calls.some((call) => call[1] === "pack"));
   assert.ok(!fixture.calls.some((call) => call[1] === "publish"));
 });
 
