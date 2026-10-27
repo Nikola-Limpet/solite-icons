@@ -38,3 +38,41 @@ jobs:
         with:
           name: solite-icons-docs
           path: website/out
+
+  publish:
+    name: Publish npm
+    needs: [validate, docs]
+    if: >-
+      github.event_name == 'push' &&
+      github.repository == 'Nikola-Limpet/solite-icons' &&
+      (github.ref == 'refs/heads/staging' || github.ref == 'refs/heads/main')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      id-token: write
+    concurrency:
+      group: npm-publish-solite-icons
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.23.4
+          registry-url: https://registry.npmjs.org
+      - name: Install npm with trusted publishing support
+        run: npm install --global npm@11.21.1 --ignore-scripts
+      - run: npm ci
+      - name: Publish eligible version through npm OIDC
+        run: node scripts/release.mjs publish
+      - name: Retain npm archive and release report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: npm-release-${{ github.run_id }}-${{ github.run_attempt }}
+          path: output/npm-release/
+          if-no-files-found: warn
+          retention-days: 14
