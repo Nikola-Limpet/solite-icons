@@ -82,10 +82,18 @@
 
 **Files:** Packed artifact, isolated consumer checks, contact sheets, and task ledger/report.
 
-- [ ] Run package tests, browser tests, generated-file checks, formatting, docs builds/typecheck, and packed-artifact ESM/CommonJS/TypeScript checks.
-- [ ] Run one independent whole-change review; fix substantive findings and verify each correction.
-- [ ] Commit only this feature's files and leave the release candidate reviewable. Report actual icon count, checks, artifact path, npm public status, and remaining manual checks.
+- [x] Run package tests, browser tests, generated-file checks, formatting, docs builds/typecheck, and packed-artifact ESM/CommonJS/TypeScript checks.
+- [x] Run one independent whole-change review; fix substantive findings and verify each correction.
+- [x] Commit only this feature's files and leave the release candidate reviewable. Report actual icon count, checks, artifact path, npm public status, and remaining manual checks.
 
 ## Execution rulings
 
 The maintainer approved proceeding after the design and style comparison. The controller writes this task-level plan and executes through verification without another routine approval round, as authorized by the design. Icon generation is parallel because ownership is disjoint; shared data and generated files remain controller-owned. Work starts from main commit d00f4ce, after the independent blue-branding change was merged. Use a feature branch in the current clean checkout rather than touching the merged main history.
+
+## Completed validation
+
+The candidate contains 553 icons and preserves all 253 baseline drawings. All 21 package tests and the browser accessibility, ref, hydration, and lazy-transition fixture passed on React 18.2.0 and 19.2.8. A fresh archive installation passed ESM, CommonJS, all 553 lazy loaders in both formats, and TypeScript consumer checks.
+
+Documentation build, typecheck, metadata search, tile counts, and SVG downloads passed at the root path and /solite-icons. The real restore workflow returned exactly 253 public-release SVGs; reinstalling the candidate returned 553. The two independent review findings were fixed with a regression for stale downloads and a count-neutral social image. No material package/API finding remained.
+
+Manual VoiceOver and NVDA checks are pending and documented. The feature stays on its local branch. npm publication, deployment, pushing, merging, and concurrent sidebar and npm-pipeline work remain separate.
