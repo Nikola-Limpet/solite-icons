@@ -12,3 +12,8 @@ React.createElement(icons.CodeIcon, { size: 16 });
 React.createElement(icons.MicrophoneOffIcon, { title: "Muted microphone" });
 Object.keys(data.icons["git-branch"]);
 React.createElement(terminal.default, { size: 24 });
+import lazy = require("solite-icons/lazy");
+import metadata = require("solite-icons/metadata");
+React.createElement(icons.SoliteProvider, { size: 20 }, React.createElement(icons.EarIcon));
+React.createElement(lazy.LazySoliteIcon, { name: "ear" });
+metadata.searchIcons("hearing");

@@ -21,3 +21,17 @@ createElement(AccessibilityIcon, { title: "Accessibility" });
 createElement(TerminalIcon, { size: 16 });
 createElement(SoliteIcon, { name: "microphone-off" });
 Object.keys(icons["git-branch"]);
+
+import { SoliteProvider, KeyboardIcon, type SoliteIconComponent } from "solite-icons";
+import { LazySoliteIcon } from "solite-icons/lazy";
+import { searchIcons, isIconName, lucideIconMap } from "solite-icons/metadata";
+const IconSlot: SoliteIconComponent = KeyboardIcon;
+createElement(IconSlot, { nonScalingStroke: true, size: "1.25rem" });
+createElement(SoliteProvider, { size: 20, nonScalingStroke: true }, createElement(HomeIcon));
+createElement(LazySoliteIcon, { name: "ear", fallback: null, ref: createRef<SVGSVGElement>() });
+const external: unknown = "home";
+if (isIconName(external)) createElement(SoliteIcon, { name: external });
+searchIcons("hearing");
+createElement(SoliteIcon, { name: lucideIconMap.House });
+// @ts-expect-error Provider defaults must not distribute accessible names to every child.
+createElement(SoliteProvider, { title: "Wrong global title" });

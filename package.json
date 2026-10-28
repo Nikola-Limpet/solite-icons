@@ -1,6 +1,6 @@
 {
   "name": "solite-icons",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Original rounded outline icons for Solite and React or SVG projects.",
   "keywords": [
     "icons",
@@ -56,6 +56,26 @@
         "default": "./dist/cjs/dynamic.js"
       }
     },
+    "./metadata": {
+      "import": {
+        "types": "./dist/types/metadata.d.ts",
+        "default": "./dist/esm/metadata.js"
+      },
+      "require": {
+        "types": "./dist/types-cjs/metadata.d.ts",
+        "default": "./dist/cjs/metadata.js"
+      }
+    },
+    "./lazy": {
+      "import": {
+        "types": "./dist/types/lazy.d.ts",
+        "default": "./dist/esm/lazy.js"
+      },
+      "require": {
+        "types": "./dist/types-cjs/lazy.d.ts",
+        "default": "./dist/cjs/lazy.js"
+      }
+    },
     "./data": {
       "import": {
         "types": "./dist/types/data.d.ts",
@@ -85,16 +105,23 @@
     "build": "node scripts/build.mjs",
     "check": "node scripts/build.mjs --check",
     "test": "node --test test/*.test.mjs",
+    "test:browser": "node --test test/browser/*.test.mjs",
+    "docs:candidate": "node scripts/docs-candidate.mjs",
+    "docs:restore": "node scripts/docs-candidate.mjs --restore",
+    "check:docs": "node scripts/check-docs.mjs",
+    "check:package": "node scripts/check-package.mjs",
     "format": "oxfmt .",
     "format:check": "oxfmt --check .",
     "prepack": "npm run build",
     "preview:render": "node scripts/render-preview.mjs"
   },
   "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
     "@types/node": "22.20.1",
     "@types/react": "19.2.18",
     "esbuild": "0.28.1",
     "oxfmt": "0.75.0",
+    "playwright": "1.64.1",
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "typescript": "6.0.3"

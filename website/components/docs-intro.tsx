@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRightIcon, CodeIcon } from "solite-icons";
 import { CopyButton } from "./copy-button";
 import { SoliteLogo } from "./solite-logo";
+import { iconCount, iconVersion } from "../lib/collection";
 
 // THESIS: The drawings lead a practical, open-source introduction.
 // OWN-WORLD: Blue accents, neutral surfaces, white reading space, rounded open geometry.
@@ -14,7 +15,7 @@ export function DocsIntro() {
       <div className="intro-product">
         <SoliteLogo size={32} />
         <span>Solite Icons</span>
-        <a href="https://github.com/Nikola-Limpet/solite-icons/releases/tag/v0.2.1">v0.2.1</a>
+        <Link href="/releases">v{iconVersion}</Link>
       </div>
       <h1>
         Outline icons.
@@ -22,8 +23,8 @@ export function DocsIntro() {
         <span>Open by design.</span>
       </h1>
       <p className="intro-description">
-        253 original icons with rounded strokes and room to breathe. Find the right one for your
-        interface, then make it your own with React or plain SVG.
+        {iconCount} original icons with rounded strokes and room to breathe. Find the right one for
+        your interface, then make it your own with React or plain SVG.
       </p>
       <div className="install-command">
         <code>npm install solite-icons</code>

@@ -1,10 +1,10 @@
 # Solite Icons docs
 
-A Next.js 16 and Fumadocs site with MDX guides, static documentation search, rendered React examples, and an interactive 253-icon gallery.
+A Next.js 16 and Fumadocs site with MDX guides, static documentation search, rendered React examples, and an interactive collection browser. The repository contains an unpublished 0.3.0 candidate with 553 icons, including 300 additions; npm latest remains 0.2.1 with 253 icons.
 
 ## Run locally
 
-Use Node.js 22 or newer. From the repository root:
+Use Node.js 22 or newer. From the repository root, install the locked dependencies and preview the published collection:
 
 ```sh
 npm ci
@@ -12,7 +12,28 @@ npm --prefix website ci
 npm --prefix website run dev
 ```
 
-Visit `http://localhost:3000`. The docs app has its own dependency lockfile and is not included in the published library files.
+The development server runs at `http://localhost:3000`. The docs app has its own dependency lockfile and is not included in the published library files.
+
+The package manifest and lockfile pin `solite-icons@0.2.1` from npm. The docs can run and build with that published collection. To preview the expanded collection, use the local workflow below. Code samples importing new candidate APIs require the candidate in the consuming application.
+
+## Preview the local candidate
+
+After installing root and website dependencies, run from the repository root:
+
+```sh
+npm run docs:candidate
+npm --prefix website run dev
+```
+
+`docs:candidate` builds the library, packs the local 0.3.0 candidate under `output/`, and installs that archive into the website's `node_modules` with no saved dependency or lockfile changes. It does not publish anything. React previews, metadata, counts, and SVG downloads should all come from that installed candidate.
+
+To restore the registry dependency recorded in the website lockfile:
+
+```sh
+npm run docs:restore
+```
+
+This runs `npm ci` in `website/` and restores the published collection for docs development and builds. Re-run `docs:candidate` to preview the expanded collection and new APIs. Do not replace the pinned dependency with an unpublished registry version. After npm publication, update both the website dependency and lockfile to the published version, reinstall, and rebuild.
 
 ## Write a guide
 
@@ -25,7 +46,7 @@ The MDX component mapping in `components/mdx.tsx` exposes:
 - `<IconPlayground />`: size, stroke, color, and canvas controls, with copyable JSX.
 - `<IconBrowser />`: all icons, name/category filters, size controls, React imports, and SVG downloads.
 
-The package dependency is pinned to npm version `0.2.1`. After publishing new icons, update `solite-icons` in this app's package and lockfile to the new npm version. `scripts/sync-assets.mjs` copies downloads from the installed icon package before each build, so the rendered icons and downloads use the same release.
+`scripts/sync-assets.mjs` copies downloads from the installed icon package before each build. Derive collection counts and search data from that same package; do not hardcode a candidate total into shared introduction copy. Keep explicit release totals in versioned release notes.
 
 ## Build and check
 
@@ -35,6 +56,8 @@ npm --prefix website run typecheck
 ```
 
 The site exports to `website/out/`. A static host must serve each directory's `index.html`. Do not run `next start`, which is not used for an exported site.
+
+Run both checks after `npm run docs:candidate` when validating this branch. Also verify a base-path build before release. At the repository root, `npm run test:browser` runs the Playwright and axe package fixtures after Chromium installation with `npx playwright install chromium`. It checks accessible names, complete controls, refs, hydration, and lazy transitions. Manual VoiceOver/NVDA verification is separate; record software versions and results using `content/docs/accessibility.mdx`. Do not claim those checks ran without an actual record.
 
 For local verification of an exported build:
 

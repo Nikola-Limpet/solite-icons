@@ -7,12 +7,13 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { build } from "esbuild";
 
 const require = createRequire(import.meta.url);
+const { count: iconCount } = require("solite-icons/manifest.json");
 
-test("all 253 names have named and deep exports and matching safe SVG assets", async () => {
+test("every manifest name has named and deep exports and matching safe SVG assets", async () => {
   const { icons, iconCategories } = await import("solite-icons/data");
   const components = await import("solite-icons");
   const names = Object.keys(icons);
-  assert.equal(names.length, 253);
+  assert.equal(names.length, iconCount);
   assert.deepEqual(new Set(Object.values(iconCategories).flat()), new Set(names));
   for (const name of names) {
     const componentName =
@@ -75,10 +76,10 @@ test("CommonJS consumers can require named, dynamic and data exports", () => {
   const { HomeIcon } = require("solite-icons");
   assert.match(renderToStaticMarkup(createElement(HomeIcon)), /data-solite-icon="home"/);
   assert.equal(typeof require("solite-icons/dynamic").SoliteIcon, "object");
-  assert.equal(Object.keys(require("solite-icons/data").icons).length, 253);
+  assert.equal(Object.keys(require("solite-icons/data").icons).length, iconCount);
 });
 
-test("a named import excludes the other 252 glyphs from the browser bundle", async () => {
+test("a named import excludes unused glyphs and metadata from the browser bundle", async () => {
   const bundled = await build({
     stdin: {
       contents: 'import { HomeIcon } from "solite-icons"; console.log(HomeIcon);',
@@ -97,6 +98,8 @@ test("a named import excludes the other 252 glyphs from the browser bundle", asy
     `Unexpected home bundle size: ${Buffer.byteLength(out)}`,
   );
   assert.doesNotMatch(out, /cash-register|cloud-sync|archive-restore/);
+  for (const input of Object.keys(bundled.metafile.inputs))
+    if (/\/metadata\//.test(input)) throw new Error(`Metadata entered a named bundle: ${input}`);
   for (const [file, meta] of Object.entries(Object.values(bundled.metafile.outputs)[0].inputs))
     if (file.includes("/icons/") && !file.endsWith("/home.js"))
       assert.equal(meta.bytesInOutput, 0, file);
@@ -164,9 +167,9 @@ test("the 24 essentials render through named, deep, and dynamic imports with mat
 test("catalog icon buttons hide duplicate decorative SVGs from assistive technology", async () => {
   const catalog = await readFile(new URL("../catalog/index.html", import.meta.url), "utf8");
   const glyphs = [...catalog.matchAll(/(<button[^>]*class="glyph"[^>]*>)(<svg\b[^>]*>)/g)];
-  assert.equal(glyphs.length, 253);
+  assert.equal(glyphs.length, iconCount);
   for (const [, button, svg] of glyphs) {
-    assert.match(button, /aria-label="Inspect [a-z-]+"/);
+    assert.match(button, /aria-label="Inspect [a-z0-9-]+"/);
     assert.match(svg, /aria-hidden="true"/);
     assert.match(svg, /focusable="false"/);
   }

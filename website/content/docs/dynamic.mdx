@@ -1,9 +1,15 @@
 ---
-title: Dynamic names
-description: Render an icon when its name comes from configuration or data.
+title: Dynamic and lazy names
+description: Choose an eager or lazy renderer and search canonical icon names.
 ---
 
-## The dynamic component
+The lazy and metadata entries below require the unpublished 0.3.0 candidate. [Preview it locally](/installation#preview-the-local-030-candidate). The existing eager renderer is also available in the published 0.2.1 release.
+
+## Keep fixed names as imports
+
+Use [named imports](/react) when the name is known in your source. They support tree shaking without a runtime lookup or asynchronous icon request.
+
+## Existing eager renderer
 
 ```tsx
 import { SoliteIcon, type SoliteIconName } from "solite-icons/dynamic";
@@ -13,28 +19,78 @@ const name: SoliteIconName = "cash-register";
 <SoliteIcon name={name} size={20} />;
 ```
 
-The names match the SVG filenames, without `.svg`. `cash-register` maps to the named component `CashRegisterIcon`.
+Names match SVG filenames without `.svg`. `cash-register` maps to `CashRegisterIcon`.
 
-The dynamic entry includes the full collection. Prefer [named imports](/react) when the icon is known in your source code.
+The `/dynamic` entry remains eager. It includes the entire installed collection and renders synchronously, including on the server. In the candidate that means all 553 icons. Adding the lazy entry does not change this behavior.
 
-## Validate external values
-
-Unknown names throw an error at runtime. Check strings from an API, database, or user input before rendering them.
+## Opt-in lazy renderer
 
 ```tsx
-import { icons } from "solite-icons/data";
-import { SoliteIcon, type SoliteIconName } from "solite-icons/dynamic";
+import { useRef } from "react";
+import { LazySoliteIcon, type SoliteIconName } from "solite-icons/lazy";
 
-function isIconName(value: string): value is SoliteIconName {
-  return Object.hasOwn(icons, value);
-}
-
-export function ConfiguredIcon({ value }: { value: string }) {
-  return isIconName(value) ? <SoliteIcon name={value} /> : null;
+export function ConfiguredIcon({ name }: { name: SoliteIconName }) {
+  const ref = useRef<SVGSVGElement>(null);
+  return <LazySoliteIcon name={name} size={20} ref={ref} />;
 }
 ```
 
-## Read the collection data
+`LazySoliteIcon` accepts `name: SoliteIconName`, standard icon props, a forwarded SVG ref, and `fallback?: ReactNode`. It uses `React.lazy` and an internal Suspense boundary with a generated import for each per-icon module. Lazy component identities are cached across renders.
+
+The default fallback is an empty decorative SVG. It reserves `size`, or explicit `width` and `height`, and inherits provider sizing, classes, and the supplied style. It does not receive the loaded icon's accessible name. The ref connects to the drawing after loading, so account for a null ref while pending. Changing `name` resets the boundary so the previous drawing does not stand in for the next icon.
+
+Supply a custom fallback or `null` when needed:
+
+```tsx
+<LazySoliteIcon
+  name="ear"
+  size={20}
+  fallback={<span aria-hidden="true" style={{ display: "inline-block", width: 20, height: 20 }} />}
+/>
+```
+
+Keep a button's name on the button so loading cannot remove it. Keep placeholder graphics decorative. For a meaningful status, provide accurate visible text outside the lazy icon while loading. Avoid duplicating accessible names or announcing success before the drawing loads. [Accessibility examples](/accessibility) cover controls and busy states.
+
+## SSR and bundling limits
+
+Dynamic imports permit separate chunks when the production bundler supports code splitting. Chunk grouping, caching, preload behavior, and request timing belong to your bundler and framework. The lazy import map itself has overhead, and many distinct runtime icons may create many requests. Inspect your production output before choosing it.
+
+The component uses [React Suspense](https://react.dev/reference/react/Suspense). Streaming server rendering can resolve suspended content according to the framework's rendering strategy. [`renderToString`](https://react.dev/reference/react-dom/server/renderToString) does not wait for a suspended icon and emits its fallback instead. Prefer named or eager imports when the icon must be in the initial synchronous HTML. Test your framework's hydration and loading behavior.
+
+## Validate external values
+
+Both renderers throw for unknown runtime names. Check values from APIs, databases, or user input using the candidate's React-free metadata entry:
+
+```tsx
+import { isIconName } from "solite-icons/metadata";
+import { LazySoliteIcon } from "solite-icons/lazy";
+
+export function ConfiguredIcon({ value }: { value: unknown }) {
+  return isIconName(value) ? <LazySoliteIcon name={value} /> : null;
+}
+```
+
+On 0.2.1, use `Object.hasOwn(icons, value)` with `icons` from `/data` and an appropriate TypeScript guard. The `/metadata` helper is a candidate addition.
+
+## Search names and aliases
+
+```ts
+import { iconMetadata, isIconName, searchIcons, lucideIconMap } from "solite-icons/metadata";
+
+const matches = searchIcons("magnifier");
+const componentMatches = searchIcons("CashRegisterIcon");
+const allNames = searchIcons("");
+const shopTags = iconMetadata.shop.tags;
+const homeName = lucideIconMap.House; // "home"
+```
+
+`iconMetadata` maps each canonical name to a category, tags, and optional aliases. `searchIcons` matches those fields, canonical kebab-case names, and component-style spelling. Matching ignores case and punctuation. Results are canonical `SoliteIconName` values in stable collection order. Empty input returns all names; an unmatched term returns an empty array. Aliases such as `close`, `delete`, `gear`, `magnifier`, and `hearing` help discovery without adding duplicate exports.
+
+`lucideIconMap` is a curated migration aid. It does not cover every Lucide component or guarantee interchangeable drawings or props. See [migration](/migration).
+
+The `/metadata` entry has no React imports. Importing a named icon does not pull this search metadata into your bundle. The website browser and offline catalog use the same metadata; a custom search UI should announce result counts with a polite status region.
+
+## Read raw collection data
 
 ```ts
 import { icons, iconCategories } from "solite-icons/data";
@@ -44,4 +100,4 @@ const navigationNames = iconCategories.Navigation;
 const shopGeometry = icons.shop;
 ```
 
-This entry has no React imports. Each geometry node is an SVG tag name and an attributes object. It is suitable for custom framework adapters and catalog tooling.
+This entry also has no React imports. Each geometry node is an SVG tag name and an attributes object. Use it for custom framework adapters and geometry tooling; use `/metadata` for search and validation without importing all drawings.

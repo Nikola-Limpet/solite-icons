@@ -7,6 +7,9 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        react: ["18.2.0", "19.2.8"]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -14,10 +17,24 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - run: npm install --no-save --package-lock=false react@${{ matrix.react }} react-dom@${{ matrix.react }}
       - run: npm run format:check
       - run: npm run check
       - run: npm test
       - run: npm pack --dry-run
+
+  accessibility:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run check
+      - run: npm run test:browser
 
   docs:
     runs-on: ubuntu-latest
@@ -32,6 +49,7 @@ jobs:
             website/package-lock.json
       - run: npm ci
       - run: npm --prefix website ci
+      - run: npm run docs:candidate
       - run: npm --prefix website run build
       - run: npm --prefix website run typecheck
       - uses: actions/upload-artifact@v4

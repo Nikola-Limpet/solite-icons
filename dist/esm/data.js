@@ -13,6 +13,9 @@ import { workflowIcons } from "./definitions/workflow.js";
 import { developerIcons } from "./definitions/developer.js";
 import { mediaIcons } from "./definitions/media.js";
 import { discoveryIcons } from "./definitions/discovery.js";
+import { interfaceExpansionIcons } from "./definitions/interface-expansion.js";
+import { editingExpansionIcons } from "./definitions/editing-expansion.js";
+import { appsExpansionIcons } from "./definitions/apps-expansion.js";
 const icons = {
   ...navigationIcons,
   ...peopleIcons,
@@ -28,7 +31,10 @@ const icons = {
   ...workflowIcons,
   ...developerIcons,
   ...mediaIcons,
-  ...discoveryIcons
+  ...discoveryIcons,
+  ...interfaceExpansionIcons,
+  ...editingExpansionIcons,
+  ...appsExpansionIcons
 };
 const names = (group) => Object.keys(group);
 const iconCategories = {
@@ -46,7 +52,10 @@ const iconCategories = {
   Workflow: names(workflowIcons),
   "Developer tools": names(developerIcons),
   "Media & sharing": names(mediaIcons),
-  "Discovery & learning": names(discoveryIcons)
+  "Discovery & learning": names(discoveryIcons),
+  "Accessibility & interface": names(interfaceExpansionIcons),
+  "Editing & development": names(editingExpansionIcons),
+  "Everyday applications": names(appsExpansionIcons)
 };
 export {
   iconCategories,

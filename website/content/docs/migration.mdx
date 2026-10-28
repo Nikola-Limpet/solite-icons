@@ -1,0 +1,84 @@
+---
+title: Migration
+icon: shuffle
+description: Move from Lucide or app-local Uicons while reviewing names, props, and accessibility.
+---
+
+The 0.3.0 candidate preserves the 253 existing Solite names, drawings, paths, and rendering defaults. Its 300 additions and new APIs are unpublished. [Install the local candidate](/installation#preview-the-local-030-candidate) before using `/metadata`, `/lazy`, `SoliteProvider`, or `nonScalingStroke`. npm latest remains 0.2.1.
+
+## From Lucide React
+
+Choose icons by purpose and compare their drawings in the browser. Solite uses original geometry on a 24px grid with a default stroke width of 1.75. Similar names do not imply identical silhouettes, optical weight, or props.
+
+| Lucide component  | Solite component     | Canonical Solite name |
+| ----------------- | -------------------- | --------------------- |
+| `House` or `Home` | `HomeIcon`           | `home`                |
+| `Pencil`          | `EditIcon`           | `edit`                |
+| `Trash2`          | `TrashIcon`          | `trash`               |
+| `CircleHelp`      | `HelpIcon`           | `help`                |
+| `RefreshCw`       | `RefreshIcon`        | `refresh`             |
+| `Loader`          | `LoadingIcon`        | `loading`             |
+| `Ellipsis`        | `MoreHorizontalIcon` | `more-horizontal`     |
+
+```tsx
+// Before:
+// import { House } from "lucide-react";
+// <House size={20} strokeWidth={2} />;
+
+// After:
+import { HomeIcon } from "solite-icons";
+
+<HomeIcon size={20} strokeWidth={2} />;
+```
+
+Solite components end in `Icon`; deep paths use canonical kebab-case names. Do not mechanically append `Icon` to every Lucide name. The candidate exports a curated map:
+
+```ts
+import { lucideIconMap } from "solite-icons/metadata";
+
+const name = lucideIconMap.House; // "home"
+```
+
+The map covers common names only. A missing entry means no mapping has been curated; it does not prove that Solite has no suitable drawing. Search by purpose and inspect the results. Solite does not promise complete Lucide coverage, brand logos, or an equivalent for every icon variant. Search aliases are not extra React exports.
+
+## Review props and behavior
+
+| Concern                              | Solite behavior                                                                                                                                                                                                     |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `size`, `color`, `strokeWidth`       | Supported. Defaults are `24`, `currentColor`, and `1.75`; set an explicit stroke when preserving an existing weight.                                                                                                |
+| `className`, `style`, SVG attributes | Supported. Selectors that depend on Lucide-generated classes must be updated. Solite exposes `data-solite-icon`.                                                                                                    |
+| `absoluteStrokeWidth`                | Not a Solite prop. Review the intended result and use the candidate's `nonScalingStroke` when the stroke should stay fixed under scaling. It uses SVG `vectorEffect` on drawing elements, including with CSS sizes. |
+| Accessibility                        | Decorative by default. Name controls on the button or link; use `title`, `aria-label`, or `aria-labelledby` for an informative SVG. Review explicit hidden state and label precedence.                              |
+| Children or custom icon nodes        | `SoliteIconProps` excludes `children` and `dangerouslySetInnerHTML`. Use the exported drawings or build a separate custom component.                                                                                |
+| Runtime names                        | `/dynamic` is eager. `/lazy` is a separate opt-in candidate entry and may suspend. Names use Solite's canonical kebab-case spelling.                                                                                |
+| Shared defaults                      | The candidate's `SoliteProvider` shares visual defaults only. It does not share labels, titles, refs, or handlers.                                                                                                  |
+
+Passing an unrecognized prop does not implement another library's behavior. Remove library-specific props and verify small sizes, hover and focus states, high contrast, RTL, and loading in the actual interface. See [styling](/styling) and [accessibility](/accessibility).
+
+## From the app's Uicons
+
+```tsx
+// Before, inside Solite POS:
+// import { Uicons } from "@/components/uicons";
+// <Uicons name="shop" size={20} />;
+
+import { ShopIcon } from "solite-icons";
+
+<ShopIcon size={20} />;
+```
+
+The original geometry and default appearance are unchanged. The diagnostic attribute is `data-solite-icon`, replacing app-local `data-uicon`. Update CSS and tests that use the old attribute.
+
+To keep runtime name rendering:
+
+```tsx
+import { SoliteIcon } from "solite-icons/dynamic";
+
+<SoliteIcon name="shop" size={20} />;
+```
+
+Validate external values with the candidate's `isIconName` helper. Prefer named imports for fixed names and review bundle size before retaining an eager renderer throughout the application.
+
+## From Solite 0.2.1 to the candidate
+
+Existing imports continue to work. Adopt new features one at a time, without renaming existing icons. Keep the previous lockfile until you have validated the local archive, then restore or record the intended dependency explicitly. The [installation guide](/installation) explains local packing and restoration; it does not require an unavailable registry release.

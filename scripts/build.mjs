@@ -20,12 +20,63 @@ const { icons, iconCategories } = await import(
   `data:text/javascript;base64,${Buffer.from(dataBundle.outputFiles[0].text).toString("base64")}`
 );
 const names = Object.keys(icons);
+const metadataBundle = await build({
+  entryPoints: ["src/metadata.ts"],
+  bundle: true,
+  platform: "node",
+  format: "esm",
+  write: false,
+});
+const { iconMetadata } = await import(
+  `data:text/javascript;base64,${Buffer.from(metadataBundle.outputFiles[0].text).toString("base64")}`
+);
+if (
+  Object.keys(iconMetadata).length !== names.length ||
+  names.some((name) => !Object.hasOwn(iconMetadata, name))
+)
+  throw Error("Icon metadata must cover every canonical name exactly once.");
+const allowedTags = new Set(["path", "rect", "circle", "ellipse", "line", "polyline", "polygon"]);
+const allowedAttributes = new Set([
+  "d",
+  "x",
+  "y",
+  "width",
+  "height",
+  "rx",
+  "ry",
+  "cx",
+  "cy",
+  "r",
+  "x1",
+  "y1",
+  "x2",
+  "y2",
+  "points",
+]);
+for (const [name, nodes] of Object.entries(icons)) {
+  if (!/^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$/.test(name) || !nodes.length)
+    throw Error(`Invalid icon: ${name}`);
+  for (const [tag, attributes] of nodes) {
+    if (!allowedTags.has(tag) || Object.keys(attributes).some((key) => !allowedAttributes.has(key)))
+      throw Error(`Unsafe drawing node: ${name}`);
+    if (
+      Object.values(attributes).some((value) =>
+        typeof value === "number" ? !Number.isFinite(value) : typeof value !== "string",
+      )
+    )
+      throw Error(`Invalid drawing attributes: ${name}`);
+  }
+}
 const componentName = (name) =>
   name
     .split("-")
     .map((part) => part[0].toUpperCase() + part.slice(1))
     .join("") + "Icon";
 const generatedSource = new Map();
+generatedSource.set(
+  "src/lazy-imports.ts",
+  `// Generated literal imports keep glyphs in separate lazy chunks.\nimport type { SoliteIconName } from "./data.js";\nimport type { SoliteIconComponent } from "./create-icon.js";\nimport { resolveLazyModule } from "./lazy-module.js";\n\nexport const lazyIconImports: Record<SoliteIconName, () => Promise<{ default: SoliteIconComponent }>> = {\n${names.map((name) => `  ${JSON.stringify(name)}: () => import("./icons/${name}.js").then((module) => resolveLazyModule(module, "${componentName(name)}")),`).join("\n")}\n};\n`,
+);
 for (const [name, definition] of Object.entries(icons)) {
   const component = componentName(name);
   generatedSource.set(
@@ -35,7 +86,7 @@ for (const [name, definition] of Object.entries(icons)) {
 }
 generatedSource.set(
   "src/index.ts",
-  `// Generated named exports. Dynamic rendering is a separate entry point.\nexport type { SoliteIconProps } from "./create-icon.js";\nexport type { SoliteIconName } from "./data.js";\nexport type { IconDefinition, IconNode } from "./geometry.js";\n${names.map((name) => `export { ${componentName(name)} } from "./icons/${name}.js";`).join("\n")}\n`,
+  `// Generated named exports. Dynamic rendering is a separate entry point.\nexport type { SoliteIconProps, SoliteIconComponent } from "./create-icon.js";\nexport { SoliteProvider } from "./context.js";\nexport type { SoliteIconDefaults, SoliteProviderProps } from "./context.js";\nexport type { SoliteIconName } from "./data.js";\nexport type { IconDefinition, IconNode } from "./geometry.js";\n${names.map((name) => `export { ${componentName(name)} } from "./icons/${name}.js";`).join("\n")}\n`,
 );
 
 async function syncFiles(files) {
@@ -133,6 +184,7 @@ generated.set(
         name,
         component: componentName(name),
         file: `svg/${name}.svg`,
+        ...iconMetadata[name],
       })),
     },
     null,
@@ -141,7 +193,18 @@ generated.set(
 );
 generated.set(
   "catalog/index.html",
-  renderCatalog({ icons, iconCategories, svg, escape, componentName }),
+  renderCatalog({ icons, iconCategories, iconMetadata, svg, escape, componentName }),
+);
+generated.set(
+  "docs/icons.md",
+  `# Icon list\n\n${names.length} icons. Import each React component from \`solite-icons\`, or use its name with \`SoliteIcon\` from \`solite-icons/dynamic\`.\n\n${Object.entries(
+    iconCategories,
+  )
+    .map(
+      ([category, values]) =>
+        `## ${category}\n\n| Name | React import |\n| --- | --- |\n${values.map((name) => `| \`${name}\` | \`${componentName(name)}\` |`).join("\n")}\n`,
+    )
+    .join("\n")}`,
 );
 await syncFiles(generated);
 for (const dir of ["src/icons", "dist", "svg", "catalog"]) {

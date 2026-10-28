@@ -1,7 +1,19 @@
 ---
 title: Releases
-description: Published versions, release notes, and where to install Solite Icons.
+description: Local candidate status, published versions, and where to install Solite Icons.
 ---
+
+## 0.3.0 candidate, unpublished
+
+The local candidate contains **553 original icons**, including **300 additions** for interface controls, editing, accessibility settings, and application categories. All 253 existing names and drawings are preserved.
+
+It adds `SoliteProvider` for visual defaults, the TypeScript-only `SoliteIconComponent` type, and `nonScalingStroke` on drawing elements. The opt-in `/lazy` entry provides `LazySoliteIcon`; the existing `/dynamic` entry remains eager. The React-free `/metadata` entry provides `iconMetadata`, `isIconName`, `searchIcons`, and a curated `lucideIconMap` migration aid.
+
+Package, metadata, lazy-bundling, browser accessibility, and hydration checks accompany the candidate. Manual VoiceOver and NVDA checks remain separate and are not claimed as completed. See the [accessibility checklist](/accessibility#reproducible-voiceover-and-nvda-checklist).
+
+**npm latest remains 0.2.1.** Use the [local archive workflow](/installation#preview-the-local-030-candidate) to try the candidate. From a clone with root and website dependencies installed, `npm run docs:candidate` builds and installs the archive into the docs app without changing its registry lockfile. `npm run docs:restore` reinstalls the locked published dependency.
+
+The [recorded size benchmark](https://github.com/Nikola-Limpet/solite-icons/blob/main/docs/benchmarks/2026-10-27.md) uses Solite 0.2.1 and its stated comparison versions. It does not measure this candidate.
 
 ## 0.2.1
 

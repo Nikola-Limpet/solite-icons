@@ -37,6 +37,9 @@ var import_workflow = require("./definitions/workflow.js");
 var import_developer = require("./definitions/developer.js");
 var import_media = require("./definitions/media.js");
 var import_discovery = require("./definitions/discovery.js");
+var import_interface_expansion = require("./definitions/interface-expansion.js");
+var import_editing_expansion = require("./definitions/editing-expansion.js");
+var import_apps_expansion = require("./definitions/apps-expansion.js");
 const icons = {
   ...import_navigation.navigationIcons,
   ...import_people.peopleIcons,
@@ -52,7 +55,10 @@ const icons = {
   ...import_workflow.workflowIcons,
   ...import_developer.developerIcons,
   ...import_media.mediaIcons,
-  ...import_discovery.discoveryIcons
+  ...import_discovery.discoveryIcons,
+  ...import_interface_expansion.interfaceExpansionIcons,
+  ...import_editing_expansion.editingExpansionIcons,
+  ...import_apps_expansion.appsExpansionIcons
 };
 const names = (group) => Object.keys(group);
 const iconCategories = {
@@ -70,5 +76,8 @@ const iconCategories = {
   Workflow: names(import_workflow.workflowIcons),
   "Developer tools": names(import_developer.developerIcons),
   "Media & sharing": names(import_media.mediaIcons),
-  "Discovery & learning": names(import_discovery.discoveryIcons)
+  "Discovery & learning": names(import_discovery.discoveryIcons),
+  "Accessibility & interface": names(import_interface_expansion.interfaceExpansionIcons),
+  "Editing & development": names(import_editing_expansion.editingExpansionIcons),
+  "Everyday applications": names(import_apps_expansion.appsExpansionIcons)
 };

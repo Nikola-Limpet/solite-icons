@@ -1,7 +1,7 @@
 {
   "name": "solite-icons",
-  "version": "0.2.1",
-  "count": 253,
+  "version": "0.3.0",
+  "count": 553,
   "viewBox": "0 0 24 24",
   "strokeWidth": 1.75,
   "provenance": "Original SVG geometry authored for Solite POS and extracted into solite-icons. Initial source: Nikola-Limpet/hang-pos commit 07d7a83c9d2b98bb8449ea7b2a58ca055f8aecd1.",
@@ -288,1273 +288,7024 @@
       "wrench",
       "puzzle",
       "target"
+    ],
+    "Accessibility & interface": [
+      "keyboard",
+      "keyboard-off",
+      "captions",
+      "captions-off",
+      "ear",
+      "ear-off",
+      "contrast",
+      "type",
+      "text-cursor",
+      "reading-guide",
+      "speech",
+      "focus",
+      "mouse-pointer",
+      "keyboard-key",
+      "text-cursor-input",
+      "textarea",
+      "select",
+      "combobox",
+      "toggle-left",
+      "toggle-right",
+      "input-otp",
+      "input-password",
+      "asterisk",
+      "form",
+      "signature",
+      "input-number",
+      "input-clear",
+      "circle",
+      "square",
+      "circle-dot",
+      "minus-square",
+      "plus-square",
+      "square-dashed",
+      "lasso",
+      "lasso-polygon",
+      "mouse-pointer-click",
+      "hand",
+      "table-row-add",
+      "table-row-remove",
+      "table-column-add",
+      "table-column-remove",
+      "table-row-select",
+      "table-column-select",
+      "table-cells-merge",
+      "table-cells-split",
+      "table-row-freeze",
+      "table-column-freeze",
+      "chevrons-up-down",
+      "sort-ascending",
+      "sort-descending",
+      "sort-alphabetical",
+      "sort-numeric",
+      "list",
+      "list-ordered",
+      "list-checks",
+      "list-tree",
+      "chevrons-left",
+      "chevrons-right",
+      "arrow-left-to-line",
+      "arrow-right-to-line",
+      "panel-right",
+      "panel-top",
+      "panel-bottom",
+      "panel-left-open",
+      "panel-left-close",
+      "panel-right-open",
+      "panel-right-close",
+      "panel-top-open",
+      "panel-top-close",
+      "panel-bottom-open",
+      "panel-bottom-close",
+      "panel-resize",
+      "arrow-up-left",
+      "arrow-up-right",
+      "arrow-down-left",
+      "arrow-down-right",
+      "arrow-left-right",
+      "arrow-up-to-line",
+      "arrow-down-to-line",
+      "corner-down-left",
+      "corner-down-right",
+      "corner-up-left",
+      "corner-up-right",
+      "corner-left-up",
+      "corner-left-down",
+      "corner-right-up",
+      "corner-right-down",
+      "move-horizontal",
+      "move-vertical",
+      "layers",
+      "columns-2",
+      "columns-3",
+      "rows-2",
+      "rows-3",
+      "panels-left-right",
+      "layout-header-footer",
+      "layout-centered",
+      "layout-overlay",
+      "layout-tabs",
+      "layout-responsive"
+    ],
+    "Editing & development": [
+      "bold",
+      "italic",
+      "underline",
+      "strikethrough",
+      "heading",
+      "subscript",
+      "superscript",
+      "small-caps",
+      "text-direction-ltr",
+      "case-upper",
+      "case-lower",
+      "case-title",
+      "align-left",
+      "align-center",
+      "align-right",
+      "align-justify",
+      "indent-increase",
+      "indent-decrease",
+      "line-height",
+      "letter-spacing",
+      "text-color",
+      "highlighter",
+      "remove-formatting",
+      "paragraph",
+      "quote",
+      "text-wrap",
+      "word-break",
+      "text-hyphenation",
+      "paragraph-spacing",
+      "text-align-top",
+      "text-align-middle",
+      "text-align-bottom",
+      "scissors",
+      "eraser",
+      "spell-check",
+      "find-replace",
+      "file-diff",
+      "file-code",
+      "word-count",
+      "page-break",
+      "page-number",
+      "page-margin",
+      "page-size",
+      "footnote",
+      "track-changes",
+      "sticky-note",
+      "stamp",
+      "scan-text",
+      "unlink",
+      "redact",
+      "text-direction-rtl",
+      "document-template",
+      "page-header",
+      "page-footer",
+      "git-commit",
+      "git-pull-request",
+      "git-merge",
+      "git-compare",
+      "git-rebase",
+      "git-cherry-pick",
+      "git-conflict",
+      "git-graph",
+      "bug",
+      "variable",
+      "function",
+      "lambda",
+      "regex",
+      "binary",
+      "array",
+      "boolean",
+      "string",
+      "number",
+      "parentheses",
+      "ampersand",
+      "breakpoint",
+      "recursion",
+      "webhook",
+      "api",
+      "network",
+      "cluster",
+      "container",
+      "virtual-machine",
+      "load-balancer",
+      "queue",
+      "cache",
+      "database-schema",
+      "data-stream",
+      "dependency",
+      "sandbox",
+      "pipeline",
+      "database-query",
+      "database-replica",
+      "at-sign",
+      "hash",
+      "thumbs-up",
+      "thumbs-down",
+      "message-dots",
+      "organization-chart",
+      "vote",
+      "message-reply"
+    ],
+    "Everyday applications": [
+      "stop-circle",
+      "skip-back",
+      "skip-forward",
+      "rewind",
+      "fast-forward",
+      "cassette",
+      "eject",
+      "music",
+      "disc",
+      "film",
+      "clapperboard",
+      "radio",
+      "podcast",
+      "waveform",
+      "cast",
+      "signal",
+      "router",
+      "cable",
+      "nfc",
+      "tv",
+      "speaker",
+      "mouse",
+      "watch",
+      "gamepad",
+      "remote-control",
+      "battery-charging",
+      "sim-card",
+      "security-camera",
+      "siren",
+      "vault",
+      "scan-face",
+      "school",
+      "backpack",
+      "microscope",
+      "telescope",
+      "flask",
+      "atom",
+      "ruler",
+      "drafting-compass",
+      "magnet",
+      "car",
+      "bus",
+      "train",
+      "bicycle",
+      "motorbike",
+      "plane",
+      "ship",
+      "helicopter",
+      "fuel",
+      "charging-station",
+      "parking",
+      "traffic-light",
+      "anchor",
+      "cloud-rain",
+      "cloud-snow",
+      "cloud-lightning",
+      "cloud-sun",
+      "wind",
+      "fog",
+      "snowflake",
+      "droplet",
+      "thermometer",
+      "leaf",
+      "tree",
+      "flower",
+      "mountain",
+      "waves",
+      "flame",
+      "umbrella",
+      "rainbow",
+      "stethoscope",
+      "first-aid",
+      "pill",
+      "syringe",
+      "bandage",
+      "hospital",
+      "ambulance",
+      "dna",
+      "tooth",
+      "bone",
+      "lungs",
+      "brain",
+      "dumbbell",
+      "bed",
+      "bath",
+      "shower",
+      "sofa",
+      "lamp",
+      "door",
+      "washing-machine",
+      "refrigerator",
+      "fan",
+      "tent",
+      "luggage",
+      "paw-print",
+      "fish",
+      "bird",
+      "apple",
+      "cake",
+      "shirt"
     ]
   },
   "icons": [
     {
       "name": "home",
       "component": "HomeIcon",
-      "file": "svg/home.svg"
+      "file": "svg/home.svg",
+      "category": "Navigation",
+      "tags": [
+        "home"
+      ],
+      "aliases": [
+        "house",
+        "residence"
+      ]
     },
     {
       "name": "dashboard",
       "component": "DashboardIcon",
-      "file": "svg/dashboard.svg"
+      "file": "svg/dashboard.svg",
+      "category": "Navigation",
+      "tags": [
+        "dashboard"
+      ],
+      "aliases": [
+        "layout-dashboard"
+      ]
     },
     {
       "name": "shop",
       "component": "ShopIcon",
-      "file": "svg/shop.svg"
+      "file": "svg/shop.svg",
+      "category": "Navigation",
+      "tags": [
+        "shop"
+      ],
+      "aliases": [
+        "store",
+        "storefront"
+      ]
     },
     {
       "name": "building",
       "component": "BuildingIcon",
-      "file": "svg/building.svg"
+      "file": "svg/building.svg",
+      "category": "Navigation",
+      "tags": [
+        "building"
+      ],
+      "aliases": [
+        "office",
+        "workplace"
+      ]
     },
     {
       "name": "package",
       "component": "PackageIcon",
-      "file": "svg/package.svg"
+      "file": "svg/package.svg",
+      "category": "Navigation",
+      "tags": [
+        "package"
+      ],
+      "aliases": [
+        "software-package",
+        "artifact",
+        "bundle"
+      ]
     },
     {
       "name": "grid",
       "component": "GridIcon",
-      "file": "svg/grid.svg"
+      "file": "svg/grid.svg",
+      "category": "Navigation",
+      "tags": [
+        "grid"
+      ],
+      "aliases": [
+        "layout-grid"
+      ]
     },
     {
       "name": "menu",
       "component": "MenuIcon",
-      "file": "svg/menu.svg"
+      "file": "svg/menu.svg",
+      "category": "Navigation",
+      "tags": [
+        "menu"
+      ]
     },
     {
       "name": "search",
       "component": "SearchIcon",
-      "file": "svg/search.svg"
+      "file": "svg/search.svg",
+      "category": "Navigation",
+      "tags": [
+        "search"
+      ],
+      "aliases": [
+        "magnifier",
+        "magnifying-glass",
+        "find",
+        "text-search"
+      ]
     },
     {
       "name": "filter",
       "component": "FilterIcon",
-      "file": "svg/filter.svg"
+      "file": "svg/filter.svg",
+      "category": "Navigation",
+      "tags": [
+        "filter"
+      ],
+      "aliases": [
+        "query-filter",
+        "narrow-results"
+      ]
     },
     {
       "name": "sliders",
       "component": "SlidersIcon",
-      "file": "svg/sliders.svg"
+      "file": "svg/sliders.svg",
+      "category": "Navigation",
+      "tags": [
+        "sliders"
+      ],
+      "aliases": [
+        "preferences",
+        "tune"
+      ]
     },
     {
       "name": "settings",
       "component": "SettingsIcon",
-      "file": "svg/settings.svg"
+      "file": "svg/settings.svg",
+      "category": "Navigation",
+      "tags": [
+        "settings"
+      ],
+      "aliases": [
+        "gear",
+        "cog",
+        "preferences",
+        "configuration"
+      ]
     },
     {
       "name": "globe",
       "component": "GlobeIcon",
-      "file": "svg/globe.svg"
+      "file": "svg/globe.svg",
+      "category": "Navigation",
+      "tags": [
+        "globe"
+      ],
+      "aliases": [
+        "world",
+        "earth",
+        "geography",
+        "internet"
+      ]
     },
     {
       "name": "compass",
       "component": "CompassIcon",
-      "file": "svg/compass.svg"
+      "file": "svg/compass.svg",
+      "category": "Navigation",
+      "tags": [
+        "compass"
+      ],
+      "aliases": [
+        "bearing",
+        "navigation-compass"
+      ]
     },
     {
       "name": "map-pin",
       "component": "MapPinIcon",
-      "file": "svg/map-pin.svg"
+      "file": "svg/map-pin.svg",
+      "category": "Navigation",
+      "tags": [
+        "map",
+        "pin"
+      ],
+      "aliases": [
+        "location",
+        "place"
+      ]
     },
     {
       "name": "map",
       "component": "MapIcon",
-      "file": "svg/map.svg"
+      "file": "svg/map.svg",
+      "category": "Navigation",
+      "tags": [
+        "map"
+      ],
+      "aliases": [
+        "atlas",
+        "street-map"
+      ]
     },
     {
       "name": "route",
       "component": "RouteIcon",
-      "file": "svg/route.svg"
+      "file": "svg/route.svg",
+      "category": "Navigation",
+      "tags": [
+        "route"
+      ],
+      "aliases": [
+        "directions",
+        "journey"
+      ]
     },
     {
       "name": "link",
       "component": "LinkIcon",
-      "file": "svg/link.svg"
+      "file": "svg/link.svg",
+      "category": "Navigation",
+      "tags": [
+        "link"
+      ],
+      "aliases": [
+        "hyperlink",
+        "chain-link"
+      ]
     },
     {
       "name": "external-link",
       "component": "ExternalLinkIcon",
-      "file": "svg/external-link.svg"
+      "file": "svg/external-link.svg",
+      "category": "Navigation",
+      "tags": [
+        "external",
+        "link"
+      ],
+      "aliases": [
+        "open-in-new",
+        "new-tab"
+      ]
     },
     {
       "name": "sidebar",
       "component": "SidebarIcon",
-      "file": "svg/sidebar.svg"
+      "file": "svg/sidebar.svg",
+      "category": "Navigation",
+      "tags": [
+        "sidebar"
+      ],
+      "aliases": [
+        "panel-left"
+      ]
     },
     {
       "name": "layout",
       "component": "LayoutIcon",
-      "file": "svg/layout.svg"
+      "file": "svg/layout.svg",
+      "category": "Navigation",
+      "tags": [
+        "layout"
+      ]
     },
     {
       "name": "user",
       "component": "UserIcon",
-      "file": "svg/user.svg"
+      "file": "svg/user.svg",
+      "category": "People & access",
+      "tags": [
+        "user"
+      ]
     },
     {
       "name": "users",
       "component": "UsersIcon",
-      "file": "svg/users.svg"
+      "file": "svg/users.svg",
+      "category": "People & access",
+      "tags": [
+        "users"
+      ],
+      "aliases": [
+        "team",
+        "collaborators",
+        "meeting",
+        "pair-programming"
+      ]
     },
     {
       "name": "user-add",
       "component": "UserAddIcon",
-      "file": "svg/user-add.svg"
+      "file": "svg/user-add.svg",
+      "category": "People & access",
+      "tags": [
+        "user",
+        "add"
+      ],
+      "aliases": [
+        "invite-collaborator",
+        "invite-user"
+      ]
     },
     {
       "name": "user-check",
       "component": "UserCheckIcon",
-      "file": "svg/user-check.svg"
+      "file": "svg/user-check.svg",
+      "category": "People & access",
+      "tags": [
+        "user",
+        "check"
+      ],
+      "aliases": [
+        "approved-collaborator"
+      ]
     },
     {
       "name": "user-remove",
       "component": "UserRemoveIcon",
-      "file": "svg/user-remove.svg"
+      "file": "svg/user-remove.svg",
+      "category": "People & access",
+      "tags": [
+        "user",
+        "remove"
+      ],
+      "aliases": [
+        "remove-collaborator"
+      ]
     },
     {
       "name": "user-lock",
       "component": "UserLockIcon",
-      "file": "svg/user-lock.svg"
+      "file": "svg/user-lock.svg",
+      "category": "People & access",
+      "tags": [
+        "user",
+        "lock"
+      ],
+      "aliases": [
+        "restricted-collaborator"
+      ]
     },
     {
       "name": "id-card",
       "component": "IdCardIcon",
-      "file": "svg/id-card.svg"
+      "file": "svg/id-card.svg",
+      "category": "People & access",
+      "tags": [
+        "id",
+        "card"
+      ],
+      "aliases": [
+        "identification",
+        "identity-card"
+      ]
     },
     {
       "name": "contact",
       "component": "ContactIcon",
-      "file": "svg/contact.svg"
+      "file": "svg/contact.svg",
+      "category": "People & access",
+      "tags": [
+        "contact"
+      ]
     },
     {
       "name": "handshake",
       "component": "HandshakeIcon",
-      "file": "svg/handshake.svg"
+      "file": "svg/handshake.svg",
+      "category": "People & access",
+      "tags": [
+        "handshake"
+      ],
+      "aliases": [
+        "agreement",
+        "partnership"
+      ]
     },
     {
       "name": "shield",
       "component": "ShieldIcon",
-      "file": "svg/shield.svg"
+      "file": "svg/shield.svg",
+      "category": "People & access",
+      "tags": [
+        "shield"
+      ],
+      "aliases": [
+        "protection",
+        "security"
+      ]
     },
     {
       "name": "shield-check",
       "component": "ShieldCheckIcon",
-      "file": "svg/shield-check.svg"
+      "file": "svg/shield-check.svg",
+      "category": "People & access",
+      "tags": [
+        "shield",
+        "check"
+      ],
+      "aliases": [
+        "trusted",
+        "verified-protection"
+      ]
     },
     {
       "name": "shield-lock",
       "component": "ShieldLockIcon",
-      "file": "svg/shield-lock.svg"
+      "file": "svg/shield-lock.svg",
+      "category": "People & access",
+      "tags": [
+        "shield",
+        "lock"
+      ],
+      "aliases": [
+        "secure",
+        "protected-access"
+      ]
     },
     {
       "name": "key",
       "component": "KeyIcon",
-      "file": "svg/key.svg"
+      "file": "svg/key.svg",
+      "category": "People & access",
+      "tags": [
+        "key"
+      ],
+      "aliases": [
+        "access-key",
+        "passkey"
+      ]
     },
     {
       "name": "lock",
       "component": "LockIcon",
-      "file": "svg/lock.svg"
+      "file": "svg/lock.svg",
+      "category": "People & access",
+      "tags": [
+        "lock"
+      ],
+      "aliases": [
+        "locked",
+        "encryption",
+        "password-protection"
+      ]
     },
     {
       "name": "unlock",
       "component": "UnlockIcon",
-      "file": "svg/unlock.svg"
+      "file": "svg/unlock.svg",
+      "category": "People & access",
+      "tags": [
+        "unlock"
+      ],
+      "aliases": [
+        "unlocked",
+        "open-access"
+      ]
     },
     {
       "name": "eye",
       "component": "EyeIcon",
-      "file": "svg/eye.svg"
+      "file": "svg/eye.svg",
+      "category": "People & access",
+      "tags": [
+        "eye"
+      ],
+      "aliases": [
+        "visible",
+        "show-password"
+      ]
     },
     {
       "name": "eye-off",
       "component": "EyeOffIcon",
-      "file": "svg/eye-off.svg"
+      "file": "svg/eye-off.svg",
+      "category": "People & access",
+      "tags": [
+        "eye",
+        "off"
+      ],
+      "aliases": [
+        "hidden",
+        "hide-password",
+        "privacy"
+      ]
     },
     {
       "name": "fingerprint",
       "component": "FingerprintIcon",
-      "file": "svg/fingerprint.svg"
+      "file": "svg/fingerprint.svg",
+      "category": "People & access",
+      "tags": [
+        "fingerprint"
+      ],
+      "aliases": [
+        "touch-id",
+        "fingerprint-authentication"
+      ]
     },
     {
       "name": "login",
       "component": "LoginIcon",
-      "file": "svg/login.svg"
+      "file": "svg/login.svg",
+      "category": "People & access",
+      "tags": [
+        "login"
+      ]
     },
     {
       "name": "logout",
       "component": "LogoutIcon",
-      "file": "svg/logout.svg"
+      "file": "svg/logout.svg",
+      "category": "People & access",
+      "tags": [
+        "logout"
+      ]
     },
     {
       "name": "cash-register",
       "component": "CashRegisterIcon",
-      "file": "svg/cash-register.svg"
+      "file": "svg/cash-register.svg",
+      "category": "Sales",
+      "tags": [
+        "cash",
+        "register"
+      ],
+      "aliases": [
+        "pos",
+        "point-of-sale"
+      ]
     },
     {
       "name": "shopping-cart",
       "component": "ShoppingCartIcon",
-      "file": "svg/shopping-cart.svg"
+      "file": "svg/shopping-cart.svg",
+      "category": "Sales",
+      "tags": [
+        "shopping",
+        "cart"
+      ]
     },
     {
       "name": "shopping-bag",
       "component": "ShoppingBagIcon",
-      "file": "svg/shopping-bag.svg"
+      "file": "svg/shopping-bag.svg",
+      "category": "Sales",
+      "tags": [
+        "shopping",
+        "bag"
+      ]
     },
     {
       "name": "basket",
       "component": "BasketIcon",
-      "file": "svg/basket.svg"
+      "file": "svg/basket.svg",
+      "category": "Sales",
+      "tags": [
+        "basket"
+      ]
     },
     {
       "name": "barcode",
       "component": "BarcodeIcon",
-      "file": "svg/barcode.svg"
+      "file": "svg/barcode.svg",
+      "category": "Sales",
+      "tags": [
+        "barcode"
+      ]
     },
     {
       "name": "qr-code",
       "component": "QrCodeIcon",
-      "file": "svg/qr-code.svg"
+      "file": "svg/qr-code.svg",
+      "category": "Sales",
+      "tags": [
+        "qr",
+        "code"
+      ]
     },
     {
       "name": "tag",
       "component": "TagIcon",
-      "file": "svg/tag.svg"
+      "file": "svg/tag.svg",
+      "category": "Sales",
+      "tags": [
+        "tag"
+      ],
+      "aliases": [
+        "git-tag",
+        "version-tag"
+      ]
     },
     {
       "name": "tags",
       "component": "TagsIcon",
-      "file": "svg/tags.svg"
+      "file": "svg/tags.svg",
+      "category": "Sales",
+      "tags": [
+        "tags"
+      ]
     },
     {
       "name": "discount",
       "component": "DiscountIcon",
-      "file": "svg/discount.svg"
+      "file": "svg/discount.svg",
+      "category": "Sales",
+      "tags": [
+        "discount"
+      ]
     },
     {
       "name": "percent",
       "component": "PercentIcon",
-      "file": "svg/percent.svg"
+      "file": "svg/percent.svg",
+      "category": "Sales",
+      "tags": [
+        "percent"
+      ]
     },
     {
       "name": "coupon",
       "component": "CouponIcon",
-      "file": "svg/coupon.svg"
+      "file": "svg/coupon.svg",
+      "category": "Sales",
+      "tags": [
+        "coupon"
+      ]
     },
     {
       "name": "gift",
       "component": "GiftIcon",
-      "file": "svg/gift.svg"
+      "file": "svg/gift.svg",
+      "category": "Sales",
+      "tags": [
+        "gift"
+      ]
     },
     {
       "name": "receipt",
       "component": "ReceiptIcon",
-      "file": "svg/receipt.svg"
+      "file": "svg/receipt.svg",
+      "category": "Sales",
+      "tags": [
+        "receipt"
+      ]
     },
     {
       "name": "receipt-check",
       "component": "ReceiptCheckIcon",
-      "file": "svg/receipt-check.svg"
+      "file": "svg/receipt-check.svg",
+      "category": "Sales",
+      "tags": [
+        "receipt",
+        "check"
+      ]
     },
     {
       "name": "receipt-refund",
       "component": "ReceiptRefundIcon",
-      "file": "svg/receipt-refund.svg"
+      "file": "svg/receipt-refund.svg",
+      "category": "Sales",
+      "tags": [
+        "receipt",
+        "refund"
+      ]
     },
     {
       "name": "order",
       "component": "OrderIcon",
-      "file": "svg/order.svg"
+      "file": "svg/order.svg",
+      "category": "Sales",
+      "tags": [
+        "order"
+      ]
     },
     {
       "name": "order-check",
       "component": "OrderCheckIcon",
-      "file": "svg/order-check.svg"
+      "file": "svg/order-check.svg",
+      "category": "Sales",
+      "tags": [
+        "order",
+        "check"
+      ]
     },
     {
       "name": "order-cancel",
       "component": "OrderCancelIcon",
-      "file": "svg/order-cancel.svg"
+      "file": "svg/order-cancel.svg",
+      "category": "Sales",
+      "tags": [
+        "order",
+        "cancel"
+      ]
     },
     {
       "name": "order-history",
       "component": "OrderHistoryIcon",
-      "file": "svg/order-history.svg"
+      "file": "svg/order-history.svg",
+      "category": "Sales",
+      "tags": [
+        "order",
+        "history"
+      ]
     },
     {
       "name": "calculator",
       "component": "CalculatorIcon",
-      "file": "svg/calculator.svg"
+      "file": "svg/calculator.svg",
+      "category": "Sales",
+      "tags": [
+        "calculator"
+      ],
+      "aliases": [
+        "arithmetic",
+        "calculation",
+        "math"
+      ]
     },
     {
       "name": "wallet",
       "component": "WalletIcon",
-      "file": "svg/wallet.svg"
+      "file": "svg/wallet.svg",
+      "category": "Payments & time",
+      "tags": [
+        "wallet"
+      ]
     },
     {
       "name": "credit-card",
       "component": "CreditCardIcon",
-      "file": "svg/credit-card.svg"
+      "file": "svg/credit-card.svg",
+      "category": "Payments & time",
+      "tags": [
+        "credit",
+        "card"
+      ]
     },
     {
       "name": "cash",
       "component": "CashIcon",
-      "file": "svg/cash.svg"
+      "file": "svg/cash.svg",
+      "category": "Payments & time",
+      "tags": [
+        "cash"
+      ]
     },
     {
       "name": "coins",
       "component": "CoinsIcon",
-      "file": "svg/coins.svg"
+      "file": "svg/coins.svg",
+      "category": "Payments & time",
+      "tags": [
+        "coins"
+      ]
     },
     {
       "name": "bank",
       "component": "BankIcon",
-      "file": "svg/bank.svg"
+      "file": "svg/bank.svg",
+      "category": "Payments & time",
+      "tags": [
+        "bank"
+      ]
     },
     {
       "name": "bank-transfer",
       "component": "BankTransferIcon",
-      "file": "svg/bank-transfer.svg"
+      "file": "svg/bank-transfer.svg",
+      "category": "Payments & time",
+      "tags": [
+        "bank",
+        "transfer"
+      ]
     },
     {
       "name": "dollar",
       "component": "DollarIcon",
-      "file": "svg/dollar.svg"
+      "file": "svg/dollar.svg",
+      "category": "Payments & time",
+      "tags": [
+        "dollar"
+      ]
     },
     {
       "name": "riel",
       "component": "RielIcon",
-      "file": "svg/riel.svg"
+      "file": "svg/riel.svg",
+      "category": "Payments & time",
+      "tags": [
+        "riel"
+      ]
     },
     {
       "name": "currency-exchange",
       "component": "CurrencyExchangeIcon",
-      "file": "svg/currency-exchange.svg"
+      "file": "svg/currency-exchange.svg",
+      "category": "Payments & time",
+      "tags": [
+        "currency",
+        "exchange"
+      ]
     },
     {
       "name": "payment-check",
       "component": "PaymentCheckIcon",
-      "file": "svg/payment-check.svg"
+      "file": "svg/payment-check.svg",
+      "category": "Payments & time",
+      "tags": [
+        "payment",
+        "check"
+      ]
     },
     {
       "name": "payment-pending",
       "component": "PaymentPendingIcon",
-      "file": "svg/payment-pending.svg"
+      "file": "svg/payment-pending.svg",
+      "category": "Payments & time",
+      "tags": [
+        "payment",
+        "pending"
+      ]
     },
     {
       "name": "payment-failed",
       "component": "PaymentFailedIcon",
-      "file": "svg/payment-failed.svg"
+      "file": "svg/payment-failed.svg",
+      "category": "Payments & time",
+      "tags": [
+        "payment",
+        "failed"
+      ]
     },
     {
       "name": "invoice",
       "component": "InvoiceIcon",
-      "file": "svg/invoice.svg"
+      "file": "svg/invoice.svg",
+      "category": "Payments & time",
+      "tags": [
+        "invoice"
+      ]
     },
     {
       "name": "billing-cycle",
       "component": "BillingCycleIcon",
-      "file": "svg/billing-cycle.svg"
+      "file": "svg/billing-cycle.svg",
+      "category": "Payments & time",
+      "tags": [
+        "billing",
+        "cycle"
+      ]
     },
     {
       "name": "subscription",
       "component": "SubscriptionIcon",
-      "file": "svg/subscription.svg"
+      "file": "svg/subscription.svg",
+      "category": "Payments & time",
+      "tags": [
+        "subscription"
+      ]
     },
     {
       "name": "calendar",
       "component": "CalendarIcon",
-      "file": "svg/calendar.svg"
+      "file": "svg/calendar.svg",
+      "category": "Payments & time",
+      "tags": [
+        "calendar"
+      ]
     },
     {
       "name": "calendar-check",
       "component": "CalendarCheckIcon",
-      "file": "svg/calendar-check.svg"
+      "file": "svg/calendar-check.svg",
+      "category": "Payments & time",
+      "tags": [
+        "calendar",
+        "check"
+      ]
     },
     {
       "name": "calendar-clock",
       "component": "CalendarClockIcon",
-      "file": "svg/calendar-clock.svg"
+      "file": "svg/calendar-clock.svg",
+      "category": "Payments & time",
+      "tags": [
+        "calendar",
+        "clock"
+      ]
     },
     {
       "name": "clock",
       "component": "ClockIcon",
-      "file": "svg/clock.svg"
+      "file": "svg/clock.svg",
+      "category": "Payments & time",
+      "tags": [
+        "clock"
+      ],
+      "aliases": [
+        "time"
+      ]
     },
     {
       "name": "alarm",
       "component": "AlarmIcon",
-      "file": "svg/alarm.svg"
+      "file": "svg/alarm.svg",
+      "category": "Payments & time",
+      "tags": [
+        "alarm"
+      ],
+      "aliases": [
+        "alarm-clock",
+        "wake-up"
+      ]
     },
     {
       "name": "coffee",
       "component": "CoffeeIcon",
-      "file": "svg/coffee.svg"
+      "file": "svg/coffee.svg",
+      "category": "Business operations",
+      "tags": [
+        "coffee"
+      ],
+      "aliases": [
+        "cafe",
+        "hot-drink"
+      ]
     },
     {
       "name": "tea",
       "component": "TeaIcon",
-      "file": "svg/tea.svg"
+      "file": "svg/tea.svg",
+      "category": "Business operations",
+      "tags": [
+        "tea"
+      ],
+      "aliases": [
+        "tea-drink"
+      ]
     },
     {
       "name": "cup",
       "component": "CupIcon",
-      "file": "svg/cup.svg"
+      "file": "svg/cup.svg",
+      "category": "Business operations",
+      "tags": [
+        "cup"
+      ],
+      "aliases": [
+        "beverage",
+        "takeaway-cup"
+      ]
     },
     {
       "name": "restaurant",
       "component": "RestaurantIcon",
-      "file": "svg/restaurant.svg"
+      "file": "svg/restaurant.svg",
+      "category": "Business operations",
+      "tags": [
+        "restaurant"
+      ],
+      "aliases": [
+        "dining",
+        "food-service"
+      ]
     },
     {
       "name": "utensils",
       "component": "UtensilsIcon",
-      "file": "svg/utensils.svg"
+      "file": "svg/utensils.svg",
+      "category": "Business operations",
+      "tags": [
+        "utensils"
+      ],
+      "aliases": [
+        "cutlery",
+        "fork-knife"
+      ]
     },
     {
       "name": "chef-hat",
       "component": "ChefHatIcon",
-      "file": "svg/chef-hat.svg"
+      "file": "svg/chef-hat.svg",
+      "category": "Business operations",
+      "tags": [
+        "chef",
+        "hat"
+      ]
     },
     {
       "name": "cooking-pot",
       "component": "CookingPotIcon",
-      "file": "svg/cooking-pot.svg"
+      "file": "svg/cooking-pot.svg",
+      "category": "Business operations",
+      "tags": [
+        "cooking",
+        "pot"
+      ]
     },
     {
       "name": "bakery",
       "component": "BakeryIcon",
-      "file": "svg/bakery.svg"
+      "file": "svg/bakery.svg",
+      "category": "Business operations",
+      "tags": [
+        "bakery"
+      ],
+      "aliases": [
+        "muffin",
+        "baked-goods"
+      ]
     },
     {
       "name": "bread",
       "component": "BreadIcon",
-      "file": "svg/bread.svg"
+      "file": "svg/bread.svg",
+      "category": "Business operations",
+      "tags": [
+        "bread"
+      ],
+      "aliases": [
+        "loaf",
+        "toast"
+      ]
     },
     {
       "name": "bottle",
       "component": "BottleIcon",
-      "file": "svg/bottle.svg"
+      "file": "svg/bottle.svg",
+      "category": "Business operations",
+      "tags": [
+        "bottle"
+      ],
+      "aliases": [
+        "water-bottle",
+        "drink-bottle"
+      ]
     },
     {
       "name": "retail",
       "component": "RetailIcon",
-      "file": "svg/retail.svg"
+      "file": "svg/retail.svg",
+      "category": "Business operations",
+      "tags": [
+        "retail"
+      ]
     },
     {
       "name": "box",
       "component": "BoxIcon",
-      "file": "svg/box.svg"
+      "file": "svg/box.svg",
+      "category": "Business operations",
+      "tags": [
+        "box"
+      ]
     },
     {
       "name": "boxes",
       "component": "BoxesIcon",
-      "file": "svg/boxes.svg"
+      "file": "svg/boxes.svg",
+      "category": "Business operations",
+      "tags": [
+        "boxes"
+      ]
     },
     {
       "name": "warehouse",
       "component": "WarehouseIcon",
-      "file": "svg/warehouse.svg"
+      "file": "svg/warehouse.svg",
+      "category": "Business operations",
+      "tags": [
+        "warehouse"
+      ]
     },
     {
       "name": "inventory",
       "component": "InventoryIcon",
-      "file": "svg/inventory.svg"
+      "file": "svg/inventory.svg",
+      "category": "Business operations",
+      "tags": [
+        "inventory"
+      ]
     },
     {
       "name": "truck",
       "component": "TruckIcon",
-      "file": "svg/truck.svg"
+      "file": "svg/truck.svg",
+      "category": "Business operations",
+      "tags": [
+        "truck"
+      ],
+      "aliases": [
+        "lorry",
+        "freight"
+      ]
     },
     {
       "name": "delivery",
       "component": "DeliveryIcon",
-      "file": "svg/delivery.svg"
+      "file": "svg/delivery.svg",
+      "category": "Business operations",
+      "tags": [
+        "delivery"
+      ],
+      "aliases": [
+        "shipping",
+        "courier"
+      ]
     },
     {
       "name": "pickup",
       "component": "PickupIcon",
-      "file": "svg/pickup.svg"
+      "file": "svg/pickup.svg",
+      "category": "Business operations",
+      "tags": [
+        "pickup"
+      ]
     },
     {
       "name": "table",
       "component": "TableIcon",
-      "file": "svg/table.svg"
+      "file": "svg/table.svg",
+      "category": "Business operations",
+      "tags": [
+        "table"
+      ],
+      "aliases": [
+        "dining-table",
+        "cafe-table"
+      ]
     },
     {
       "name": "seating",
       "component": "SeatingIcon",
-      "file": "svg/seating.svg"
+      "file": "svg/seating.svg",
+      "category": "Business operations",
+      "tags": [
+        "seating"
+      ],
+      "aliases": [
+        "chair",
+        "seat"
+      ]
     },
     {
       "name": "file",
       "component": "FileIcon",
-      "file": "svg/file.svg"
+      "file": "svg/file.svg",
+      "category": "Files",
+      "tags": [
+        "file"
+      ],
+      "aliases": [
+        "document",
+        "page"
+      ]
     },
     {
       "name": "files",
       "component": "FilesIcon",
-      "file": "svg/files.svg"
+      "file": "svg/files.svg",
+      "category": "Files",
+      "tags": [
+        "files"
+      ],
+      "aliases": [
+        "documents",
+        "pages"
+      ]
     },
     {
       "name": "file-add",
       "component": "FileAddIcon",
-      "file": "svg/file-add.svg"
+      "file": "svg/file-add.svg",
+      "category": "Files",
+      "tags": [
+        "file",
+        "add"
+      ],
+      "aliases": [
+        "new-document",
+        "file-plus"
+      ]
     },
     {
       "name": "file-check",
       "component": "FileCheckIcon",
-      "file": "svg/file-check.svg"
+      "file": "svg/file-check.svg",
+      "category": "Files",
+      "tags": [
+        "file",
+        "check"
+      ],
+      "aliases": [
+        "document-approved",
+        "file-verified"
+      ]
     },
     {
       "name": "file-remove",
       "component": "FileRemoveIcon",
-      "file": "svg/file-remove.svg"
+      "file": "svg/file-remove.svg",
+      "category": "Files",
+      "tags": [
+        "file",
+        "remove"
+      ],
+      "aliases": [
+        "file-minus",
+        "remove-document"
+      ]
     },
     {
       "name": "file-search",
       "component": "FileSearchIcon",
-      "file": "svg/file-search.svg"
+      "file": "svg/file-search.svg",
+      "category": "Files",
+      "tags": [
+        "file",
+        "search"
+      ],
+      "aliases": [
+        "find-in-file",
+        "document-search"
+      ]
     },
     {
       "name": "file-lock",
       "component": "FileLockIcon",
-      "file": "svg/file-lock.svg"
+      "file": "svg/file-lock.svg",
+      "category": "Files",
+      "tags": [
+        "file",
+        "lock"
+      ],
+      "aliases": [
+        "protected-document"
+      ]
     },
     {
       "name": "file-text",
       "component": "FileTextIcon",
-      "file": "svg/file-text.svg"
+      "file": "svg/file-text.svg",
+      "category": "Files",
+      "tags": [
+        "file",
+        "text"
+      ],
+      "aliases": [
+        "text-document",
+        "notes-file",
+        "document-text"
+      ]
     },
     {
       "name": "file-export",
       "component": "FileExportIcon",
-      "file": "svg/file-export.svg"
+      "file": "svg/file-export.svg",
+      "category": "Files",
+      "tags": [
+        "file",
+        "export"
+      ],
+      "aliases": [
+        "document-export"
+      ]
     },
     {
       "name": "file-import",
       "component": "FileImportIcon",
-      "file": "svg/file-import.svg"
+      "file": "svg/file-import.svg",
+      "category": "Files",
+      "tags": [
+        "file",
+        "import"
+      ],
+      "aliases": [
+        "document-import"
+      ]
     },
     {
       "name": "folder",
       "component": "FolderIcon",
-      "file": "svg/folder.svg"
+      "file": "svg/folder.svg",
+      "category": "Files",
+      "tags": [
+        "folder"
+      ],
+      "aliases": [
+        "directory"
+      ]
     },
     {
       "name": "folder-open",
       "component": "FolderOpenIcon",
-      "file": "svg/folder-open.svg"
+      "file": "svg/folder-open.svg",
+      "category": "Files",
+      "tags": [
+        "folder",
+        "open"
+      ],
+      "aliases": [
+        "open-directory"
+      ]
     },
     {
       "name": "folder-add",
       "component": "FolderAddIcon",
-      "file": "svg/folder-add.svg"
+      "file": "svg/folder-add.svg",
+      "category": "Files",
+      "tags": [
+        "folder",
+        "add"
+      ],
+      "aliases": [
+        "new-directory",
+        "folder-plus"
+      ]
     },
     {
       "name": "archive",
       "component": "ArchiveIcon",
-      "file": "svg/archive.svg"
+      "file": "svg/archive.svg",
+      "category": "Files",
+      "tags": [
+        "archive"
+      ],
+      "aliases": [
+        "stash",
+        "git-stash"
+      ]
     },
     {
       "name": "clipboard",
       "component": "ClipboardIcon",
-      "file": "svg/clipboard.svg"
+      "file": "svg/clipboard.svg",
+      "category": "Files",
+      "tags": [
+        "clipboard"
+      ],
+      "aliases": [
+        "paste",
+        "clipboard-copy"
+      ]
     },
     {
       "name": "clipboard-check",
       "component": "ClipboardCheckIcon",
-      "file": "svg/clipboard-check.svg"
+      "file": "svg/clipboard-check.svg",
+      "category": "Files",
+      "tags": [
+        "clipboard",
+        "check"
+      ],
+      "aliases": [
+        "review-complete",
+        "checklist-complete"
+      ]
     },
     {
       "name": "clipboard-list",
       "component": "ClipboardListIcon",
-      "file": "svg/clipboard-list.svg"
+      "file": "svg/clipboard-list.svg",
+      "category": "Files",
+      "tags": [
+        "clipboard",
+        "list"
+      ],
+      "aliases": [
+        "checklist",
+        "task-list"
+      ]
     },
     {
       "name": "book",
       "component": "BookIcon",
-      "file": "svg/book.svg"
+      "file": "svg/book.svg",
+      "category": "Files",
+      "tags": [
+        "book"
+      ],
+      "aliases": [
+        "book-open",
+        "reading",
+        "course-text",
+        "manual",
+        "documentation"
+      ]
     },
     {
       "name": "notebook",
       "component": "NotebookIcon",
-      "file": "svg/notebook.svg"
+      "file": "svg/notebook.svg",
+      "category": "Files",
+      "tags": [
+        "notebook"
+      ],
+      "aliases": [
+        "journal",
+        "study-notes",
+        "notepad"
+      ]
     },
     {
       "name": "paperclip",
       "component": "PaperclipIcon",
-      "file": "svg/paperclip.svg"
+      "file": "svg/paperclip.svg",
+      "category": "Files",
+      "tags": [
+        "paperclip"
+      ],
+      "aliases": [
+        "attach",
+        "attachment"
+      ]
     },
     {
       "name": "plus",
       "component": "PlusIcon",
-      "file": "svg/plus.svg"
+      "file": "svg/plus.svg",
+      "category": "Actions",
+      "tags": [
+        "plus"
+      ]
     },
     {
       "name": "minus",
       "component": "MinusIcon",
-      "file": "svg/minus.svg"
+      "file": "svg/minus.svg",
+      "category": "Actions",
+      "tags": [
+        "minus"
+      ]
     },
     {
       "name": "check",
       "component": "CheckIcon",
-      "file": "svg/check.svg"
+      "file": "svg/check.svg",
+      "category": "Actions",
+      "tags": [
+        "check"
+      ]
     },
     {
       "name": "x",
       "component": "XIcon",
-      "file": "svg/x.svg"
+      "file": "svg/x.svg",
+      "category": "Actions",
+      "tags": [
+        "x"
+      ],
+      "aliases": [
+        "close",
+        "dismiss",
+        "cancel"
+      ]
     },
     {
       "name": "arrow-left",
       "component": "ArrowLeftIcon",
-      "file": "svg/arrow-left.svg"
+      "file": "svg/arrow-left.svg",
+      "category": "Actions",
+      "tags": [
+        "arrow",
+        "left"
+      ]
     },
     {
       "name": "arrow-right",
       "component": "ArrowRightIcon",
-      "file": "svg/arrow-right.svg"
+      "file": "svg/arrow-right.svg",
+      "category": "Actions",
+      "tags": [
+        "arrow",
+        "right"
+      ]
     },
     {
       "name": "arrow-up",
       "component": "ArrowUpIcon",
-      "file": "svg/arrow-up.svg"
+      "file": "svg/arrow-up.svg",
+      "category": "Actions",
+      "tags": [
+        "arrow",
+        "up"
+      ]
     },
     {
       "name": "arrow-down",
       "component": "ArrowDownIcon",
-      "file": "svg/arrow-down.svg"
+      "file": "svg/arrow-down.svg",
+      "category": "Actions",
+      "tags": [
+        "arrow",
+        "down"
+      ]
     },
     {
       "name": "chevron-left",
       "component": "ChevronLeftIcon",
-      "file": "svg/chevron-left.svg"
+      "file": "svg/chevron-left.svg",
+      "category": "Actions",
+      "tags": [
+        "chevron",
+        "left"
+      ]
     },
     {
       "name": "chevron-right",
       "component": "ChevronRightIcon",
-      "file": "svg/chevron-right.svg"
+      "file": "svg/chevron-right.svg",
+      "category": "Actions",
+      "tags": [
+        "chevron",
+        "right"
+      ]
     },
     {
       "name": "chevron-up",
       "component": "ChevronUpIcon",
-      "file": "svg/chevron-up.svg"
+      "file": "svg/chevron-up.svg",
+      "category": "Actions",
+      "tags": [
+        "chevron",
+        "up"
+      ]
     },
     {
       "name": "chevron-down",
       "component": "ChevronDownIcon",
-      "file": "svg/chevron-down.svg"
+      "file": "svg/chevron-down.svg",
+      "category": "Actions",
+      "tags": [
+        "chevron",
+        "down"
+      ]
     },
     {
       "name": "undo",
       "component": "UndoIcon",
-      "file": "svg/undo.svg"
+      "file": "svg/undo.svg",
+      "category": "Actions",
+      "tags": [
+        "undo"
+      ],
+      "aliases": [
+        "revert",
+        "rollback"
+      ]
     },
     {
       "name": "redo",
       "component": "RedoIcon",
-      "file": "svg/redo.svg"
+      "file": "svg/redo.svg",
+      "category": "Actions",
+      "tags": [
+        "redo"
+      ],
+      "aliases": [
+        "reapply"
+      ]
     },
     {
       "name": "refresh",
       "component": "RefreshIcon",
-      "file": "svg/refresh.svg"
+      "file": "svg/refresh.svg",
+      "category": "Actions",
+      "tags": [
+        "refresh"
+      ],
+      "aliases": [
+        "reload",
+        "refresh-data"
+      ]
     },
     {
       "name": "rotate",
       "component": "RotateIcon",
-      "file": "svg/rotate.svg"
+      "file": "svg/rotate.svg",
+      "category": "Actions",
+      "tags": [
+        "rotate"
+      ]
     },
     {
       "name": "expand",
       "component": "ExpandIcon",
-      "file": "svg/expand.svg"
+      "file": "svg/expand.svg",
+      "category": "Actions",
+      "tags": [
+        "expand"
+      ],
+      "aliases": [
+        "unfold",
+        "unfold-code"
+      ]
     },
     {
       "name": "collapse",
       "component": "CollapseIcon",
-      "file": "svg/collapse.svg"
+      "file": "svg/collapse.svg",
+      "category": "Actions",
+      "tags": [
+        "collapse"
+      ],
+      "aliases": [
+        "fold",
+        "fold-code"
+      ]
     },
     {
       "name": "move",
       "component": "MoveIcon",
-      "file": "svg/move.svg"
+      "file": "svg/move.svg",
+      "category": "Actions",
+      "tags": [
+        "move"
+      ]
     },
     {
       "name": "sort",
       "component": "SortIcon",
-      "file": "svg/sort.svg"
+      "file": "svg/sort.svg",
+      "category": "Actions",
+      "tags": [
+        "sort"
+      ],
+      "aliases": [
+        "arrow-up-down",
+        "arrows-up-down"
+      ]
     },
     {
       "name": "bell",
       "component": "BellIcon",
-      "file": "svg/bell.svg"
+      "file": "svg/bell.svg",
+      "category": "Communication & status",
+      "tags": [
+        "bell"
+      ]
     },
     {
       "name": "bell-off",
       "component": "BellOffIcon",
-      "file": "svg/bell-off.svg"
+      "file": "svg/bell-off.svg",
+      "category": "Communication & status",
+      "tags": [
+        "bell",
+        "off"
+      ]
     },
     {
       "name": "mail",
       "component": "MailIcon",
-      "file": "svg/mail.svg"
+      "file": "svg/mail.svg",
+      "category": "Communication & status",
+      "tags": [
+        "mail"
+      ]
     },
     {
       "name": "mail-open",
       "component": "MailOpenIcon",
-      "file": "svg/mail-open.svg"
+      "file": "svg/mail-open.svg",
+      "category": "Communication & status",
+      "tags": [
+        "mail",
+        "open"
+      ]
     },
     {
       "name": "mail-send",
       "component": "MailSendIcon",
-      "file": "svg/mail-send.svg"
+      "file": "svg/mail-send.svg",
+      "category": "Communication & status",
+      "tags": [
+        "mail",
+        "send"
+      ],
+      "aliases": [
+        "send-message",
+        "send-email"
+      ]
     },
     {
       "name": "message",
       "component": "MessageIcon",
-      "file": "svg/message.svg"
+      "file": "svg/message.svg",
+      "category": "Communication & status",
+      "tags": [
+        "message"
+      ],
+      "aliases": [
+        "chat",
+        "comment",
+        "discussion"
+      ]
     },
     {
       "name": "messages",
       "component": "MessagesIcon",
-      "file": "svg/messages.svg"
+      "file": "svg/messages.svg",
+      "category": "Communication & status",
+      "tags": [
+        "messages"
+      ],
+      "aliases": [
+        "conversation",
+        "thread",
+        "message-thread"
+      ]
     },
     {
       "name": "message-check",
       "component": "MessageCheckIcon",
-      "file": "svg/message-check.svg"
+      "file": "svg/message-check.svg",
+      "category": "Communication & status",
+      "tags": [
+        "message",
+        "check"
+      ],
+      "aliases": [
+        "resolved-comment",
+        "resolved-thread"
+      ]
     },
     {
       "name": "phone",
       "component": "PhoneIcon",
-      "file": "svg/phone.svg"
+      "file": "svg/phone.svg",
+      "category": "Communication & status",
+      "tags": [
+        "phone"
+      ]
     },
     {
       "name": "phone-call",
       "component": "PhoneCallIcon",
-      "file": "svg/phone-call.svg"
+      "file": "svg/phone-call.svg",
+      "category": "Communication & status",
+      "tags": [
+        "phone",
+        "call"
+      ]
     },
     {
       "name": "headphones",
       "component": "HeadphonesIcon",
-      "file": "svg/headphones.svg"
+      "file": "svg/headphones.svg",
+      "category": "Communication & status",
+      "tags": [
+        "headphones"
+      ],
+      "aliases": [
+        "headset",
+        "personal-audio"
+      ]
     },
     {
       "name": "help",
       "component": "HelpIcon",
-      "file": "svg/help.svg"
+      "file": "svg/help.svg",
+      "category": "Communication & status",
+      "tags": [
+        "help"
+      ],
+      "aliases": [
+        "circle-help",
+        "question",
+        "support"
+      ]
     },
     {
       "name": "info",
       "component": "InfoIcon",
-      "file": "svg/info.svg"
+      "file": "svg/info.svg",
+      "category": "Communication & status",
+      "tags": [
+        "info"
+      ]
     },
     {
       "name": "alert-circle",
       "component": "AlertCircleIcon",
-      "file": "svg/alert-circle.svg"
+      "file": "svg/alert-circle.svg",
+      "category": "Communication & status",
+      "tags": [
+        "alert",
+        "circle"
+      ]
     },
     {
       "name": "alert-triangle",
       "component": "AlertTriangleIcon",
-      "file": "svg/alert-triangle.svg"
+      "file": "svg/alert-triangle.svg",
+      "category": "Communication & status",
+      "tags": [
+        "alert",
+        "triangle"
+      ]
     },
     {
       "name": "check-circle",
       "component": "CheckCircleIcon",
-      "file": "svg/check-circle.svg"
+      "file": "svg/check-circle.svg",
+      "category": "Communication & status",
+      "tags": [
+        "check",
+        "circle"
+      ]
     },
     {
       "name": "x-circle",
       "component": "XCircleIcon",
-      "file": "svg/x-circle.svg"
+      "file": "svg/x-circle.svg",
+      "category": "Communication & status",
+      "tags": [
+        "x",
+        "circle"
+      ]
     },
     {
       "name": "minus-circle",
       "component": "MinusCircleIcon",
-      "file": "svg/minus-circle.svg"
+      "file": "svg/minus-circle.svg",
+      "category": "Communication & status",
+      "tags": [
+        "minus",
+        "circle"
+      ]
     },
     {
       "name": "plus-circle",
       "component": "PlusCircleIcon",
-      "file": "svg/plus-circle.svg"
+      "file": "svg/plus-circle.svg",
+      "category": "Communication & status",
+      "tags": [
+        "plus",
+        "circle"
+      ]
     },
     {
       "name": "activity",
       "component": "ActivityIcon",
-      "file": "svg/activity.svg"
+      "file": "svg/activity.svg",
+      "category": "Communication & status",
+      "tags": [
+        "activity"
+      ],
+      "aliases": [
+        "pulse",
+        "heartbeat",
+        "vital-signs",
+        "ecg"
+      ]
     },
     {
       "name": "chart-bar",
       "component": "ChartBarIcon",
-      "file": "svg/chart-bar.svg"
+      "file": "svg/chart-bar.svg",
+      "category": "Data",
+      "tags": [
+        "chart",
+        "bar"
+      ]
     },
     {
       "name": "chart-line",
       "component": "ChartLineIcon",
-      "file": "svg/chart-line.svg"
+      "file": "svg/chart-line.svg",
+      "category": "Data",
+      "tags": [
+        "chart",
+        "line"
+      ]
     },
     {
       "name": "chart-pie",
       "component": "ChartPieIcon",
-      "file": "svg/chart-pie.svg"
+      "file": "svg/chart-pie.svg",
+      "category": "Data",
+      "tags": [
+        "chart",
+        "pie"
+      ]
     },
     {
       "name": "chart-donut",
       "component": "ChartDonutIcon",
-      "file": "svg/chart-donut.svg"
+      "file": "svg/chart-donut.svg",
+      "category": "Data",
+      "tags": [
+        "chart",
+        "donut"
+      ]
     },
     {
       "name": "trend-up",
       "component": "TrendUpIcon",
-      "file": "svg/trend-up.svg"
+      "file": "svg/trend-up.svg",
+      "category": "Data",
+      "tags": [
+        "trend",
+        "up"
+      ]
     },
     {
       "name": "trend-down",
       "component": "TrendDownIcon",
-      "file": "svg/trend-down.svg"
+      "file": "svg/trend-down.svg",
+      "category": "Data",
+      "tags": [
+        "trend",
+        "down"
+      ]
     },
     {
       "name": "report",
       "component": "ReportIcon",
-      "file": "svg/report.svg"
+      "file": "svg/report.svg",
+      "category": "Data",
+      "tags": [
+        "report"
+      ]
     },
     {
       "name": "table-data",
       "component": "TableDataIcon",
-      "file": "svg/table-data.svg"
+      "file": "svg/table-data.svg",
+      "category": "Data",
+      "tags": [
+        "table",
+        "data"
+      ]
     },
     {
       "name": "database",
       "component": "DatabaseIcon",
-      "file": "svg/database.svg"
+      "file": "svg/database.svg",
+      "category": "Data",
+      "tags": [
+        "database"
+      ],
+      "aliases": [
+        "datastore",
+        "sql-database"
+      ]
     },
     {
       "name": "server",
       "component": "ServerIcon",
-      "file": "svg/server.svg"
+      "file": "svg/server.svg",
+      "category": "Data",
+      "tags": [
+        "server"
+      ],
+      "aliases": [
+        "hosting",
+        "backend",
+        "rack-server"
+      ]
     },
     {
       "name": "cloud",
       "component": "CloudIcon",
-      "file": "svg/cloud.svg"
+      "file": "svg/cloud.svg",
+      "category": "Data",
+      "tags": [
+        "cloud"
+      ],
+      "aliases": [
+        "cloudy",
+        "overcast",
+        "cloud-service",
+        "remote-storage"
+      ]
     },
     {
       "name": "cloud-upload",
       "component": "CloudUploadIcon",
-      "file": "svg/cloud-upload.svg"
+      "file": "svg/cloud-upload.svg",
+      "category": "Data",
+      "tags": [
+        "cloud",
+        "upload"
+      ],
+      "aliases": [
+        "upload-to-cloud"
+      ]
     },
     {
       "name": "cloud-download",
       "component": "CloudDownloadIcon",
-      "file": "svg/cloud-download.svg"
+      "file": "svg/cloud-download.svg",
+      "category": "Data",
+      "tags": [
+        "cloud",
+        "download"
+      ],
+      "aliases": [
+        "download-from-cloud"
+      ]
     },
     {
       "name": "upload",
       "component": "UploadIcon",
-      "file": "svg/upload.svg"
+      "file": "svg/upload.svg",
+      "category": "Data",
+      "tags": [
+        "upload"
+      ]
     },
     {
       "name": "download",
       "component": "DownloadIcon",
-      "file": "svg/download.svg"
+      "file": "svg/download.svg",
+      "category": "Data",
+      "tags": [
+        "download"
+      ]
     },
     {
       "name": "import",
       "component": "ImportIcon",
-      "file": "svg/import.svg"
+      "file": "svg/import.svg",
+      "category": "Data",
+      "tags": [
+        "import"
+      ]
     },
     {
       "name": "export",
       "component": "ExportIcon",
-      "file": "svg/export.svg"
+      "file": "svg/export.svg",
+      "category": "Data",
+      "tags": [
+        "export"
+      ]
     },
     {
       "name": "save",
       "component": "SaveIcon",
-      "file": "svg/save.svg"
+      "file": "svg/save.svg",
+      "category": "Data",
+      "tags": [
+        "save"
+      ],
+      "aliases": [
+        "save-document",
+        "persist"
+      ]
     },
     {
       "name": "copy",
       "component": "CopyIcon",
-      "file": "svg/copy.svg"
+      "file": "svg/copy.svg",
+      "category": "Data",
+      "tags": [
+        "copy"
+      ],
+      "aliases": [
+        "duplicate",
+        "clone"
+      ]
     },
     {
       "name": "edit",
       "component": "EditIcon",
-      "file": "svg/edit.svg"
+      "file": "svg/edit.svg",
+      "category": "Data",
+      "tags": [
+        "edit"
+      ],
+      "aliases": [
+        "pencil",
+        "write",
+        "rename"
+      ]
     },
     {
       "name": "printer",
       "component": "PrinterIcon",
-      "file": "svg/printer.svg"
+      "file": "svg/printer.svg",
+      "category": "Devices",
+      "tags": [
+        "printer"
+      ]
     },
     {
       "name": "monitor",
       "component": "MonitorIcon",
-      "file": "svg/monitor.svg"
+      "file": "svg/monitor.svg",
+      "category": "Devices",
+      "tags": [
+        "monitor"
+      ]
     },
     {
       "name": "laptop",
       "component": "LaptopIcon",
-      "file": "svg/laptop.svg"
+      "file": "svg/laptop.svg",
+      "category": "Devices",
+      "tags": [
+        "laptop"
+      ]
     },
     {
       "name": "tablet",
       "component": "TabletIcon",
-      "file": "svg/tablet.svg"
+      "file": "svg/tablet.svg",
+      "category": "Devices",
+      "tags": [
+        "tablet"
+      ]
     },
     {
       "name": "smartphone",
       "component": "SmartphoneIcon",
-      "file": "svg/smartphone.svg"
+      "file": "svg/smartphone.svg",
+      "category": "Devices",
+      "tags": [
+        "smartphone"
+      ]
     },
     {
       "name": "scan",
       "component": "ScanIcon",
-      "file": "svg/scan.svg"
+      "file": "svg/scan.svg",
+      "category": "Devices",
+      "tags": [
+        "scan"
+      ]
     },
     {
       "name": "scanner",
       "component": "ScannerIcon",
-      "file": "svg/scanner.svg"
+      "file": "svg/scanner.svg",
+      "category": "Devices",
+      "tags": [
+        "scanner"
+      ]
     },
     {
       "name": "camera",
       "component": "CameraIcon",
-      "file": "svg/camera.svg"
+      "file": "svg/camera.svg",
+      "category": "Devices",
+      "tags": [
+        "camera"
+      ]
     },
     {
       "name": "image",
       "component": "ImageIcon",
-      "file": "svg/image.svg"
+      "file": "svg/image.svg",
+      "category": "Devices",
+      "tags": [
+        "image"
+      ]
     },
     {
       "name": "images",
       "component": "ImagesIcon",
-      "file": "svg/images.svg"
+      "file": "svg/images.svg",
+      "category": "Devices",
+      "tags": [
+        "images"
+      ]
     },
     {
       "name": "crop",
       "component": "CropIcon",
-      "file": "svg/crop.svg"
+      "file": "svg/crop.svg",
+      "category": "Devices",
+      "tags": [
+        "crop"
+      ]
     },
     {
       "name": "zoom-in",
       "component": "ZoomInIcon",
-      "file": "svg/zoom-in.svg"
+      "file": "svg/zoom-in.svg",
+      "category": "Devices",
+      "tags": [
+        "zoom",
+        "in"
+      ]
     },
     {
       "name": "zoom-out",
       "component": "ZoomOutIcon",
-      "file": "svg/zoom-out.svg"
+      "file": "svg/zoom-out.svg",
+      "category": "Devices",
+      "tags": [
+        "zoom",
+        "out"
+      ]
     },
     {
       "name": "wifi",
       "component": "WifiIcon",
-      "file": "svg/wifi.svg"
+      "file": "svg/wifi.svg",
+      "category": "Devices",
+      "tags": [
+        "wifi"
+      ],
+      "aliases": [
+        "wireless",
+        "wlan"
+      ]
     },
     {
       "name": "wifi-off",
       "component": "WifiOffIcon",
-      "file": "svg/wifi-off.svg"
+      "file": "svg/wifi-off.svg",
+      "category": "Devices",
+      "tags": [
+        "wifi",
+        "off"
+      ],
+      "aliases": [
+        "wireless-off",
+        "wifi-disabled"
+      ]
     },
     {
       "name": "bluetooth",
       "component": "BluetoothIcon",
-      "file": "svg/bluetooth.svg"
+      "file": "svg/bluetooth.svg",
+      "category": "Devices",
+      "tags": [
+        "bluetooth"
+      ],
+      "aliases": [
+        "short-range-wireless"
+      ]
     },
     {
       "name": "usb",
       "component": "UsbIcon",
-      "file": "svg/usb.svg"
+      "file": "svg/usb.svg",
+      "category": "Devices",
+      "tags": [
+        "usb"
+      ],
+      "aliases": [
+        "usb-port",
+        "universal-serial-bus"
+      ]
     },
     {
       "name": "plug",
       "component": "PlugIcon",
-      "file": "svg/plug.svg"
+      "file": "svg/plug.svg",
+      "category": "Devices",
+      "tags": [
+        "plug"
+      ],
+      "aliases": [
+        "power-plug",
+        "electrical-connection"
+      ]
     },
     {
       "name": "power",
       "component": "PowerIcon",
-      "file": "svg/power.svg"
+      "file": "svg/power.svg",
+      "category": "Devices",
+      "tags": [
+        "power"
+      ],
+      "aliases": [
+        "power-switch",
+        "on-off"
+      ]
     },
     {
       "name": "battery",
       "component": "BatteryIcon",
-      "file": "svg/battery.svg"
+      "file": "svg/battery.svg",
+      "category": "Devices",
+      "tags": [
+        "battery"
+      ],
+      "aliases": [
+        "battery-level",
+        "power-level"
+      ]
     },
     {
       "name": "sun",
       "component": "SunIcon",
-      "file": "svg/sun.svg"
+      "file": "svg/sun.svg",
+      "category": "Interface essentials",
+      "tags": [
+        "sun"
+      ],
+      "aliases": [
+        "light-mode",
+        "day",
+        "sunny",
+        "clear-weather",
+        "daytime"
+      ]
     },
     {
       "name": "moon",
       "component": "MoonIcon",
-      "file": "svg/moon.svg"
+      "file": "svg/moon.svg",
+      "category": "Interface essentials",
+      "tags": [
+        "moon"
+      ],
+      "aliases": [
+        "dark-mode",
+        "night",
+        "nighttime"
+      ]
     },
     {
       "name": "loading",
       "component": "LoadingIcon",
-      "file": "svg/loading.svg"
+      "file": "svg/loading.svg",
+      "category": "Interface essentials",
+      "tags": [
+        "loading"
+      ],
+      "aliases": [
+        "loader",
+        "spinner"
+      ]
     },
     {
       "name": "more-horizontal",
       "component": "MoreHorizontalIcon",
-      "file": "svg/more-horizontal.svg"
+      "file": "svg/more-horizontal.svg",
+      "category": "Interface essentials",
+      "tags": [
+        "more",
+        "horizontal"
+      ]
     },
     {
       "name": "more-vertical",
       "component": "MoreVerticalIcon",
-      "file": "svg/more-vertical.svg"
+      "file": "svg/more-vertical.svg",
+      "category": "Interface essentials",
+      "tags": [
+        "more",
+        "vertical"
+      ]
     },
     {
       "name": "trash",
       "component": "TrashIcon",
-      "file": "svg/trash.svg"
+      "file": "svg/trash.svg",
+      "category": "Interface essentials",
+      "tags": [
+        "trash"
+      ],
+      "aliases": [
+        "delete",
+        "remove",
+        "bin"
+      ]
     },
     {
       "name": "trash-restore",
       "component": "TrashRestoreIcon",
-      "file": "svg/trash-restore.svg"
+      "file": "svg/trash-restore.svg",
+      "category": "Interface essentials",
+      "tags": [
+        "trash",
+        "restore"
+      ]
     },
     {
       "name": "edit-square",
       "component": "EditSquareIcon",
-      "file": "svg/edit-square.svg"
+      "file": "svg/edit-square.svg",
+      "category": "Interface essentials",
+      "tags": [
+        "edit",
+        "square"
+      ],
+      "aliases": [
+        "compose",
+        "square-pen"
+      ]
     },
     {
       "name": "check-square",
       "component": "CheckSquareIcon",
-      "file": "svg/check-square.svg"
+      "file": "svg/check-square.svg",
+      "category": "Interface essentials",
+      "tags": [
+        "check",
+        "square"
+      ]
     },
     {
       "name": "x-square",
       "component": "XSquareIcon",
-      "file": "svg/x-square.svg"
+      "file": "svg/x-square.svg",
+      "category": "Interface essentials",
+      "tags": [
+        "x",
+        "square"
+      ]
     },
     {
       "name": "heart",
       "component": "HeartIcon",
-      "file": "svg/heart.svg"
+      "file": "svg/heart.svg",
+      "category": "Interface essentials",
+      "tags": [
+        "heart"
+      ],
+      "aliases": [
+        "favorite",
+        "love",
+        "heart-health"
+      ]
     },
     {
       "name": "star",
       "component": "StarIcon",
-      "file": "svg/star.svg"
+      "file": "svg/star.svg",
+      "category": "Interface essentials",
+      "tags": [
+        "star"
+      ]
     },
     {
       "name": "flag",
       "component": "FlagIcon",
-      "file": "svg/flag.svg"
+      "file": "svg/flag.svg",
+      "category": "Interface essentials",
+      "tags": [
+        "flag"
+      ],
+      "aliases": [
+        "feature-flag",
+        "milestone"
+      ]
     },
     {
       "name": "pin",
       "component": "PinIcon",
-      "file": "svg/pin.svg"
+      "file": "svg/pin.svg",
+      "category": "Interface essentials",
+      "tags": [
+        "pin"
+      ],
+      "aliases": [
+        "pin-message",
+        "pin-comment"
+      ]
     },
     {
       "name": "bookmark",
       "component": "BookmarkIcon",
-      "file": "svg/bookmark.svg"
+      "file": "svg/bookmark.svg",
+      "category": "Interface essentials",
+      "tags": [
+        "bookmark"
+      ],
+      "aliases": [
+        "saved-reference"
+      ]
     },
     {
       "name": "history",
       "component": "HistoryIcon",
-      "file": "svg/history.svg"
+      "file": "svg/history.svg",
+      "category": "Interface essentials",
+      "tags": [
+        "history"
+      ],
+      "aliases": [
+        "change-history",
+        "audit-history"
+      ]
     },
     {
       "name": "repeat",
       "component": "RepeatIcon",
-      "file": "svg/repeat.svg"
+      "file": "svg/repeat.svg",
+      "category": "Interface essentials",
+      "tags": [
+        "repeat"
+      ],
+      "aliases": [
+        "loop",
+        "repeat-playback",
+        "iteration",
+        "rerun"
+      ]
     },
     {
       "name": "shuffle",
       "component": "ShuffleIcon",
-      "file": "svg/shuffle.svg"
+      "file": "svg/shuffle.svg",
+      "category": "Interface essentials",
+      "tags": [
+        "shuffle"
+      ],
+      "aliases": [
+        "random-playback",
+        "randomize-tracks"
+      ]
     },
     {
       "name": "pause",
       "component": "PauseIcon",
-      "file": "svg/pause.svg"
+      "file": "svg/pause.svg",
+      "category": "Interface essentials",
+      "tags": [
+        "pause"
+      ],
+      "aliases": [
+        "pause-playback"
+      ]
     },
     {
       "name": "play",
       "component": "PlayIcon",
-      "file": "svg/play.svg"
+      "file": "svg/play.svg",
+      "category": "Interface essentials",
+      "tags": [
+        "play"
+      ],
+      "aliases": [
+        "start-playback",
+        "resume-playback"
+      ]
     },
     {
       "name": "cash-drawer",
       "component": "CashDrawerIcon",
-      "file": "svg/cash-drawer.svg"
+      "file": "svg/cash-drawer.svg",
+      "category": "Workflow",
+      "tags": [
+        "cash",
+        "drawer"
+      ]
     },
     {
       "name": "cash-in",
       "component": "CashInIcon",
-      "file": "svg/cash-in.svg"
+      "file": "svg/cash-in.svg",
+      "category": "Workflow",
+      "tags": [
+        "cash",
+        "in"
+      ]
     },
     {
       "name": "cash-out",
       "component": "CashOutIcon",
-      "file": "svg/cash-out.svg"
+      "file": "svg/cash-out.svg",
+      "category": "Workflow",
+      "tags": [
+        "cash",
+        "out"
+      ]
     },
     {
       "name": "cloud-sync",
       "component": "CloudSyncIcon",
-      "file": "svg/cloud-sync.svg"
+      "file": "svg/cloud-sync.svg",
+      "category": "Workflow",
+      "tags": [
+        "cloud",
+        "sync"
+      ],
+      "aliases": [
+        "synchronize-cloud"
+      ]
     },
     {
       "name": "sunrise",
       "component": "SunriseIcon",
-      "file": "svg/sunrise.svg"
+      "file": "svg/sunrise.svg",
+      "category": "Workflow",
+      "tags": [
+        "sunrise"
+      ],
+      "aliases": [
+        "dawn",
+        "daybreak"
+      ]
     },
     {
       "name": "drag-handle",
       "component": "DragHandleIcon",
-      "file": "svg/drag-handle.svg"
+      "file": "svg/drag-handle.svg",
+      "category": "Workflow",
+      "tags": [
+        "drag",
+        "handle"
+      ]
     },
     {
       "name": "package-add",
       "component": "PackageAddIcon",
-      "file": "svg/package-add.svg"
+      "file": "svg/package-add.svg",
+      "category": "Workflow",
+      "tags": [
+        "package",
+        "add"
+      ],
+      "aliases": [
+        "install-package",
+        "add-dependency"
+      ]
     },
     {
       "name": "archive-restore",
       "component": "ArchiveRestoreIcon",
-      "file": "svg/archive-restore.svg"
+      "file": "svg/archive-restore.svg",
+      "category": "Workflow",
+      "tags": [
+        "archive",
+        "restore"
+      ],
+      "aliases": [
+        "unstash",
+        "restore-stash"
+      ]
     },
     {
       "name": "palette",
       "component": "PaletteIcon",
-      "file": "svg/palette.svg"
+      "file": "svg/palette.svg",
+      "category": "Workflow",
+      "tags": [
+        "palette"
+      ]
     },
     {
       "name": "code",
       "component": "CodeIcon",
-      "file": "svg/code.svg"
+      "file": "svg/code.svg",
+      "category": "Developer tools",
+      "tags": [
+        "code"
+      ],
+      "aliases": [
+        "source-code",
+        "code-xml",
+        "code-block",
+        "markup",
+        "html"
+      ]
     },
     {
       "name": "terminal",
       "component": "TerminalIcon",
-      "file": "svg/terminal.svg"
+      "file": "svg/terminal.svg",
+      "category": "Developer tools",
+      "tags": [
+        "terminal"
+      ],
+      "aliases": [
+        "console",
+        "shell",
+        "command-line",
+        "repl"
+      ]
     },
     {
       "name": "command",
       "component": "CommandIcon",
-      "file": "svg/command.svg"
+      "file": "svg/command.svg",
+      "category": "Developer tools",
+      "tags": [
+        "command"
+      ],
+      "aliases": [
+        "command-key",
+        "cmd-key"
+      ]
     },
     {
       "name": "braces",
       "component": "BracesIcon",
-      "file": "svg/braces.svg"
+      "file": "svg/braces.svg",
+      "category": "Developer tools",
+      "tags": [
+        "braces"
+      ],
+      "aliases": [
+        "curly-braces",
+        "json",
+        "json-object"
+      ]
     },
     {
       "name": "git-branch",
       "component": "GitBranchIcon",
-      "file": "svg/git-branch.svg"
+      "file": "svg/git-branch.svg",
+      "category": "Developer tools",
+      "tags": [
+        "git",
+        "branch"
+      ],
+      "aliases": [
+        "branch",
+        "git-fork",
+        "branching",
+        "conditional",
+        "if-else"
+      ]
     },
     {
       "name": "bot",
       "component": "BotIcon",
-      "file": "svg/bot.svg"
+      "file": "svg/bot.svg",
+      "category": "Developer tools",
+      "tags": [
+        "bot"
+      ],
+      "aliases": [
+        "automation",
+        "assistant-bot"
+      ]
     },
     {
       "name": "share",
       "component": "ShareIcon",
-      "file": "svg/share.svg"
+      "file": "svg/share.svg",
+      "category": "Media & sharing",
+      "tags": [
+        "share"
+      ],
+      "aliases": [
+        "sharing",
+        "share-document"
+      ]
     },
     {
       "name": "volume",
       "component": "VolumeIcon",
-      "file": "svg/volume.svg"
+      "file": "svg/volume.svg",
+      "category": "Media & sharing",
+      "tags": [
+        "volume"
+      ],
+      "aliases": [
+        "audio",
+        "sound",
+        "volume-high",
+        "loudspeaker-volume"
+      ]
     },
     {
       "name": "volume-off",
       "component": "VolumeOffIcon",
-      "file": "svg/volume-off.svg"
+      "file": "svg/volume-off.svg",
+      "category": "Media & sharing",
+      "tags": [
+        "volume",
+        "off"
+      ],
+      "aliases": [
+        "mute",
+        "silent",
+        "sound-off"
+      ]
     },
     {
       "name": "microphone",
       "component": "MicrophoneIcon",
-      "file": "svg/microphone.svg"
+      "file": "svg/microphone.svg",
+      "category": "Media & sharing",
+      "tags": [
+        "microphone"
+      ],
+      "aliases": [
+        "mic",
+        "voice-input"
+      ]
     },
     {
       "name": "microphone-off",
       "component": "MicrophoneOffIcon",
-      "file": "svg/microphone-off.svg"
+      "file": "svg/microphone-off.svg",
+      "category": "Media & sharing",
+      "tags": [
+        "microphone",
+        "off"
+      ],
+      "aliases": [
+        "mic-mute",
+        "muted-microphone"
+      ]
     },
     {
       "name": "video",
       "component": "VideoIcon",
-      "file": "svg/video.svg"
+      "file": "svg/video.svg",
+      "category": "Media & sharing",
+      "tags": [
+        "video"
+      ],
+      "aliases": [
+        "camcorder",
+        "video-call",
+        "webcam"
+      ]
     },
     {
       "name": "video-off",
       "component": "VideoOffIcon",
-      "file": "svg/video-off.svg"
+      "file": "svg/video-off.svg",
+      "category": "Media & sharing",
+      "tags": [
+        "video",
+        "off"
+      ],
+      "aliases": [
+        "video-disabled",
+        "webcam-off"
+      ]
     },
     {
       "name": "sparkles",
       "component": "SparklesIcon",
-      "file": "svg/sparkles.svg"
+      "file": "svg/sparkles.svg",
+      "category": "Discovery & learning",
+      "tags": [
+        "sparkles"
+      ]
     },
     {
       "name": "wand",
       "component": "WandIcon",
-      "file": "svg/wand.svg"
+      "file": "svg/wand.svg",
+      "category": "Discovery & learning",
+      "tags": [
+        "wand"
+      ]
     },
     {
       "name": "lightbulb",
       "component": "LightbulbIcon",
-      "file": "svg/lightbulb.svg"
+      "file": "svg/lightbulb.svg",
+      "category": "Discovery & learning",
+      "tags": [
+        "lightbulb"
+      ]
     },
     {
       "name": "rocket",
       "component": "RocketIcon",
-      "file": "svg/rocket.svg"
+      "file": "svg/rocket.svg",
+      "category": "Discovery & learning",
+      "tags": [
+        "rocket"
+      ],
+      "aliases": [
+        "deploy",
+        "deployment",
+        "launch-release"
+      ]
     },
     {
       "name": "accessibility",
       "component": "AccessibilityIcon",
-      "file": "svg/accessibility.svg"
+      "file": "svg/accessibility.svg",
+      "category": "Discovery & learning",
+      "tags": [
+        "accessibility"
+      ]
     },
     {
       "name": "languages",
       "component": "LanguagesIcon",
-      "file": "svg/languages.svg"
+      "file": "svg/languages.svg",
+      "category": "Discovery & learning",
+      "tags": [
+        "languages"
+      ],
+      "aliases": [
+        "translate",
+        "translation",
+        "multilingual"
+      ]
     },
     {
       "name": "trophy",
       "component": "TrophyIcon",
-      "file": "svg/trophy.svg"
+      "file": "svg/trophy.svg",
+      "category": "Discovery & learning",
+      "tags": [
+        "trophy"
+      ],
+      "aliases": [
+        "award",
+        "prize",
+        "achievement"
+      ]
     },
     {
       "name": "graduation-cap",
       "component": "GraduationCapIcon",
-      "file": "svg/graduation-cap.svg"
+      "file": "svg/graduation-cap.svg",
+      "category": "Discovery & learning",
+      "tags": [
+        "graduation",
+        "cap"
+      ],
+      "aliases": [
+        "education",
+        "academic",
+        "degree"
+      ]
     },
     {
       "name": "wrench",
       "component": "WrenchIcon",
-      "file": "svg/wrench.svg"
+      "file": "svg/wrench.svg",
+      "category": "Discovery & learning",
+      "tags": [
+        "wrench"
+      ]
     },
     {
       "name": "puzzle",
       "component": "PuzzleIcon",
-      "file": "svg/puzzle.svg"
+      "file": "svg/puzzle.svg",
+      "category": "Discovery & learning",
+      "tags": [
+        "puzzle"
+      ],
+      "aliases": [
+        "jigsaw",
+        "problem-solving",
+        "plugin",
+        "extension",
+        "module"
+      ]
     },
     {
       "name": "target",
       "component": "TargetIcon",
-      "file": "svg/target.svg"
+      "file": "svg/target.svg",
+      "category": "Discovery & learning",
+      "tags": [
+        "target"
+      ]
+    },
+    {
+      "name": "keyboard",
+      "component": "KeyboardIcon",
+      "file": "svg/keyboard.svg",
+      "category": "Accessibility preferences",
+      "tags": [
+        "keys",
+        "typing",
+        "shortcuts",
+        "navigation",
+        "input"
+      ]
+    },
+    {
+      "name": "keyboard-off",
+      "component": "KeyboardOffIcon",
+      "file": "svg/keyboard-off.svg",
+      "category": "Accessibility preferences",
+      "tags": [
+        "keys",
+        "shortcuts",
+        "disabled",
+        "hide keyboard"
+      ]
+    },
+    {
+      "name": "captions",
+      "component": "CaptionsIcon",
+      "file": "svg/captions.svg",
+      "category": "Accessibility preferences",
+      "tags": [
+        "closed captions",
+        "subtitles",
+        "hearing",
+        "video",
+        "cc"
+      ]
+    },
+    {
+      "name": "captions-off",
+      "component": "CaptionsOffIcon",
+      "file": "svg/captions-off.svg",
+      "category": "Accessibility preferences",
+      "tags": [
+        "subtitles",
+        "closed captions",
+        "disabled",
+        "cc"
+      ]
+    },
+    {
+      "name": "ear",
+      "component": "EarIcon",
+      "file": "svg/ear.svg",
+      "category": "Accessibility preferences",
+      "tags": [
+        "hearing",
+        "listen",
+        "auditory",
+        "assistance"
+      ]
+    },
+    {
+      "name": "ear-off",
+      "component": "EarOffIcon",
+      "file": "svg/ear-off.svg",
+      "category": "Accessibility preferences",
+      "tags": [
+        "hearing",
+        "deaf",
+        "listening disabled",
+        "auditory"
+      ]
+    },
+    {
+      "name": "contrast",
+      "component": "ContrastIcon",
+      "file": "svg/contrast.svg",
+      "category": "Accessibility preferences",
+      "tags": [
+        "high contrast",
+        "visibility",
+        "appearance",
+        "light dark"
+      ]
+    },
+    {
+      "name": "type",
+      "component": "TypeIcon",
+      "file": "svg/type.svg",
+      "category": "Accessibility preferences",
+      "tags": [
+        "font",
+        "text",
+        "typography",
+        "readability"
+      ]
+    },
+    {
+      "name": "text-cursor",
+      "component": "TextCursorIcon",
+      "file": "svg/text-cursor.svg",
+      "category": "Accessibility preferences",
+      "tags": [
+        "caret",
+        "insertion point",
+        "ibeam",
+        "text navigation"
+      ]
+    },
+    {
+      "name": "reading-guide",
+      "component": "ReadingGuideIcon",
+      "file": "svg/reading-guide.svg",
+      "category": "Accessibility preferences",
+      "tags": [
+        "line focus",
+        "readability",
+        "reading ruler",
+        "tracking"
+      ]
+    },
+    {
+      "name": "speech",
+      "component": "SpeechIcon",
+      "file": "svg/speech.svg",
+      "category": "Accessibility preferences",
+      "tags": [
+        "read aloud",
+        "text to speech",
+        "spoken feedback",
+        "voice"
+      ]
+    },
+    {
+      "name": "focus",
+      "component": "FocusIcon",
+      "file": "svg/focus.svg",
+      "category": "Accessibility preferences",
+      "tags": [
+        "focus indicator",
+        "keyboard navigation",
+        "target",
+        "attention"
+      ]
+    },
+    {
+      "name": "mouse-pointer",
+      "component": "MousePointerIcon",
+      "file": "svg/mouse-pointer.svg",
+      "category": "Accessibility preferences",
+      "tags": [
+        "cursor",
+        "arrow cursor",
+        "pointer settings",
+        "navigation"
+      ]
+    },
+    {
+      "name": "keyboard-key",
+      "component": "KeyboardKeyIcon",
+      "file": "svg/keyboard-key.svg",
+      "category": "Accessibility preferences",
+      "tags": [
+        "keycap",
+        "shortcut",
+        "remap",
+        "enter",
+        "return"
+      ]
+    },
+    {
+      "name": "text-cursor-input",
+      "component": "TextCursorInputIcon",
+      "file": "svg/text-cursor-input.svg",
+      "category": "Forms",
+      "tags": [
+        "text field",
+        "textbox",
+        "caret",
+        "single line",
+        "edit"
+      ]
+    },
+    {
+      "name": "textarea",
+      "component": "TextareaIcon",
+      "file": "svg/textarea.svg",
+      "category": "Forms",
+      "tags": [
+        "multiline",
+        "text area",
+        "response",
+        "paragraph",
+        "resize"
+      ]
+    },
+    {
+      "name": "select",
+      "component": "SelectIcon",
+      "file": "svg/select.svg",
+      "category": "Forms",
+      "tags": [
+        "dropdown",
+        "option",
+        "choose",
+        "single select"
+      ]
+    },
+    {
+      "name": "combobox",
+      "component": "ComboboxIcon",
+      "file": "svg/combobox.svg",
+      "category": "Forms",
+      "tags": [
+        "autocomplete",
+        "search select",
+        "dropdown",
+        "searchable options"
+      ]
+    },
+    {
+      "name": "toggle-left",
+      "component": "ToggleLeftIcon",
+      "file": "svg/toggle-left.svg",
+      "category": "Forms",
+      "tags": [
+        "switch",
+        "off",
+        "disabled state",
+        "false"
+      ]
+    },
+    {
+      "name": "toggle-right",
+      "component": "ToggleRightIcon",
+      "file": "svg/toggle-right.svg",
+      "category": "Forms",
+      "tags": [
+        "switch",
+        "on",
+        "enabled state",
+        "true"
+      ]
+    },
+    {
+      "name": "input-otp",
+      "component": "InputOtpIcon",
+      "file": "svg/input-otp.svg",
+      "category": "Forms",
+      "tags": [
+        "verification",
+        "one time password",
+        "code",
+        "two factor",
+        "pin"
+      ]
+    },
+    {
+      "name": "input-password",
+      "component": "InputPasswordIcon",
+      "file": "svg/input-password.svg",
+      "category": "Forms",
+      "tags": [
+        "secret",
+        "masked",
+        "password field",
+        "credentials"
+      ]
+    },
+    {
+      "name": "asterisk",
+      "component": "AsteriskIcon",
+      "file": "svg/asterisk.svg",
+      "category": "Forms",
+      "tags": [
+        "required",
+        "mandatory",
+        "star mark",
+        "wildcard"
+      ]
+    },
+    {
+      "name": "form",
+      "component": "FormIcon",
+      "file": "svg/form.svg",
+      "category": "Forms",
+      "tags": [
+        "questionnaire",
+        "survey",
+        "fields",
+        "application",
+        "submit"
+      ]
+    },
+    {
+      "name": "signature",
+      "component": "SignatureIcon",
+      "file": "svg/signature.svg",
+      "category": "Forms",
+      "tags": [
+        "sign",
+        "handwriting",
+        "autograph",
+        "approval",
+        "esign"
+      ]
+    },
+    {
+      "name": "input-number",
+      "component": "InputNumberIcon",
+      "file": "svg/input-number.svg",
+      "category": "Forms",
+      "tags": [
+        "quantity",
+        "stepper",
+        "numeric",
+        "increment",
+        "decrement"
+      ]
+    },
+    {
+      "name": "input-clear",
+      "component": "InputClearIcon",
+      "file": "svg/input-clear.svg",
+      "category": "Forms",
+      "tags": [
+        "clear field",
+        "reset text",
+        "erase",
+        "dismiss value"
+      ]
+    },
+    {
+      "name": "circle",
+      "component": "CircleIcon",
+      "file": "svg/circle.svg",
+      "category": "Selection states",
+      "tags": [
+        "radio unchecked",
+        "round",
+        "shape",
+        "unselected"
+      ]
+    },
+    {
+      "name": "square",
+      "component": "SquareIcon",
+      "file": "svg/square.svg",
+      "category": "Selection states",
+      "tags": [
+        "checkbox unchecked",
+        "shape",
+        "unselected",
+        "box"
+      ]
+    },
+    {
+      "name": "circle-dot",
+      "component": "CircleDotIcon",
+      "file": "svg/circle-dot.svg",
+      "category": "Selection states",
+      "tags": [
+        "radio selected",
+        "active step",
+        "checked",
+        "round"
+      ]
+    },
+    {
+      "name": "minus-square",
+      "component": "MinusSquareIcon",
+      "file": "svg/minus-square.svg",
+      "category": "Selection states",
+      "tags": [
+        "indeterminate",
+        "partial selection",
+        "checkbox mixed",
+        "collapse node"
+      ]
+    },
+    {
+      "name": "plus-square",
+      "component": "PlusSquareIcon",
+      "file": "svg/plus-square.svg",
+      "category": "Selection states",
+      "tags": [
+        "add item",
+        "expand node",
+        "tree",
+        "collection"
+      ]
+    },
+    {
+      "name": "square-dashed",
+      "component": "SquareDashedIcon",
+      "file": "svg/square-dashed.svg",
+      "category": "Selection states",
+      "tags": [
+        "marquee",
+        "selection area",
+        "bounding box",
+        "dotted rectangle"
+      ]
+    },
+    {
+      "name": "lasso",
+      "component": "LassoIcon",
+      "file": "svg/lasso.svg",
+      "category": "Selection states",
+      "tags": [
+        "freehand selection",
+        "irregular region",
+        "canvas",
+        "rope"
+      ]
+    },
+    {
+      "name": "lasso-polygon",
+      "component": "LassoPolygonIcon",
+      "file": "svg/lasso-polygon.svg",
+      "category": "Selection states",
+      "tags": [
+        "polygonal selection",
+        "straight edges",
+        "canvas",
+        "region"
+      ]
+    },
+    {
+      "name": "mouse-pointer-click",
+      "component": "MousePointerClickIcon",
+      "file": "svg/mouse-pointer-click.svg",
+      "category": "Selection states",
+      "tags": [
+        "click",
+        "cursor",
+        "select item",
+        "inspect",
+        "tap"
+      ]
+    },
+    {
+      "name": "hand",
+      "component": "HandIcon",
+      "file": "svg/hand.svg",
+      "category": "Selection states",
+      "tags": [
+        "pan",
+        "drag view",
+        "grab",
+        "palm",
+        "canvas"
+      ]
+    },
+    {
+      "name": "table-row-add",
+      "component": "TableRowAddIcon",
+      "file": "svg/table-row-add.svg",
+      "category": "Tables",
+      "tags": [
+        "insert row",
+        "spreadsheet",
+        "data grid",
+        "append record"
+      ]
+    },
+    {
+      "name": "table-row-remove",
+      "component": "TableRowRemoveIcon",
+      "file": "svg/table-row-remove.svg",
+      "category": "Tables",
+      "tags": [
+        "delete row",
+        "spreadsheet",
+        "data grid",
+        "remove record"
+      ]
+    },
+    {
+      "name": "table-column-add",
+      "component": "TableColumnAddIcon",
+      "file": "svg/table-column-add.svg",
+      "category": "Tables",
+      "tags": [
+        "insert column",
+        "spreadsheet",
+        "data grid",
+        "add field"
+      ]
+    },
+    {
+      "name": "table-column-remove",
+      "component": "TableColumnRemoveIcon",
+      "file": "svg/table-column-remove.svg",
+      "category": "Tables",
+      "tags": [
+        "delete column",
+        "spreadsheet",
+        "data grid",
+        "remove field"
+      ]
+    },
+    {
+      "name": "table-row-select",
+      "component": "TableRowSelectIcon",
+      "file": "svg/table-row-select.svg",
+      "category": "Tables",
+      "tags": [
+        "select row",
+        "horizontal band",
+        "spreadsheet",
+        "record"
+      ]
+    },
+    {
+      "name": "table-column-select",
+      "component": "TableColumnSelectIcon",
+      "file": "svg/table-column-select.svg",
+      "category": "Tables",
+      "tags": [
+        "select column",
+        "vertical band",
+        "spreadsheet",
+        "field"
+      ]
+    },
+    {
+      "name": "table-cells-merge",
+      "component": "TableCellsMergeIcon",
+      "file": "svg/table-cells-merge.svg",
+      "category": "Tables",
+      "tags": [
+        "combine cells",
+        "join",
+        "spreadsheet",
+        "merge columns"
+      ]
+    },
+    {
+      "name": "table-cells-split",
+      "component": "TableCellsSplitIcon",
+      "file": "svg/table-cells-split.svg",
+      "category": "Tables",
+      "tags": [
+        "divide cell",
+        "separate",
+        "spreadsheet",
+        "split column"
+      ]
+    },
+    {
+      "name": "table-row-freeze",
+      "component": "TableRowFreezeIcon",
+      "file": "svg/table-row-freeze.svg",
+      "category": "Tables",
+      "tags": [
+        "freeze header",
+        "sticky row",
+        "pin row",
+        "spreadsheet"
+      ]
+    },
+    {
+      "name": "table-column-freeze",
+      "component": "TableColumnFreezeIcon",
+      "file": "svg/table-column-freeze.svg",
+      "category": "Tables",
+      "tags": [
+        "freeze column",
+        "sticky column",
+        "pin field",
+        "spreadsheet"
+      ]
+    },
+    {
+      "name": "chevrons-up-down",
+      "component": "ChevronsUpDownIcon",
+      "file": "svg/chevrons-up-down.svg",
+      "category": "Lists and sorting",
+      "tags": [
+        "sortable",
+        "expand vertically",
+        "selector",
+        "double chevron"
+      ]
+    },
+    {
+      "name": "sort-ascending",
+      "component": "SortAscendingIcon",
+      "file": "svg/sort-ascending.svg",
+      "category": "Lists and sorting",
+      "tags": [
+        "increasing",
+        "small to large",
+        "order",
+        "low to high"
+      ]
+    },
+    {
+      "name": "sort-descending",
+      "component": "SortDescendingIcon",
+      "file": "svg/sort-descending.svg",
+      "category": "Lists and sorting",
+      "tags": [
+        "decreasing",
+        "large to small",
+        "order",
+        "high to low"
+      ]
+    },
+    {
+      "name": "sort-alphabetical",
+      "component": "SortAlphabeticalIcon",
+      "file": "svg/sort-alphabetical.svg",
+      "category": "Lists and sorting",
+      "tags": [
+        "a to z",
+        "alphabet",
+        "text order",
+        "lexicographic"
+      ]
+    },
+    {
+      "name": "sort-numeric",
+      "component": "SortNumericIcon",
+      "file": "svg/sort-numeric.svg",
+      "category": "Lists and sorting",
+      "tags": [
+        "number order",
+        "magnitude",
+        "one to nine",
+        "ranking"
+      ]
+    },
+    {
+      "name": "list",
+      "component": "ListIcon",
+      "file": "svg/list.svg",
+      "category": "Lists and sorting",
+      "tags": [
+        "bullets",
+        "unordered list",
+        "items",
+        "list view"
+      ]
+    },
+    {
+      "name": "list-ordered",
+      "component": "ListOrderedIcon",
+      "file": "svg/list-ordered.svg",
+      "category": "Lists and sorting",
+      "tags": [
+        "numbered list",
+        "steps",
+        "sequence",
+        "ranking"
+      ]
+    },
+    {
+      "name": "list-checks",
+      "component": "ListChecksIcon",
+      "file": "svg/list-checks.svg",
+      "category": "Lists and sorting",
+      "tags": [
+        "tasks",
+        "checklist",
+        "todo",
+        "completed"
+      ]
+    },
+    {
+      "name": "list-tree",
+      "component": "ListTreeIcon",
+      "file": "svg/list-tree.svg",
+      "category": "Lists and sorting",
+      "tags": [
+        "hierarchy",
+        "nested navigation",
+        "outline",
+        "branches"
+      ]
+    },
+    {
+      "name": "chevrons-left",
+      "component": "ChevronsLeftIcon",
+      "file": "svg/chevrons-left.svg",
+      "category": "Pagination",
+      "tags": [
+        "previous group",
+        "double left",
+        "backward",
+        "page group"
+      ]
+    },
+    {
+      "name": "chevrons-right",
+      "component": "ChevronsRightIcon",
+      "file": "svg/chevrons-right.svg",
+      "category": "Pagination",
+      "tags": [
+        "next group",
+        "double right",
+        "forward",
+        "page group"
+      ]
+    },
+    {
+      "name": "arrow-left-to-line",
+      "component": "ArrowLeftToLineIcon",
+      "file": "svg/arrow-left-to-line.svg",
+      "category": "Pagination",
+      "tags": [
+        "first page",
+        "beginning",
+        "start",
+        "jump left"
+      ]
+    },
+    {
+      "name": "arrow-right-to-line",
+      "component": "ArrowRightToLineIcon",
+      "file": "svg/arrow-right-to-line.svg",
+      "category": "Pagination",
+      "tags": [
+        "last page",
+        "end",
+        "finish",
+        "jump right"
+      ]
+    },
+    {
+      "name": "panel-right",
+      "component": "PanelRightIcon",
+      "file": "svg/panel-right.svg",
+      "category": "Panels",
+      "tags": [
+        "right sidebar",
+        "inspector",
+        "workspace",
+        "right pane"
+      ]
+    },
+    {
+      "name": "panel-top",
+      "component": "PanelTopIcon",
+      "file": "svg/panel-top.svg",
+      "category": "Panels",
+      "tags": [
+        "top pane",
+        "header panel",
+        "workspace",
+        "toolbar"
+      ]
+    },
+    {
+      "name": "panel-bottom",
+      "component": "PanelBottomIcon",
+      "file": "svg/panel-bottom.svg",
+      "category": "Panels",
+      "tags": [
+        "bottom pane",
+        "footer panel",
+        "workspace",
+        "console"
+      ]
+    },
+    {
+      "name": "panel-left-open",
+      "component": "PanelLeftOpenIcon",
+      "file": "svg/panel-left-open.svg",
+      "category": "Panels",
+      "tags": [
+        "show sidebar",
+        "left drawer",
+        "expand panel",
+        "reveal"
+      ]
+    },
+    {
+      "name": "panel-left-close",
+      "component": "PanelLeftCloseIcon",
+      "file": "svg/panel-left-close.svg",
+      "category": "Panels",
+      "tags": [
+        "hide sidebar",
+        "left drawer",
+        "collapse panel",
+        "dismiss"
+      ]
+    },
+    {
+      "name": "panel-right-open",
+      "component": "PanelRightOpenIcon",
+      "file": "svg/panel-right-open.svg",
+      "category": "Panels",
+      "tags": [
+        "show inspector",
+        "right drawer",
+        "expand panel",
+        "reveal"
+      ]
+    },
+    {
+      "name": "panel-right-close",
+      "component": "PanelRightCloseIcon",
+      "file": "svg/panel-right-close.svg",
+      "category": "Panels",
+      "tags": [
+        "hide inspector",
+        "right drawer",
+        "collapse panel",
+        "dismiss"
+      ]
+    },
+    {
+      "name": "panel-top-open",
+      "component": "PanelTopOpenIcon",
+      "file": "svg/panel-top-open.svg",
+      "category": "Panels",
+      "tags": [
+        "show top drawer",
+        "expand panel",
+        "reveal",
+        "downward"
+      ]
+    },
+    {
+      "name": "panel-top-close",
+      "component": "PanelTopCloseIcon",
+      "file": "svg/panel-top-close.svg",
+      "category": "Panels",
+      "tags": [
+        "hide top drawer",
+        "collapse panel",
+        "dismiss",
+        "upward"
+      ]
+    },
+    {
+      "name": "panel-bottom-open",
+      "component": "PanelBottomOpenIcon",
+      "file": "svg/panel-bottom-open.svg",
+      "category": "Panels",
+      "tags": [
+        "show console",
+        "bottom drawer",
+        "expand panel",
+        "upward"
+      ]
+    },
+    {
+      "name": "panel-bottom-close",
+      "component": "PanelBottomCloseIcon",
+      "file": "svg/panel-bottom-close.svg",
+      "category": "Panels",
+      "tags": [
+        "hide console",
+        "bottom drawer",
+        "collapse panel",
+        "downward"
+      ]
+    },
+    {
+      "name": "panel-resize",
+      "component": "PanelResizeIcon",
+      "file": "svg/panel-resize.svg",
+      "category": "Panels",
+      "tags": [
+        "split pane",
+        "resize divider",
+        "adjust width",
+        "workspace"
+      ]
+    },
+    {
+      "name": "arrow-up-left",
+      "component": "ArrowUpLeftIcon",
+      "file": "svg/arrow-up-left.svg",
+      "category": "Directional arrows",
+      "tags": [
+        "northwest",
+        "diagonal",
+        "direction",
+        "upper left"
+      ]
+    },
+    {
+      "name": "arrow-up-right",
+      "component": "ArrowUpRightIcon",
+      "file": "svg/arrow-up-right.svg",
+      "category": "Directional arrows",
+      "tags": [
+        "northeast",
+        "diagonal",
+        "direction",
+        "upper right"
+      ]
+    },
+    {
+      "name": "arrow-down-left",
+      "component": "ArrowDownLeftIcon",
+      "file": "svg/arrow-down-left.svg",
+      "category": "Directional arrows",
+      "tags": [
+        "southwest",
+        "diagonal",
+        "direction",
+        "lower left"
+      ]
+    },
+    {
+      "name": "arrow-down-right",
+      "component": "ArrowDownRightIcon",
+      "file": "svg/arrow-down-right.svg",
+      "category": "Directional arrows",
+      "tags": [
+        "southeast",
+        "diagonal",
+        "direction",
+        "lower right"
+      ]
+    },
+    {
+      "name": "arrow-left-right",
+      "component": "ArrowLeftRightIcon",
+      "file": "svg/arrow-left-right.svg",
+      "category": "Directional arrows",
+      "tags": [
+        "exchange",
+        "swap",
+        "opposing arrows",
+        "transfer"
+      ]
+    },
+    {
+      "name": "arrow-up-to-line",
+      "component": "ArrowUpToLineIcon",
+      "file": "svg/arrow-up-to-line.svg",
+      "category": "Directional arrows",
+      "tags": [
+        "jump top",
+        "align top",
+        "upper edge",
+        "beginning"
+      ]
+    },
+    {
+      "name": "arrow-down-to-line",
+      "component": "ArrowDownToLineIcon",
+      "file": "svg/arrow-down-to-line.svg",
+      "category": "Directional arrows",
+      "tags": [
+        "jump bottom",
+        "align bottom",
+        "lower edge",
+        "end"
+      ]
+    },
+    {
+      "name": "corner-down-left",
+      "component": "CornerDownLeftIcon",
+      "file": "svg/corner-down-left.svg",
+      "category": "Directional arrows",
+      "tags": [
+        "turn left",
+        "down then left",
+        "elbow arrow",
+        "route"
+      ]
+    },
+    {
+      "name": "corner-down-right",
+      "component": "CornerDownRightIcon",
+      "file": "svg/corner-down-right.svg",
+      "category": "Directional arrows",
+      "tags": [
+        "turn right",
+        "down then right",
+        "elbow arrow",
+        "route"
+      ]
+    },
+    {
+      "name": "corner-up-left",
+      "component": "CornerUpLeftIcon",
+      "file": "svg/corner-up-left.svg",
+      "category": "Directional arrows",
+      "tags": [
+        "turn left",
+        "up then left",
+        "elbow arrow",
+        "route"
+      ]
+    },
+    {
+      "name": "corner-up-right",
+      "component": "CornerUpRightIcon",
+      "file": "svg/corner-up-right.svg",
+      "category": "Directional arrows",
+      "tags": [
+        "turn right",
+        "up then right",
+        "elbow arrow",
+        "route"
+      ]
+    },
+    {
+      "name": "corner-left-up",
+      "component": "CornerLeftUpIcon",
+      "file": "svg/corner-left-up.svg",
+      "category": "Directional arrows",
+      "tags": [
+        "turn up",
+        "left then up",
+        "elbow arrow",
+        "route"
+      ]
+    },
+    {
+      "name": "corner-left-down",
+      "component": "CornerLeftDownIcon",
+      "file": "svg/corner-left-down.svg",
+      "category": "Directional arrows",
+      "tags": [
+        "turn down",
+        "left then down",
+        "elbow arrow",
+        "route"
+      ]
+    },
+    {
+      "name": "corner-right-up",
+      "component": "CornerRightUpIcon",
+      "file": "svg/corner-right-up.svg",
+      "category": "Directional arrows",
+      "tags": [
+        "turn up",
+        "right then up",
+        "elbow arrow",
+        "route"
+      ]
+    },
+    {
+      "name": "corner-right-down",
+      "component": "CornerRightDownIcon",
+      "file": "svg/corner-right-down.svg",
+      "category": "Directional arrows",
+      "tags": [
+        "turn down",
+        "right then down",
+        "elbow arrow",
+        "route"
+      ]
+    },
+    {
+      "name": "move-horizontal",
+      "component": "MoveHorizontalIcon",
+      "file": "svg/move-horizontal.svg",
+      "category": "Directional arrows",
+      "tags": [
+        "horizontal resize",
+        "drag axis",
+        "left right",
+        "width"
+      ]
+    },
+    {
+      "name": "move-vertical",
+      "component": "MoveVerticalIcon",
+      "file": "svg/move-vertical.svg",
+      "category": "Directional arrows",
+      "tags": [
+        "vertical resize",
+        "drag axis",
+        "up down",
+        "height"
+      ]
+    },
+    {
+      "name": "layers",
+      "component": "LayersIcon",
+      "file": "svg/layers.svg",
+      "category": "Layouts",
+      "tags": [
+        "stack",
+        "planes",
+        "overlap",
+        "layer management"
+      ]
+    },
+    {
+      "name": "columns-2",
+      "component": "Columns2Icon",
+      "file": "svg/columns-2.svg",
+      "category": "Layouts",
+      "tags": [
+        "two columns",
+        "equal split",
+        "vertical layout",
+        "side by side"
+      ]
+    },
+    {
+      "name": "columns-3",
+      "component": "Columns3Icon",
+      "file": "svg/columns-3.svg",
+      "category": "Layouts",
+      "tags": [
+        "three columns",
+        "equal split",
+        "vertical layout",
+        "triptych"
+      ]
+    },
+    {
+      "name": "rows-2",
+      "component": "Rows2Icon",
+      "file": "svg/rows-2.svg",
+      "category": "Layouts",
+      "tags": [
+        "two rows",
+        "horizontal layout",
+        "equal split",
+        "stacked content"
+      ]
+    },
+    {
+      "name": "rows-3",
+      "component": "Rows3Icon",
+      "file": "svg/rows-3.svg",
+      "category": "Layouts",
+      "tags": [
+        "three rows",
+        "horizontal layout",
+        "equal split",
+        "stacked content"
+      ]
+    },
+    {
+      "name": "panels-left-right",
+      "component": "PanelsLeftRightIcon",
+      "file": "svg/panels-left-right.svg",
+      "category": "Layouts",
+      "tags": [
+        "both sidebars",
+        "three panes",
+        "workspace",
+        "edge panels"
+      ]
+    },
+    {
+      "name": "layout-header-footer",
+      "component": "LayoutHeaderFooterIcon",
+      "file": "svg/layout-header-footer.svg",
+      "category": "Layouts",
+      "tags": [
+        "header",
+        "footer",
+        "page bands",
+        "content layout"
+      ]
+    },
+    {
+      "name": "layout-centered",
+      "component": "LayoutCenteredIcon",
+      "file": "svg/layout-centered.svg",
+      "category": "Layouts",
+      "tags": [
+        "reading width",
+        "center column",
+        "gutters",
+        "constrained content"
+      ]
+    },
+    {
+      "name": "layout-overlay",
+      "component": "LayoutOverlayIcon",
+      "file": "svg/layout-overlay.svg",
+      "category": "Layouts",
+      "tags": [
+        "modal",
+        "dialog",
+        "floating window",
+        "popup"
+      ]
+    },
+    {
+      "name": "layout-tabs",
+      "component": "LayoutTabsIcon",
+      "file": "svg/layout-tabs.svg",
+      "category": "Layouts",
+      "tags": [
+        "tabbed workspace",
+        "navigation tabs",
+        "active tab",
+        "sections"
+      ]
+    },
+    {
+      "name": "layout-responsive",
+      "component": "LayoutResponsiveIcon",
+      "file": "svg/layout-responsive.svg",
+      "category": "Layouts",
+      "tags": [
+        "breakpoints",
+        "mobile desktop",
+        "adaptive",
+        "screen sizes"
+      ]
+    },
+    {
+      "name": "bold",
+      "component": "BoldIcon",
+      "file": "svg/bold.svg",
+      "category": "Text formatting",
+      "tags": [
+        "text",
+        "strong",
+        "emphasis",
+        "weight",
+        "editor"
+      ]
+    },
+    {
+      "name": "italic",
+      "component": "ItalicIcon",
+      "file": "svg/italic.svg",
+      "category": "Text formatting",
+      "tags": [
+        "text",
+        "emphasis",
+        "slanted",
+        "oblique",
+        "editor"
+      ]
+    },
+    {
+      "name": "underline",
+      "component": "UnderlineIcon",
+      "file": "svg/underline.svg",
+      "category": "Text formatting",
+      "tags": [
+        "text",
+        "decoration",
+        "emphasis",
+        "baseline",
+        "editor"
+      ]
+    },
+    {
+      "name": "strikethrough",
+      "component": "StrikethroughIcon",
+      "file": "svg/strikethrough.svg",
+      "category": "Text formatting",
+      "tags": [
+        "text",
+        "strike",
+        "cross-out",
+        "deleted",
+        "decoration"
+      ]
+    },
+    {
+      "name": "heading",
+      "component": "HeadingIcon",
+      "file": "svg/heading.svg",
+      "category": "Text formatting",
+      "tags": [
+        "text",
+        "title",
+        "headline",
+        "h1",
+        "block-style"
+      ]
+    },
+    {
+      "name": "subscript",
+      "component": "SubscriptIcon",
+      "file": "svg/subscript.svg",
+      "category": "Text formatting",
+      "tags": [
+        "text",
+        "lowered",
+        "chemistry",
+        "formula",
+        "index"
+      ]
+    },
+    {
+      "name": "superscript",
+      "component": "SuperscriptIcon",
+      "file": "svg/superscript.svg",
+      "category": "Text formatting",
+      "tags": [
+        "text",
+        "raised",
+        "exponent",
+        "power",
+        "formula"
+      ]
+    },
+    {
+      "name": "small-caps",
+      "component": "SmallCapsIcon",
+      "file": "svg/small-caps.svg",
+      "category": "Text formatting",
+      "tags": [
+        "text",
+        "typography",
+        "capitals",
+        "font-variant",
+        "letter-case"
+      ]
+    },
+    {
+      "name": "text-direction-ltr",
+      "component": "TextDirectionLtrIcon",
+      "file": "svg/text-direction-ltr.svg",
+      "category": "Text formatting",
+      "tags": [
+        "text",
+        "left-to-right",
+        "ltr",
+        "bidi",
+        "paragraph-direction"
+      ]
+    },
+    {
+      "name": "case-upper",
+      "component": "CaseUpperIcon",
+      "file": "svg/case-upper.svg",
+      "category": "Text formatting",
+      "tags": [
+        "text",
+        "uppercase",
+        "capital-letters",
+        "all-caps",
+        "transform"
+      ]
+    },
+    {
+      "name": "case-lower",
+      "component": "CaseLowerIcon",
+      "file": "svg/case-lower.svg",
+      "category": "Text formatting",
+      "tags": [
+        "text",
+        "lowercase",
+        "small-letters",
+        "letter-case",
+        "transform"
+      ]
+    },
+    {
+      "name": "case-title",
+      "component": "CaseTitleIcon",
+      "file": "svg/case-title.svg",
+      "category": "Text formatting",
+      "tags": [
+        "text",
+        "title-case",
+        "capitalize",
+        "word-initials",
+        "transform"
+      ]
+    },
+    {
+      "name": "align-left",
+      "component": "AlignLeftIcon",
+      "file": "svg/align-left.svg",
+      "category": "Text alignment",
+      "tags": [
+        "text",
+        "paragraph",
+        "flush-left",
+        "alignment",
+        "ragged-right"
+      ]
+    },
+    {
+      "name": "align-center",
+      "component": "AlignCenterIcon",
+      "file": "svg/align-center.svg",
+      "category": "Text alignment",
+      "tags": [
+        "text",
+        "paragraph",
+        "centered",
+        "alignment",
+        "justify-center"
+      ]
+    },
+    {
+      "name": "align-right",
+      "component": "AlignRightIcon",
+      "file": "svg/align-right.svg",
+      "category": "Text alignment",
+      "tags": [
+        "text",
+        "paragraph",
+        "flush-right",
+        "alignment",
+        "ragged-left"
+      ]
+    },
+    {
+      "name": "align-justify",
+      "component": "AlignJustifyIcon",
+      "file": "svg/align-justify.svg",
+      "category": "Text alignment",
+      "tags": [
+        "text",
+        "paragraph",
+        "justified",
+        "alignment",
+        "full-width"
+      ]
+    },
+    {
+      "name": "indent-increase",
+      "component": "IndentIncreaseIcon",
+      "file": "svg/indent-increase.svg",
+      "category": "Text alignment",
+      "tags": [
+        "text",
+        "paragraph",
+        "indent",
+        "tab",
+        "nest"
+      ]
+    },
+    {
+      "name": "indent-decrease",
+      "component": "IndentDecreaseIcon",
+      "file": "svg/indent-decrease.svg",
+      "category": "Text alignment",
+      "tags": [
+        "text",
+        "paragraph",
+        "outdent",
+        "unindent",
+        "unnest"
+      ]
+    },
+    {
+      "name": "line-height",
+      "component": "LineHeightIcon",
+      "file": "svg/line-height.svg",
+      "category": "Text formatting",
+      "tags": [
+        "text",
+        "leading",
+        "line-spacing",
+        "baseline",
+        "typography"
+      ]
+    },
+    {
+      "name": "letter-spacing",
+      "component": "LetterSpacingIcon",
+      "file": "svg/letter-spacing.svg",
+      "category": "Text formatting",
+      "tags": [
+        "text",
+        "tracking",
+        "kerning",
+        "character-spacing",
+        "typography"
+      ]
+    },
+    {
+      "name": "text-color",
+      "component": "TextColorIcon",
+      "file": "svg/text-color.svg",
+      "category": "Text formatting",
+      "tags": [
+        "text",
+        "foreground",
+        "font-color",
+        "swatch",
+        "typography"
+      ]
+    },
+    {
+      "name": "highlighter",
+      "component": "HighlighterIcon",
+      "file": "svg/highlighter.svg",
+      "category": "Text formatting",
+      "tags": [
+        "text",
+        "marker",
+        "highlight",
+        "background-color",
+        "annotation"
+      ]
+    },
+    {
+      "name": "remove-formatting",
+      "component": "RemoveFormattingIcon",
+      "file": "svg/remove-formatting.svg",
+      "category": "Text formatting",
+      "tags": [
+        "text",
+        "clear-formatting",
+        "plain-text",
+        "reset-style",
+        "erase-style"
+      ]
+    },
+    {
+      "name": "paragraph",
+      "component": "ParagraphIcon",
+      "file": "svg/paragraph.svg",
+      "category": "Text formatting",
+      "tags": [
+        "text",
+        "pilcrow",
+        "paragraph-mark",
+        "invisibles",
+        "formatting-marks"
+      ]
+    },
+    {
+      "name": "quote",
+      "component": "QuoteIcon",
+      "file": "svg/quote.svg",
+      "category": "Text formatting",
+      "tags": [
+        "text",
+        "quotation",
+        "blockquote",
+        "citation",
+        "excerpt"
+      ]
+    },
+    {
+      "name": "text-wrap",
+      "component": "TextWrapIcon",
+      "file": "svg/text-wrap.svg",
+      "category": "Text formatting",
+      "tags": [
+        "text",
+        "word-wrap",
+        "soft-wrap",
+        "line-wrap",
+        "editor-width"
+      ]
+    },
+    {
+      "name": "word-break",
+      "component": "WordBreakIcon",
+      "file": "svg/word-break.svg",
+      "category": "Text formatting",
+      "tags": [
+        "text",
+        "break-word",
+        "overflow-wrap",
+        "split-word",
+        "line-breaking"
+      ]
+    },
+    {
+      "name": "text-hyphenation",
+      "component": "TextHyphenationIcon",
+      "file": "svg/text-hyphenation.svg",
+      "category": "Text formatting",
+      "tags": [
+        "text",
+        "hyphen",
+        "hyphenate",
+        "syllable",
+        "line-ending"
+      ]
+    },
+    {
+      "name": "paragraph-spacing",
+      "component": "ParagraphSpacingIcon",
+      "file": "svg/paragraph-spacing.svg",
+      "category": "Text formatting",
+      "tags": [
+        "text",
+        "paragraph-gap",
+        "space-before",
+        "space-after",
+        "leading"
+      ]
+    },
+    {
+      "name": "text-align-top",
+      "component": "TextAlignTopIcon",
+      "file": "svg/text-align-top.svg",
+      "category": "Text alignment",
+      "tags": [
+        "text",
+        "vertical-alignment",
+        "top",
+        "frame",
+        "block-position"
+      ]
+    },
+    {
+      "name": "text-align-middle",
+      "component": "TextAlignMiddleIcon",
+      "file": "svg/text-align-middle.svg",
+      "category": "Text alignment",
+      "tags": [
+        "text",
+        "vertical-alignment",
+        "middle",
+        "center-vertically",
+        "frame"
+      ]
+    },
+    {
+      "name": "text-align-bottom",
+      "component": "TextAlignBottomIcon",
+      "file": "svg/text-align-bottom.svg",
+      "category": "Text alignment",
+      "tags": [
+        "text",
+        "vertical-alignment",
+        "bottom",
+        "frame",
+        "block-position"
+      ]
+    },
+    {
+      "name": "scissors",
+      "component": "ScissorsIcon",
+      "file": "svg/scissors.svg",
+      "category": "Document editing",
+      "tags": [
+        "cut",
+        "trim",
+        "selection",
+        "clipboard",
+        "split"
+      ]
+    },
+    {
+      "name": "eraser",
+      "component": "EraserIcon",
+      "file": "svg/eraser.svg",
+      "category": "Document editing",
+      "tags": [
+        "erase",
+        "rubber",
+        "remove-stroke",
+        "drawing",
+        "annotation"
+      ]
+    },
+    {
+      "name": "spell-check",
+      "component": "SpellCheckIcon",
+      "file": "svg/spell-check.svg",
+      "category": "Document editing",
+      "tags": [
+        "spelling",
+        "proofread",
+        "grammar",
+        "dictionary",
+        "correct"
+      ]
+    },
+    {
+      "name": "find-replace",
+      "component": "FindReplaceIcon",
+      "file": "svg/find-replace.svg",
+      "category": "Document editing",
+      "tags": [
+        "search",
+        "replace",
+        "substitute",
+        "matching-text",
+        "editor"
+      ]
+    },
+    {
+      "name": "file-diff",
+      "component": "FileDiffIcon",
+      "file": "svg/file-diff.svg",
+      "category": "Document editing",
+      "tags": [
+        "document",
+        "difference",
+        "addition",
+        "deletion",
+        "patch"
+      ]
+    },
+    {
+      "name": "file-code",
+      "component": "FileCodeIcon",
+      "file": "svg/file-code.svg",
+      "category": "Document editing",
+      "tags": [
+        "document",
+        "source-file",
+        "program",
+        "markup",
+        "script"
+      ]
+    },
+    {
+      "name": "word-count",
+      "component": "WordCountIcon",
+      "file": "svg/word-count.svg",
+      "category": "Document editing",
+      "tags": [
+        "text",
+        "statistics",
+        "word-total",
+        "character-count",
+        "length"
+      ]
+    },
+    {
+      "name": "page-break",
+      "component": "PageBreakIcon",
+      "file": "svg/page-break.svg",
+      "category": "Document editing",
+      "tags": [
+        "document",
+        "pagination",
+        "new-page",
+        "print",
+        "separator"
+      ]
+    },
+    {
+      "name": "page-number",
+      "component": "PageNumberIcon",
+      "file": "svg/page-number.svg",
+      "category": "Document editing",
+      "tags": [
+        "document",
+        "pagination",
+        "folio",
+        "numbering",
+        "print"
+      ]
+    },
+    {
+      "name": "page-margin",
+      "component": "PageMarginIcon",
+      "file": "svg/page-margin.svg",
+      "category": "Document editing",
+      "tags": [
+        "document",
+        "inset",
+        "print-area",
+        "gutter",
+        "page-setup"
+      ]
+    },
+    {
+      "name": "page-size",
+      "component": "PageSizeIcon",
+      "file": "svg/page-size.svg",
+      "category": "Document editing",
+      "tags": [
+        "document",
+        "paper-size",
+        "dimensions",
+        "a4",
+        "page-setup"
+      ]
+    },
+    {
+      "name": "footnote",
+      "component": "FootnoteIcon",
+      "file": "svg/footnote.svg",
+      "category": "Document editing",
+      "tags": [
+        "document",
+        "reference",
+        "citation",
+        "endnote",
+        "annotation"
+      ]
+    },
+    {
+      "name": "track-changes",
+      "component": "TrackChangesIcon",
+      "file": "svg/track-changes.svg",
+      "category": "Document editing",
+      "tags": [
+        "document",
+        "revision",
+        "review",
+        "suggestion",
+        "edit-history"
+      ]
+    },
+    {
+      "name": "sticky-note",
+      "component": "StickyNoteIcon",
+      "file": "svg/sticky-note.svg",
+      "category": "Document editing",
+      "tags": [
+        "annotation",
+        "memo",
+        "reminder",
+        "post-it",
+        "comment"
+      ]
+    },
+    {
+      "name": "stamp",
+      "component": "StampIcon",
+      "file": "svg/stamp.svg",
+      "category": "Document editing",
+      "tags": [
+        "document",
+        "rubber-stamp",
+        "approve",
+        "seal",
+        "imprint"
+      ]
+    },
+    {
+      "name": "scan-text",
+      "component": "ScanTextIcon",
+      "file": "svg/scan-text.svg",
+      "category": "Document editing",
+      "tags": [
+        "ocr",
+        "recognize-text",
+        "extract-text",
+        "scan",
+        "digitize"
+      ]
+    },
+    {
+      "name": "unlink",
+      "component": "UnlinkIcon",
+      "file": "svg/unlink.svg",
+      "category": "Document editing",
+      "tags": [
+        "link",
+        "remove-link",
+        "disconnect",
+        "broken-link",
+        "hyperlink"
+      ]
+    },
+    {
+      "name": "redact",
+      "component": "RedactIcon",
+      "file": "svg/redact.svg",
+      "category": "Document editing",
+      "tags": [
+        "document",
+        "censor",
+        "hide-text",
+        "sensitive",
+        "blackout"
+      ]
+    },
+    {
+      "name": "text-direction-rtl",
+      "component": "TextDirectionRtlIcon",
+      "file": "svg/text-direction-rtl.svg",
+      "category": "Text formatting",
+      "tags": [
+        "text",
+        "right-to-left",
+        "rtl",
+        "bidi",
+        "paragraph-direction"
+      ]
+    },
+    {
+      "name": "document-template",
+      "component": "DocumentTemplateIcon",
+      "file": "svg/document-template.svg",
+      "category": "Document editing",
+      "tags": [
+        "document",
+        "template",
+        "preset",
+        "placeholder",
+        "starter"
+      ]
+    },
+    {
+      "name": "page-header",
+      "component": "PageHeaderIcon",
+      "file": "svg/page-header.svg",
+      "category": "Document editing",
+      "tags": [
+        "document",
+        "header",
+        "running-head",
+        "top-margin",
+        "print"
+      ]
+    },
+    {
+      "name": "page-footer",
+      "component": "PageFooterIcon",
+      "file": "svg/page-footer.svg",
+      "category": "Document editing",
+      "tags": [
+        "document",
+        "footer",
+        "running-foot",
+        "bottom-margin",
+        "print"
+      ]
+    },
+    {
+      "name": "git-commit",
+      "component": "GitCommitIcon",
+      "file": "svg/git-commit.svg",
+      "category": "Source control",
+      "tags": [
+        "git",
+        "revision",
+        "snapshot",
+        "history",
+        "changeset"
+      ]
+    },
+    {
+      "name": "git-pull-request",
+      "component": "GitPullRequestIcon",
+      "file": "svg/git-pull-request.svg",
+      "category": "Source control",
+      "tags": [
+        "git",
+        "pull-request",
+        "pr",
+        "merge-request",
+        "code-review"
+      ]
+    },
+    {
+      "name": "git-merge",
+      "component": "GitMergeIcon",
+      "file": "svg/git-merge.svg",
+      "category": "Source control",
+      "tags": [
+        "git",
+        "merge",
+        "combine-branches",
+        "integration",
+        "revision"
+      ]
+    },
+    {
+      "name": "git-compare",
+      "component": "GitCompareIcon",
+      "file": "svg/git-compare.svg",
+      "category": "Source control",
+      "tags": [
+        "git",
+        "compare",
+        "branches",
+        "revision-diff",
+        "branch-tips"
+      ]
+    },
+    {
+      "name": "git-rebase",
+      "component": "GitRebaseIcon",
+      "file": "svg/git-rebase.svg",
+      "category": "Source control",
+      "tags": [
+        "git",
+        "rebase",
+        "rewrite-history",
+        "move-commits",
+        "base"
+      ]
+    },
+    {
+      "name": "git-cherry-pick",
+      "component": "GitCherryPickIcon",
+      "file": "svg/git-cherry-pick.svg",
+      "category": "Source control",
+      "tags": [
+        "git",
+        "cherry-pick",
+        "selected-commit",
+        "apply-commit",
+        "backport"
+      ]
+    },
+    {
+      "name": "git-conflict",
+      "component": "GitConflictIcon",
+      "file": "svg/git-conflict.svg",
+      "category": "Source control",
+      "tags": [
+        "git",
+        "merge-conflict",
+        "resolve",
+        "incompatible-changes",
+        "revision"
+      ]
+    },
+    {
+      "name": "git-graph",
+      "component": "GitGraphIcon",
+      "file": "svg/git-graph.svg",
+      "category": "Source control",
+      "tags": [
+        "git",
+        "history",
+        "commit-graph",
+        "branches",
+        "revision-topology"
+      ]
+    },
+    {
+      "name": "bug",
+      "component": "BugIcon",
+      "file": "svg/bug.svg",
+      "category": "Programming",
+      "tags": [
+        "defect",
+        "debug",
+        "issue",
+        "error",
+        "insect"
+      ]
+    },
+    {
+      "name": "variable",
+      "component": "VariableIcon",
+      "file": "svg/variable.svg",
+      "category": "Programming",
+      "tags": [
+        "binding",
+        "identifier",
+        "value",
+        "symbol",
+        "expression"
+      ]
+    },
+    {
+      "name": "function",
+      "component": "FunctionIcon",
+      "file": "svg/function.svg",
+      "category": "Programming",
+      "tags": [
+        "callable",
+        "method",
+        "procedure",
+        "routine",
+        "invoke"
+      ]
+    },
+    {
+      "name": "lambda",
+      "component": "LambdaIcon",
+      "file": "svg/lambda.svg",
+      "category": "Programming",
+      "tags": [
+        "anonymous-function",
+        "closure",
+        "functional",
+        "expression",
+        "greek"
+      ]
+    },
+    {
+      "name": "regex",
+      "component": "RegexIcon",
+      "file": "svg/regex.svg",
+      "category": "Programming",
+      "tags": [
+        "regular-expression",
+        "pattern",
+        "match",
+        "wildcard",
+        "search"
+      ]
+    },
+    {
+      "name": "binary",
+      "component": "BinaryIcon",
+      "file": "svg/binary.svg",
+      "category": "Programming",
+      "tags": [
+        "bits",
+        "base-two",
+        "zero-one",
+        "encoding",
+        "data"
+      ]
+    },
+    {
+      "name": "array",
+      "component": "ArrayIcon",
+      "file": "svg/array.svg",
+      "category": "Programming",
+      "tags": [
+        "collection",
+        "list",
+        "indexed",
+        "sequence",
+        "brackets"
+      ]
+    },
+    {
+      "name": "boolean",
+      "component": "BooleanIcon",
+      "file": "svg/boolean.svg",
+      "category": "Programming",
+      "tags": [
+        "true",
+        "false",
+        "logic",
+        "bool",
+        "data-type"
+      ]
+    },
+    {
+      "name": "string",
+      "component": "StringIcon",
+      "file": "svg/string.svg",
+      "category": "Programming",
+      "tags": [
+        "text-value",
+        "quoted",
+        "literal",
+        "characters",
+        "data-type"
+      ]
+    },
+    {
+      "name": "number",
+      "component": "NumberIcon",
+      "file": "svg/number.svg",
+      "category": "Programming",
+      "tags": [
+        "numeric",
+        "integer",
+        "decimal",
+        "digits",
+        "data-type"
+      ]
+    },
+    {
+      "name": "parentheses",
+      "component": "ParenthesesIcon",
+      "file": "svg/parentheses.svg",
+      "category": "Programming",
+      "tags": [
+        "round-brackets",
+        "group-expression",
+        "arguments",
+        "delimiter",
+        "syntax"
+      ]
+    },
+    {
+      "name": "ampersand",
+      "component": "AmpersandIcon",
+      "file": "svg/ampersand.svg",
+      "category": "Programming",
+      "tags": [
+        "and",
+        "conjunction",
+        "symbol",
+        "reference",
+        "syntax"
+      ]
+    },
+    {
+      "name": "breakpoint",
+      "component": "BreakpointIcon",
+      "file": "svg/breakpoint.svg",
+      "category": "Programming",
+      "tags": [
+        "debugger",
+        "pause-execution",
+        "stop",
+        "debug",
+        "code-line"
+      ]
+    },
+    {
+      "name": "recursion",
+      "component": "RecursionIcon",
+      "file": "svg/recursion.svg",
+      "category": "Programming",
+      "tags": [
+        "recursive",
+        "self-call",
+        "nested-call",
+        "repeat",
+        "function"
+      ]
+    },
+    {
+      "name": "webhook",
+      "component": "WebhookIcon",
+      "file": "svg/webhook.svg",
+      "category": "Infrastructure",
+      "tags": [
+        "callback",
+        "event",
+        "http",
+        "integration",
+        "notification"
+      ]
+    },
+    {
+      "name": "api",
+      "component": "ApiIcon",
+      "file": "svg/api.svg",
+      "category": "Infrastructure",
+      "tags": [
+        "application-interface",
+        "endpoint",
+        "connection",
+        "rest",
+        "integration"
+      ]
+    },
+    {
+      "name": "network",
+      "component": "NetworkIcon",
+      "file": "svg/network.svg",
+      "category": "Infrastructure",
+      "tags": [
+        "topology",
+        "services",
+        "mesh",
+        "nodes",
+        "connections"
+      ]
+    },
+    {
+      "name": "cluster",
+      "component": "ClusterIcon",
+      "file": "svg/cluster.svg",
+      "category": "Infrastructure",
+      "tags": [
+        "compute",
+        "servers",
+        "nodes",
+        "distributed",
+        "orchestration"
+      ]
+    },
+    {
+      "name": "container",
+      "component": "ContainerIcon",
+      "file": "svg/container.svg",
+      "category": "Infrastructure",
+      "tags": [
+        "runtime",
+        "image",
+        "docker",
+        "process",
+        "isolation"
+      ]
+    },
+    {
+      "name": "virtual-machine",
+      "component": "VirtualMachineIcon",
+      "file": "svg/virtual-machine.svg",
+      "category": "Infrastructure",
+      "tags": [
+        "vm",
+        "guest",
+        "host",
+        "hypervisor",
+        "virtualization"
+      ]
+    },
+    {
+      "name": "load-balancer",
+      "component": "LoadBalancerIcon",
+      "file": "svg/load-balancer.svg",
+      "category": "Infrastructure",
+      "tags": [
+        "ingress",
+        "traffic",
+        "distribute",
+        "routing",
+        "upstream"
+      ]
+    },
+    {
+      "name": "queue",
+      "component": "QueueIcon",
+      "file": "svg/queue.svg",
+      "category": "Infrastructure",
+      "tags": [
+        "jobs",
+        "messages",
+        "fifo",
+        "worker",
+        "backlog"
+      ]
+    },
+    {
+      "name": "cache",
+      "component": "CacheIcon",
+      "file": "svg/cache.svg",
+      "category": "Infrastructure",
+      "tags": [
+        "temporary-storage",
+        "memory",
+        "reuse",
+        "cached-data",
+        "fast-access"
+      ]
+    },
+    {
+      "name": "database-schema",
+      "component": "DatabaseSchemaIcon",
+      "file": "svg/database-schema.svg",
+      "category": "Infrastructure",
+      "tags": [
+        "entities",
+        "relationships",
+        "tables",
+        "data-model",
+        "erd"
+      ]
+    },
+    {
+      "name": "data-stream",
+      "component": "DataStreamIcon",
+      "file": "svg/data-stream.svg",
+      "category": "Infrastructure",
+      "tags": [
+        "streaming",
+        "events",
+        "feed",
+        "continuous-data",
+        "flow"
+      ]
+    },
+    {
+      "name": "dependency",
+      "component": "DependencyIcon",
+      "file": "svg/dependency.svg",
+      "category": "Infrastructure",
+      "tags": [
+        "requires",
+        "package",
+        "module",
+        "depends-on",
+        "relationship"
+      ]
+    },
+    {
+      "name": "sandbox",
+      "component": "SandboxIcon",
+      "file": "svg/sandbox.svg",
+      "category": "Infrastructure",
+      "tags": [
+        "isolated",
+        "test-environment",
+        "playground",
+        "experiment",
+        "safe-execution"
+      ]
+    },
+    {
+      "name": "pipeline",
+      "component": "PipelineIcon",
+      "file": "svg/pipeline.svg",
+      "category": "Infrastructure",
+      "tags": [
+        "ci",
+        "cd",
+        "build",
+        "stages",
+        "workflow"
+      ]
+    },
+    {
+      "name": "database-query",
+      "component": "DatabaseQueryIcon",
+      "file": "svg/database-query.svg",
+      "category": "Infrastructure",
+      "tags": [
+        "sql",
+        "search-data",
+        "select",
+        "lookup",
+        "datastore"
+      ]
+    },
+    {
+      "name": "database-replica",
+      "component": "DatabaseReplicaIcon",
+      "file": "svg/database-replica.svg",
+      "category": "Infrastructure",
+      "tags": [
+        "replication",
+        "copy-data",
+        "read-replica",
+        "synchronize",
+        "datastore"
+      ]
+    },
+    {
+      "name": "at-sign",
+      "component": "AtSignIcon",
+      "file": "svg/at-sign.svg",
+      "category": "Collaboration",
+      "tags": [
+        "mention",
+        "email-address",
+        "username",
+        "handle",
+        "contact"
+      ]
+    },
+    {
+      "name": "hash",
+      "component": "HashIcon",
+      "file": "svg/hash.svg",
+      "category": "Collaboration",
+      "tags": [
+        "hashtag",
+        "channel",
+        "issue-number",
+        "pound-sign",
+        "topic"
+      ]
+    },
+    {
+      "name": "thumbs-up",
+      "component": "ThumbsUpIcon",
+      "file": "svg/thumbs-up.svg",
+      "category": "Collaboration",
+      "tags": [
+        "approve",
+        "like",
+        "agree",
+        "acknowledge",
+        "positive-feedback"
+      ]
+    },
+    {
+      "name": "thumbs-down",
+      "component": "ThumbsDownIcon",
+      "file": "svg/thumbs-down.svg",
+      "category": "Collaboration",
+      "tags": [
+        "disapprove",
+        "dislike",
+        "disagree",
+        "negative-feedback",
+        "vote-down"
+      ]
+    },
+    {
+      "name": "message-dots",
+      "component": "MessageDotsIcon",
+      "file": "svg/message-dots.svg",
+      "category": "Collaboration",
+      "tags": [
+        "typing",
+        "chat",
+        "comment",
+        "reply-pending",
+        "ellipsis"
+      ]
+    },
+    {
+      "name": "organization-chart",
+      "component": "OrganizationChartIcon",
+      "file": "svg/organization-chart.svg",
+      "category": "Collaboration",
+      "tags": [
+        "hierarchy",
+        "reporting",
+        "org-chart",
+        "team-structure",
+        "roles"
+      ]
+    },
+    {
+      "name": "vote",
+      "component": "VoteIcon",
+      "file": "svg/vote.svg",
+      "category": "Collaboration",
+      "tags": [
+        "ballot",
+        "poll",
+        "election",
+        "decision",
+        "cast-vote"
+      ]
+    },
+    {
+      "name": "message-reply",
+      "component": "MessageReplyIcon",
+      "file": "svg/message-reply.svg",
+      "category": "Collaboration",
+      "tags": [
+        "reply",
+        "comment",
+        "thread",
+        "respond",
+        "discussion"
+      ]
+    },
+    {
+      "name": "stop-circle",
+      "component": "StopCircleIcon",
+      "file": "svg/stop-circle.svg",
+      "category": "Media playback",
+      "tags": [
+        "stop",
+        "stop-playback",
+        "end",
+        "recording"
+      ]
+    },
+    {
+      "name": "skip-back",
+      "component": "SkipBackIcon",
+      "file": "svg/skip-back.svg",
+      "category": "Media playback",
+      "tags": [
+        "previous",
+        "track",
+        "chapter",
+        "media"
+      ]
+    },
+    {
+      "name": "skip-forward",
+      "component": "SkipForwardIcon",
+      "file": "svg/skip-forward.svg",
+      "category": "Media playback",
+      "tags": [
+        "next",
+        "track",
+        "chapter",
+        "media"
+      ]
+    },
+    {
+      "name": "rewind",
+      "component": "RewindIcon",
+      "file": "svg/rewind.svg",
+      "category": "Media playback",
+      "tags": [
+        "seek",
+        "backward",
+        "reverse",
+        "playback"
+      ]
+    },
+    {
+      "name": "fast-forward",
+      "component": "FastForwardIcon",
+      "file": "svg/fast-forward.svg",
+      "category": "Media playback",
+      "tags": [
+        "seek",
+        "ahead",
+        "speed",
+        "playback"
+      ]
+    },
+    {
+      "name": "cassette",
+      "component": "CassetteIcon",
+      "file": "svg/cassette.svg",
+      "category": "Media playback",
+      "tags": [
+        "tape",
+        "analog",
+        "audio",
+        "recording"
+      ]
+    },
+    {
+      "name": "eject",
+      "component": "EjectIcon",
+      "file": "svg/eject.svg",
+      "category": "Media playback",
+      "tags": [
+        "remove",
+        "unmount",
+        "removable-media",
+        "tray"
+      ]
+    },
+    {
+      "name": "music",
+      "component": "MusicIcon",
+      "file": "svg/music.svg",
+      "category": "Media playback",
+      "tags": [
+        "song",
+        "notes",
+        "soundtrack",
+        "audio",
+        "melody"
+      ]
+    },
+    {
+      "name": "disc",
+      "component": "DiscIcon",
+      "file": "svg/disc.svg",
+      "category": "Media playback",
+      "tags": [
+        "cd",
+        "dvd",
+        "optical",
+        "album",
+        "record"
+      ]
+    },
+    {
+      "name": "film",
+      "component": "FilmIcon",
+      "file": "svg/film.svg",
+      "category": "Media playback",
+      "tags": [
+        "movie",
+        "cinema",
+        "reel",
+        "video"
+      ]
+    },
+    {
+      "name": "clapperboard",
+      "component": "ClapperboardIcon",
+      "file": "svg/clapperboard.svg",
+      "category": "Media playback",
+      "tags": [
+        "production",
+        "filmmaking",
+        "slate",
+        "clip",
+        "movie"
+      ]
+    },
+    {
+      "name": "radio",
+      "component": "RadioIcon",
+      "file": "svg/radio.svg",
+      "category": "Media playback",
+      "tags": [
+        "broadcast",
+        "station",
+        "tuner",
+        "fm",
+        "receiver"
+      ]
+    },
+    {
+      "name": "podcast",
+      "component": "PodcastIcon",
+      "file": "svg/podcast.svg",
+      "category": "Media playback",
+      "tags": [
+        "episode",
+        "spoken-audio",
+        "broadcast",
+        "show"
+      ]
+    },
+    {
+      "name": "waveform",
+      "component": "WaveformIcon",
+      "file": "svg/waveform.svg",
+      "category": "Media playback",
+      "tags": [
+        "sound",
+        "sample",
+        "audio",
+        "amplitude",
+        "recording"
+      ]
+    },
+    {
+      "name": "cast",
+      "component": "CastIcon",
+      "file": "svg/cast.svg",
+      "category": "Connectivity and devices",
+      "tags": [
+        "stream",
+        "screen",
+        "wireless-display",
+        "send-media"
+      ]
+    },
+    {
+      "name": "signal",
+      "component": "SignalIcon",
+      "file": "svg/signal.svg",
+      "category": "Connectivity and devices",
+      "tags": [
+        "cellular",
+        "reception",
+        "strength",
+        "mobile-network"
+      ]
+    },
+    {
+      "name": "router",
+      "component": "RouterIcon",
+      "file": "svg/router.svg",
+      "category": "Connectivity and devices",
+      "tags": [
+        "wifi",
+        "modem",
+        "wireless",
+        "network",
+        "internet"
+      ]
+    },
+    {
+      "name": "cable",
+      "component": "CableIcon",
+      "file": "svg/cable.svg",
+      "category": "Connectivity and devices",
+      "tags": [
+        "wire",
+        "connector",
+        "peripheral",
+        "wired"
+      ]
+    },
+    {
+      "name": "nfc",
+      "component": "NfcIcon",
+      "file": "svg/nfc.svg",
+      "category": "Connectivity and devices",
+      "tags": [
+        "contactless",
+        "tap",
+        "near-field",
+        "payment",
+        "pairing"
+      ]
+    },
+    {
+      "name": "tv",
+      "component": "TvIcon",
+      "file": "svg/tv.svg",
+      "category": "Connectivity and devices",
+      "tags": [
+        "television",
+        "screen",
+        "broadcast",
+        "display"
+      ]
+    },
+    {
+      "name": "speaker",
+      "component": "SpeakerIcon",
+      "file": "svg/speaker.svg",
+      "category": "Connectivity and devices",
+      "tags": [
+        "loudspeaker",
+        "audio-output",
+        "woofer",
+        "sound-system"
+      ]
+    },
+    {
+      "name": "mouse",
+      "component": "MouseIcon",
+      "file": "svg/mouse.svg",
+      "category": "Connectivity and devices",
+      "tags": [
+        "computer-mouse",
+        "input",
+        "peripheral",
+        "pointing-device"
+      ]
+    },
+    {
+      "name": "watch",
+      "component": "WatchIcon",
+      "file": "svg/watch.svg",
+      "category": "Connectivity and devices",
+      "tags": [
+        "smartwatch",
+        "wearable",
+        "wrist",
+        "pairing",
+        "timepiece"
+      ]
+    },
+    {
+      "name": "gamepad",
+      "component": "GamepadIcon",
+      "file": "svg/gamepad.svg",
+      "category": "Connectivity and devices",
+      "tags": [
+        "controller",
+        "gaming",
+        "console",
+        "joystick"
+      ]
+    },
+    {
+      "name": "remote-control",
+      "component": "RemoteControlIcon",
+      "file": "svg/remote-control.svg",
+      "category": "Connectivity and devices",
+      "tags": [
+        "handset",
+        "television-remote",
+        "infrared",
+        "controller"
+      ]
+    },
+    {
+      "name": "battery-charging",
+      "component": "BatteryChargingIcon",
+      "file": "svg/battery-charging.svg",
+      "category": "Connectivity and devices",
+      "tags": [
+        "power",
+        "recharge",
+        "energy",
+        "electricity"
+      ]
+    },
+    {
+      "name": "sim-card",
+      "component": "SimCardIcon",
+      "file": "svg/sim-card.svg",
+      "category": "Connectivity and devices",
+      "tags": [
+        "cellular",
+        "mobile-plan",
+        "subscriber",
+        "chip"
+      ]
+    },
+    {
+      "name": "security-camera",
+      "component": "SecurityCameraIcon",
+      "file": "svg/security-camera.svg",
+      "category": "Security",
+      "tags": [
+        "cctv",
+        "surveillance",
+        "monitoring",
+        "footage"
+      ]
+    },
+    {
+      "name": "siren",
+      "component": "SirenIcon",
+      "file": "svg/siren.svg",
+      "category": "Security",
+      "tags": [
+        "alarm",
+        "emergency",
+        "beacon",
+        "warning",
+        "alert"
+      ]
+    },
+    {
+      "name": "vault",
+      "component": "VaultIcon",
+      "file": "svg/vault.svg",
+      "category": "Security",
+      "tags": [
+        "safe",
+        "secure-storage",
+        "strongbox",
+        "valuables"
+      ]
+    },
+    {
+      "name": "scan-face",
+      "component": "ScanFaceIcon",
+      "file": "svg/scan-face.svg",
+      "category": "Security",
+      "tags": [
+        "face-id",
+        "recognition",
+        "biometric",
+        "authentication",
+        "identity"
+      ]
+    },
+    {
+      "name": "school",
+      "component": "SchoolIcon",
+      "file": "svg/school.svg",
+      "category": "Education",
+      "tags": [
+        "classroom",
+        "campus",
+        "learning",
+        "student",
+        "academy"
+      ]
+    },
+    {
+      "name": "backpack",
+      "component": "BackpackIcon",
+      "file": "svg/backpack.svg",
+      "category": "Education",
+      "tags": [
+        "schoolbag",
+        "rucksack",
+        "student",
+        "supplies"
+      ]
+    },
+    {
+      "name": "microscope",
+      "component": "MicroscopeIcon",
+      "file": "svg/microscope.svg",
+      "category": "Education",
+      "tags": [
+        "laboratory",
+        "microscopy",
+        "biology",
+        "science",
+        "specimen"
+      ]
+    },
+    {
+      "name": "telescope",
+      "component": "TelescopeIcon",
+      "file": "svg/telescope.svg",
+      "category": "Education",
+      "tags": [
+        "astronomy",
+        "observation",
+        "stargazing",
+        "scope",
+        "science"
+      ]
+    },
+    {
+      "name": "flask",
+      "component": "FlaskIcon",
+      "file": "svg/flask.svg",
+      "category": "Education",
+      "tags": [
+        "chemistry",
+        "laboratory",
+        "experiment",
+        "solution",
+        "science"
+      ]
+    },
+    {
+      "name": "atom",
+      "component": "AtomIcon",
+      "file": "svg/atom.svg",
+      "category": "Education",
+      "tags": [
+        "physics",
+        "nucleus",
+        "electron",
+        "science",
+        "atomic"
+      ]
+    },
+    {
+      "name": "ruler",
+      "component": "RulerIcon",
+      "file": "svg/ruler.svg",
+      "category": "Education",
+      "tags": [
+        "measure",
+        "length",
+        "geometry",
+        "distance",
+        "straightedge"
+      ]
+    },
+    {
+      "name": "drafting-compass",
+      "component": "DraftingCompassIcon",
+      "file": "svg/drafting-compass.svg",
+      "category": "Education",
+      "tags": [
+        "geometry",
+        "circle-drawing",
+        "construction",
+        "drafting"
+      ]
+    },
+    {
+      "name": "magnet",
+      "component": "MagnetIcon",
+      "file": "svg/magnet.svg",
+      "category": "Education",
+      "tags": [
+        "magnetic",
+        "attraction",
+        "physics",
+        "poles"
+      ]
+    },
+    {
+      "name": "car",
+      "component": "CarIcon",
+      "file": "svg/car.svg",
+      "category": "Transport",
+      "tags": [
+        "automobile",
+        "vehicle",
+        "driving",
+        "taxi",
+        "road"
+      ]
+    },
+    {
+      "name": "bus",
+      "component": "BusIcon",
+      "file": "svg/bus.svg",
+      "category": "Transport",
+      "tags": [
+        "transit",
+        "public-transport",
+        "coach",
+        "route",
+        "shuttle"
+      ]
+    },
+    {
+      "name": "train",
+      "component": "TrainIcon",
+      "file": "svg/train.svg",
+      "category": "Transport",
+      "tags": [
+        "railway",
+        "rail",
+        "station",
+        "metro",
+        "transit"
+      ]
+    },
+    {
+      "name": "bicycle",
+      "component": "BicycleIcon",
+      "file": "svg/bicycle.svg",
+      "category": "Transport",
+      "tags": [
+        "bike",
+        "cycling",
+        "pedal",
+        "cycle",
+        "active-travel"
+      ]
+    },
+    {
+      "name": "motorbike",
+      "component": "MotorbikeIcon",
+      "file": "svg/motorbike.svg",
+      "category": "Transport",
+      "tags": [
+        "motorcycle",
+        "motor",
+        "riding",
+        "two-wheeler"
+      ]
+    },
+    {
+      "name": "plane",
+      "component": "PlaneIcon",
+      "file": "svg/plane.svg",
+      "category": "Transport",
+      "tags": [
+        "airplane",
+        "aeroplane",
+        "flight",
+        "aviation",
+        "airport"
+      ]
+    },
+    {
+      "name": "ship",
+      "component": "ShipIcon",
+      "file": "svg/ship.svg",
+      "category": "Transport",
+      "tags": [
+        "boat",
+        "ferry",
+        "vessel",
+        "cruise",
+        "water-transport"
+      ]
+    },
+    {
+      "name": "helicopter",
+      "component": "HelicopterIcon",
+      "file": "svg/helicopter.svg",
+      "category": "Transport",
+      "tags": [
+        "rotor",
+        "aviation",
+        "air-rescue",
+        "chopper"
+      ]
+    },
+    {
+      "name": "fuel",
+      "component": "FuelIcon",
+      "file": "svg/fuel.svg",
+      "category": "Transport",
+      "tags": [
+        "petrol",
+        "gas",
+        "diesel",
+        "gas-station",
+        "pump"
+      ]
+    },
+    {
+      "name": "charging-station",
+      "component": "ChargingStationIcon",
+      "file": "svg/charging-station.svg",
+      "category": "Transport",
+      "tags": [
+        "ev",
+        "electric-vehicle",
+        "charger",
+        "recharge"
+      ]
+    },
+    {
+      "name": "parking",
+      "component": "ParkingIcon",
+      "file": "svg/parking.svg",
+      "category": "Transport",
+      "tags": [
+        "car-park",
+        "garage",
+        "vehicle-space",
+        "parking-lot"
+      ]
+    },
+    {
+      "name": "traffic-light",
+      "component": "TrafficLightIcon",
+      "file": "svg/traffic-light.svg",
+      "category": "Transport",
+      "tags": [
+        "signal",
+        "junction",
+        "road",
+        "stoplight",
+        "intersection"
+      ]
+    },
+    {
+      "name": "anchor",
+      "component": "AnchorIcon",
+      "file": "svg/anchor.svg",
+      "category": "Transport",
+      "tags": [
+        "mooring",
+        "nautical",
+        "harbor",
+        "port",
+        "anchorage"
+      ]
+    },
+    {
+      "name": "cloud-rain",
+      "component": "CloudRainIcon",
+      "file": "svg/cloud-rain.svg",
+      "category": "Weather and nature",
+      "tags": [
+        "rainy",
+        "precipitation",
+        "shower",
+        "forecast"
+      ]
+    },
+    {
+      "name": "cloud-snow",
+      "component": "CloudSnowIcon",
+      "file": "svg/cloud-snow.svg",
+      "category": "Weather and nature",
+      "tags": [
+        "snowfall",
+        "snowy",
+        "winter-weather",
+        "forecast"
+      ]
+    },
+    {
+      "name": "cloud-lightning",
+      "component": "CloudLightningIcon",
+      "file": "svg/cloud-lightning.svg",
+      "category": "Weather and nature",
+      "tags": [
+        "thunderstorm",
+        "storm",
+        "thunder",
+        "forecast"
+      ]
+    },
+    {
+      "name": "cloud-sun",
+      "component": "CloudSunIcon",
+      "file": "svg/cloud-sun.svg",
+      "category": "Weather and nature",
+      "tags": [
+        "partly-cloudy",
+        "sunny-intervals",
+        "forecast",
+        "daylight"
+      ]
+    },
+    {
+      "name": "wind",
+      "component": "WindIcon",
+      "file": "svg/wind.svg",
+      "category": "Weather and nature",
+      "tags": [
+        "airflow",
+        "breeze",
+        "gust",
+        "windy",
+        "forecast"
+      ]
+    },
+    {
+      "name": "fog",
+      "component": "FogIcon",
+      "file": "svg/fog.svg",
+      "category": "Weather and nature",
+      "tags": [
+        "mist",
+        "haze",
+        "visibility",
+        "foggy",
+        "forecast"
+      ]
+    },
+    {
+      "name": "snowflake",
+      "component": "SnowflakeIcon",
+      "file": "svg/snowflake.svg",
+      "category": "Weather and nature",
+      "tags": [
+        "cold",
+        "freezing",
+        "cooling",
+        "winter",
+        "ice"
+      ]
+    },
+    {
+      "name": "droplet",
+      "component": "DropletIcon",
+      "file": "svg/droplet.svg",
+      "category": "Weather and nature",
+      "tags": [
+        "water",
+        "humidity",
+        "liquid",
+        "moisture",
+        "drop"
+      ]
+    },
+    {
+      "name": "thermometer",
+      "component": "ThermometerIcon",
+      "file": "svg/thermometer.svg",
+      "category": "Weather and nature",
+      "tags": [
+        "temperature",
+        "degrees",
+        "heat",
+        "fever",
+        "climate"
+      ]
+    },
+    {
+      "name": "leaf",
+      "component": "LeafIcon",
+      "file": "svg/leaf.svg",
+      "category": "Weather and nature",
+      "tags": [
+        "plant",
+        "sustainable",
+        "eco",
+        "natural",
+        "foliage"
+      ]
+    },
+    {
+      "name": "tree",
+      "component": "TreeIcon",
+      "file": "svg/tree.svg",
+      "category": "Weather and nature",
+      "tags": [
+        "park",
+        "forest",
+        "woodland",
+        "green-space",
+        "plant"
+      ]
+    },
+    {
+      "name": "flower",
+      "component": "FlowerIcon",
+      "file": "svg/flower.svg",
+      "category": "Weather and nature",
+      "tags": [
+        "gardening",
+        "blossom",
+        "bloom",
+        "plant",
+        "floral"
+      ]
+    },
+    {
+      "name": "mountain",
+      "component": "MountainIcon",
+      "file": "svg/mountain.svg",
+      "category": "Weather and nature",
+      "tags": [
+        "peak",
+        "hiking",
+        "terrain",
+        "summit",
+        "alpine"
+      ]
+    },
+    {
+      "name": "waves",
+      "component": "WavesIcon",
+      "file": "svg/waves.svg",
+      "category": "Weather and nature",
+      "tags": [
+        "sea",
+        "ocean",
+        "swimming",
+        "water",
+        "surf"
+      ]
+    },
+    {
+      "name": "flame",
+      "component": "FlameIcon",
+      "file": "svg/flame.svg",
+      "category": "Weather and nature",
+      "tags": [
+        "fire",
+        "heat",
+        "combustion",
+        "burn",
+        "hot"
+      ]
+    },
+    {
+      "name": "umbrella",
+      "component": "UmbrellaIcon",
+      "file": "svg/umbrella.svg",
+      "category": "Weather and nature",
+      "tags": [
+        "rain",
+        "shelter",
+        "covered",
+        "weather-protection"
+      ]
+    },
+    {
+      "name": "rainbow",
+      "component": "RainbowIcon",
+      "file": "svg/rainbow.svg",
+      "category": "Weather and nature",
+      "tags": [
+        "spectrum",
+        "color",
+        "weather",
+        "outdoors"
+      ]
+    },
+    {
+      "name": "stethoscope",
+      "component": "StethoscopeIcon",
+      "file": "svg/stethoscope.svg",
+      "category": "Health",
+      "tags": [
+        "doctor",
+        "clinical",
+        "medical-care",
+        "examination",
+        "auscultation"
+      ]
+    },
+    {
+      "name": "first-aid",
+      "component": "FirstAidIcon",
+      "file": "svg/first-aid.svg",
+      "category": "Health",
+      "tags": [
+        "medical-kit",
+        "emergency-care",
+        "supplies",
+        "rescue"
+      ]
+    },
+    {
+      "name": "pill",
+      "component": "PillIcon",
+      "file": "svg/pill.svg",
+      "category": "Health",
+      "tags": [
+        "medication",
+        "capsule",
+        "prescription",
+        "medicine",
+        "pharmacy"
+      ]
+    },
+    {
+      "name": "syringe",
+      "component": "SyringeIcon",
+      "file": "svg/syringe.svg",
+      "category": "Health",
+      "tags": [
+        "vaccination",
+        "injection",
+        "needle",
+        "immunization",
+        "medical"
+      ]
+    },
+    {
+      "name": "bandage",
+      "component": "BandageIcon",
+      "file": "svg/bandage.svg",
+      "category": "Health",
+      "tags": [
+        "plaster",
+        "wound",
+        "dressing",
+        "injury",
+        "first-aid"
+      ]
+    },
+    {
+      "name": "hospital",
+      "component": "HospitalIcon",
+      "file": "svg/hospital.svg",
+      "category": "Health",
+      "tags": [
+        "healthcare",
+        "clinic",
+        "medical-facility",
+        "care",
+        "treatment"
+      ]
+    },
+    {
+      "name": "ambulance",
+      "component": "AmbulanceIcon",
+      "file": "svg/ambulance.svg",
+      "category": "Health",
+      "tags": [
+        "emergency-transport",
+        "paramedic",
+        "rescue",
+        "ems"
+      ]
+    },
+    {
+      "name": "dna",
+      "component": "DnaIcon",
+      "file": "svg/dna.svg",
+      "category": "Health",
+      "tags": [
+        "genetics",
+        "genome",
+        "helix",
+        "heredity",
+        "biology"
+      ]
+    },
+    {
+      "name": "tooth",
+      "component": "ToothIcon",
+      "file": "svg/tooth.svg",
+      "category": "Health",
+      "tags": [
+        "dental",
+        "dentist",
+        "oral-care",
+        "teeth"
+      ]
+    },
+    {
+      "name": "bone",
+      "component": "BoneIcon",
+      "file": "svg/bone.svg",
+      "category": "Health",
+      "tags": [
+        "skeletal",
+        "skeleton",
+        "anatomy",
+        "orthopedic"
+      ]
+    },
+    {
+      "name": "lungs",
+      "component": "LungsIcon",
+      "file": "svg/lungs.svg",
+      "category": "Health",
+      "tags": [
+        "respiratory",
+        "breathing",
+        "pulmonary",
+        "anatomy"
+      ]
+    },
+    {
+      "name": "brain",
+      "component": "BrainIcon",
+      "file": "svg/brain.svg",
+      "category": "Health",
+      "tags": [
+        "neurology",
+        "mental-health",
+        "cognitive",
+        "mind",
+        "anatomy"
+      ]
+    },
+    {
+      "name": "dumbbell",
+      "component": "DumbbellIcon",
+      "file": "svg/dumbbell.svg",
+      "category": "Health",
+      "tags": [
+        "strength",
+        "gym",
+        "fitness",
+        "weightlifting",
+        "workout"
+      ]
+    },
+    {
+      "name": "bed",
+      "component": "BedIcon",
+      "file": "svg/bed.svg",
+      "category": "Everyday applications",
+      "tags": [
+        "sleep",
+        "bedroom",
+        "hotel",
+        "accommodation",
+        "rest"
+      ]
+    },
+    {
+      "name": "bath",
+      "component": "BathIcon",
+      "file": "svg/bath.svg",
+      "category": "Everyday applications",
+      "tags": [
+        "bathtub",
+        "bathroom",
+        "bathing",
+        "amenity"
+      ]
+    },
+    {
+      "name": "shower",
+      "component": "ShowerIcon",
+      "file": "svg/shower.svg",
+      "category": "Everyday applications",
+      "tags": [
+        "bathroom",
+        "wash",
+        "bathing",
+        "amenity"
+      ]
+    },
+    {
+      "name": "sofa",
+      "component": "SofaIcon",
+      "file": "svg/sofa.svg",
+      "category": "Everyday applications",
+      "tags": [
+        "couch",
+        "lounge",
+        "living-room",
+        "furniture",
+        "seating"
+      ]
+    },
+    {
+      "name": "lamp",
+      "component": "LampIcon",
+      "file": "svg/lamp.svg",
+      "category": "Everyday applications",
+      "tags": [
+        "lighting",
+        "light-fixture",
+        "lampshade",
+        "illumination"
+      ]
+    },
+    {
+      "name": "door",
+      "component": "DoorIcon",
+      "file": "svg/door.svg",
+      "category": "Everyday applications",
+      "tags": [
+        "entrance",
+        "room",
+        "doorway",
+        "physical-access"
+      ]
+    },
+    {
+      "name": "washing-machine",
+      "component": "WashingMachineIcon",
+      "file": "svg/washing-machine.svg",
+      "category": "Everyday applications",
+      "tags": [
+        "laundry",
+        "washer",
+        "appliance",
+        "clothes"
+      ]
+    },
+    {
+      "name": "refrigerator",
+      "component": "RefrigeratorIcon",
+      "file": "svg/refrigerator.svg",
+      "category": "Everyday applications",
+      "tags": [
+        "fridge",
+        "freezer",
+        "cold-storage",
+        "appliance",
+        "kitchen"
+      ]
+    },
+    {
+      "name": "fan",
+      "component": "FanIcon",
+      "file": "svg/fan.svg",
+      "category": "Everyday applications",
+      "tags": [
+        "ventilation",
+        "air-circulation",
+        "cooling",
+        "appliance"
+      ]
+    },
+    {
+      "name": "tent",
+      "component": "TentIcon",
+      "file": "svg/tent.svg",
+      "category": "Everyday applications",
+      "tags": [
+        "camping",
+        "campsite",
+        "outdoors",
+        "shelter"
+      ]
+    },
+    {
+      "name": "luggage",
+      "component": "LuggageIcon",
+      "file": "svg/luggage.svg",
+      "category": "Everyday applications",
+      "tags": [
+        "baggage",
+        "suitcase",
+        "travel",
+        "trip"
+      ]
+    },
+    {
+      "name": "paw-print",
+      "component": "PawPrintIcon",
+      "file": "svg/paw-print.svg",
+      "category": "Everyday applications",
+      "tags": [
+        "pet",
+        "animal",
+        "dog",
+        "cat",
+        "pet-friendly"
+      ]
+    },
+    {
+      "name": "fish",
+      "component": "FishIcon",
+      "file": "svg/fish.svg",
+      "category": "Everyday applications",
+      "tags": [
+        "aquatic",
+        "seafood",
+        "fishing",
+        "animal",
+        "aquarium"
+      ]
+    },
+    {
+      "name": "bird",
+      "component": "BirdIcon",
+      "file": "svg/bird.svg",
+      "category": "Everyday applications",
+      "tags": [
+        "wildlife",
+        "birdwatching",
+        "avian",
+        "animal"
+      ]
+    },
+    {
+      "name": "apple",
+      "component": "AppleIcon",
+      "file": "svg/apple.svg",
+      "category": "Everyday applications",
+      "tags": [
+        "fruit",
+        "nutrition",
+        "food",
+        "produce",
+        "healthy-eating"
+      ]
+    },
+    {
+      "name": "cake",
+      "component": "CakeIcon",
+      "file": "svg/cake.svg",
+      "category": "Everyday applications",
+      "tags": [
+        "birthday",
+        "celebration",
+        "dessert",
+        "party",
+        "bakery"
+      ]
+    },
+    {
+      "name": "shirt",
+      "component": "ShirtIcon",
+      "file": "svg/shirt.svg",
+      "category": "Everyday applications",
+      "tags": [
+        "clothing",
+        "apparel",
+        "t-shirt",
+        "garment",
+        "fashion"
+      ]
     }
   ]
 }
