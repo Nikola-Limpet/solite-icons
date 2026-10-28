@@ -65,7 +65,7 @@ jobs:
           registry-url: https://registry.npmjs.org
       - name: Install npm with trusted publishing support
         run: npm install --global npm@11.21.1 --ignore-scripts
-      - run: npm ci
+      - run: npm ci --ignore-scripts
       - name: Publish eligible version through npm OIDC
         run: node scripts/release.mjs publish
       - name: Retain npm archive and release report

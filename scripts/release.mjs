@@ -247,7 +247,7 @@ export async function runRelease({
       registryUrl,
     ]);
     const published = await registry.version(selected.version);
-    if (!published || published.dist.integrity !== expectedIntegrity)
+    if (published?.dist?.integrity !== expectedIntegrity)
       throw new Error(
         "Published registry integrity does not match the inspected archive; inspect npm before retrying.",
       );
