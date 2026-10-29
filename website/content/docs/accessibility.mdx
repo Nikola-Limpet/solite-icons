@@ -4,50 +4,252 @@ icon: accessibility
 description: Give meaningful controls a name and keep decorative icons quiet.
 ---
 
-## Decorative icons
+Solite supplies SVG defaults. Your application supplies semantics, labels, state, keyboard behavior, contrast, and usable hit areas. Test the complete control in its actual page.
 
-Every component has `aria-hidden="true"` and `focusable="false"` by default. That is appropriate when nearby text already explains the action.
+## Decorative icons and named controls
+
+Every unnamed icon defaults to `aria-hidden="true"` and `focusable="false"`. Keep it decorative when nearby text explains its meaning.
 
 ```tsx
-import { DownloadIcon } from "solite-icons";
+import { DownloadIcon, XIcon } from "solite-icons";
 
 <button type="button">
   <DownloadIcon size={18} />
   Download report
 </button>;
-```
 
-## Icon-only controls
-
-Put the accessible name on the interactive element, not the decorative icon inside it.
-
-```tsx
-import { XIcon } from "solite-icons";
-
-<button type="button" aria-label="Close dialog">
+<button type="button" aria-label="Close dialog" className="icon-button">
   <XIcon size={20} />
 </button>;
 ```
 
-A tooltip is helpful for some users, but it does not replace the button's accessible name.
+Use native buttons for actions and links for navigation. A clickable SVG does not acquire button semantics or keyboard support. Name the interactive element, rather than adding a second name to its decorative SVG. A tooltip can help explain an action but does not replace the control's accessible name.
 
-## Informative icons
+A visually hidden label is another option:
 
-If the icon itself supplies information, use `title` or `aria-label`.
+```tsx
+<button type="button" className="icon-button">
+  <DownloadIcon size={20} />
+  <span className="visually-hidden">Download report</span>
+</button>
+```
+
+```css
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+```
+
+## Informative icons and name precedence
+
+When an SVG itself conveys information, provide `title`, `aria-label`, or `aria-labelledby`. Solite does not turn a filename into an accessible name.
 
 ```tsx
 import { PaymentCheckIcon } from "solite-icons";
 
 <PaymentCheckIcon title="Payment received" />;
 <PaymentCheckIcon aria-label="Payment received" />;
+
+<span id="payment-status">Payment received</span>;
+<PaymentCheckIcon aria-labelledby="payment-status" />;
 ```
 
-These props enable `role="img"` and remove the default hidden state. A title receives a unique ID and `aria-labelledby`, so repeated icons do not share title IDs.
+Each named icon gets `role="img"` unless you supply a role, and loses the default hidden state. Titles receive unique IDs even when the same icon appears repeatedly. Choose one naming method when possible. An explicit `aria-labelledby` takes precedence over `aria-label` and the generated title reference. `aria-label` takes precedence over the generated title reference.
 
-## Do not rely on color alone
+Explicit `aria-hidden` remains authoritative. For example, `<PaymentCheckIcon title="Payment received" aria-hidden="true" />` stays hidden from assistive technology. `aria-hidden={false}` on its own does not create an accessible name or image role. The SVG remains `focusable="false"`; place keyboard focus on the surrounding control.
 
-A green check and a red cross should also have text labels or accessible names. Color differences may not be visible to everyone.
+When visible status text already communicates the information, leave the adjacent icon decorative to avoid duplicate announcements. For standalone images, use `alt=""` for decoration or useful `alt` text for information. See [SVG usage](/svg).
 
-## Standalone SVG images
+## Toggle state
 
-For a decorative `<img>`, use `alt=""`. For an informative image, give it a useful `alt` value. See [SVG usage](/svg).
+Keep the toggle's name stable and expose its state with `aria-pressed`:
+
+```tsx
+import { useState } from "react";
+import { StarIcon } from "solite-icons";
+
+export function FavoriteButton() {
+  const [favorite, setFavorite] = useState(false);
+  return (
+    <button
+      type="button"
+      aria-label="Favorite"
+      aria-pressed={favorite}
+      className="icon-button"
+      onClick={() => setFavorite((value) => !value)}
+    >
+      <StarIcon size={20} />
+    </button>
+  );
+}
+```
+
+Provide a visible state cue as well. A color change alone is insufficient. For a disclosure, use `aria-expanded` and `aria-controls` as appropriate rather than treating it as a pressed toggle.
+
+## Loading and disabled controls
+
+Keep loading status in text. A spinner does not communicate progress by itself. This example keeps a polite status region outside the busy button so the message can be announced while the action is pending:
+
+```tsx
+import { useState } from "react";
+import { LoadingIcon, SaveIcon } from "solite-icons";
+
+export function SaveButton({ onSave }: { onSave: () => Promise<void> }) {
+  const [busy, setBusy] = useState(false);
+  const [status, setStatus] = useState("");
+
+  async function save() {
+    setBusy(true);
+    setStatus("Saving report");
+    try {
+      await onSave();
+      setStatus("Report saved");
+    } catch {
+      setStatus("Report could not be saved. Try again.");
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  return (
+    <>
+      <button type="button" disabled={busy} aria-busy={busy} onClick={save}>
+        {busy ? <LoadingIcon className="loading-icon" size={20} /> : <SaveIcon size={20} />}
+        Save report
+      </button>
+      <p role="status">{status}</p>
+    </>
+  );
+}
+```
+
+Native `disabled` prevents activation and removes a button from sequential keyboard navigation. Explain an unavailable action in nearby text when the reason matters. If a control must remain focusable, `aria-disabled="true"` only communicates the state; you must prevent every activation path yourself. Manage focus deliberately when controls become disabled or disappear. Do not move focus to the SVG.
+
+For the candidate's lazy renderer, keep the control's label outside the loading drawing. Its default placeholder is decorative; a custom fallback must not duplicate the label or announce a completed status. See [lazy fallbacks](/dynamic#opt-in-lazy-renderer).
+
+## Focus, contrast, and hit areas
+
+Keep a visible keyboard focus indicator and ensure sticky headers or overlays do not obscure the focused control. Preserve native focus behavior unless you provide a clear replacement.
+
+```css
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  color: inherit;
+}
+
+.icon-button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+```
+
+WCAG 2.2 AA target size is at least **24 by 24 CSS pixels**, with exceptions for sufficient spacing, an equivalent control, inline text, unmodified user-agent controls, or essential presentation. An undersized target can use the spacing exception only when a 24px-diameter circle centered on it does not intersect another target or the corresponding circle around another undersized target. Check the actual clickable area. The SVG's dimensions alone do not establish compliance. Aim for **44 by 44 CSS pixels** for comfortable touch controls. [W3C target-size guidance](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html).
+
+Meaningful graphical parts and visual cues needed to identify active controls or states need at least **3:1 contrast** against adjacent colors, subject to the criterion's exceptions. Decorative graphics and inactive controls have different requirements. Thin strokes can remain hard to see even when the chosen colors pass; inspect at 16px, 20px, and 24px. Add text or shape cues rather than relying on color alone. [W3C non-text contrast guidance](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html).
+
+## Forced colors, motion, and RTL
+
+Use `currentColor` so icons follow surrounding text and user-selected colors. Test Windows forced-colors mode with visible borders and focus indicators. Avoid disabling forced-color adjustment to preserve a brand color; use system colors when a custom control needs explicit styling.
+
+```css
+@media (forced-colors: active) {
+  .icon-button {
+    color: ButtonText;
+    border: 1px solid ButtonText;
+  }
+  .icon-button:focus-visible {
+    outline-color: Highlight;
+  }
+}
+```
+
+Solite does not animate icons automatically. If you animate a loading icon, honor reduced-motion preferences and keep the text status available:
+
+```css
+@media (prefers-reduced-motion: no-preference) {
+  .loading-icon {
+    animation: icon-spin 1s linear infinite;
+  }
+}
+
+@keyframes icon-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+```
+
+Mirror selectively for RTL. A directional navigation arrow may need `transform: scaleX(-1)` when its meaning follows reading direction. Do not mirror the entire collection: text-direction symbols, clocks, charts, logos, and physical-direction drawings can have meaning that must remain unchanged. Use a dedicated class on icons whose meaning you have checked.
+
+## Automated checks and manual checks
+
+From a development checkout, run `npx playwright install chromium` once, then `npm run test:browser`. The suite uses Playwright and axe to check representative complete controls, accessible-name queries, decorative exclusion, repeated titles, external labels, explicit hiding, forwarded refs, SSR hydration, and lazy name changes. A separate Chromium executable can be selected with `SOLITE_CHROME_PATH`.
+
+Automated results cover the tested fixture and tool versions. They do not certify WCAG conformance or establish how a screen reader announces every browser and application combination.
+
+## Reproducible VoiceOver and NVDA checklist
+
+Manual VoiceOver and NVDA results are **pending**. This documentation does not claim those checks have run.
+
+Use a local React application with the package version under review. For the candidate, install the [local archive](/installation#preview-the-local-030-candidate). Add a temporary page containing `FavoriteButton` and `SaveButton` from this guide, plus the following component. Apply the CSS above. Set the document language and a useful page title. Serve the application normally and record the exact URL; the code blocks in this documentation are not live test controls.
+
+```tsx
+import { DownloadIcon, HomeIcon, XIcon } from "solite-icons";
+
+export function ManualIconChecks() {
+  return (
+    <main>
+      <h1>Icon accessibility checks</h1>
+      <button type="button">
+        <DownloadIcon size={20} /> Download report
+      </button>
+      <button type="button" aria-label="Close dialog" className="icon-button">
+        <XIcon size={20} />
+      </button>
+      <HomeIcon title="Repeated home" />
+      <HomeIcon title="Repeated home" />
+      <span id="manual-home-label">Referenced home</span>
+      <HomeIcon aria-labelledby="manual-home-label" />
+      <HomeIcon title="Hidden home" aria-hidden="true" />
+      <FavoriteButton />
+      <SaveButton onSave={() => new Promise<void>((resolve) => setTimeout(resolve, 2000))} />
+      <button type="button" disabled>
+        Unavailable action
+      </button>
+    </main>
+  );
+}
+```
+
+Render `ManualIconChecks` at that route. The two-second save callback simulates pending work for this check; production code should call the real operation. For client-rendered applications, refresh the route. For server-rendered applications, test both the initial response and hydration.
+
+Record a separate result for each software combination:
+
+| Field         | Record before testing                                                                                          |
+| ------------- | -------------------------------------------------------------------------------------------------------------- |
+| Build         | Git commit, package version, archive filename, React version, URL, and date                                    |
+| VoiceOver     | macOS version/build, VoiceOver version or bundled macOS build, Safari version, and relevant verbosity settings |
+| NVDA          | Windows version/build, NVDA version, Firefox version, and relevant speech/browse-mode settings                 |
+| Input/display | Keyboard layout, zoom, forced-colors setting, and reduced-motion setting                                       |
+| Result        | Pass, fail, or not run for every step, actual announcement, expected result, and issue link                    |
+
+1. Start VoiceOver with Command-F5 in Safari, enable macOS keyboard navigation, and use its navigation commands to inspect the page. In a separate Windows run, start NVDA in Firefox and use browse mode to inspect graphics and buttons. Record changes from the screen reader's default settings.
+2. Read the page in order. Confirm the first button has the name "Download report" without an extra graphic announcement. Confirm "Close dialog" is a button with no separately named child graphic. Confirm both "Repeated home" graphics are discoverable and the referenced image is named "Referenced home". "Hidden home" must not appear as a graphic.
+3. Use Tab and Shift-Tab through the controls, with VoiceOver Quick Nav off or NVDA focus mode as needed. Confirm every enabled control has a visible focus indicator and decorative SVGs add no tab stops. The disabled action must not activate or enter the normal Tab sequence.
+4. Activate the Favorite button with Space and Enter in separate attempts. Confirm each activation changes the pressed state once, the accessible name stays "Favorite", and focus remains on the button.
+5. Activate Save report. Confirm the pending state prevents repeated saves and communicates "Saving report". After two seconds, confirm "Report saved" is announced and the action becomes available. Record focus behavior during disabling and re-enabling. Also test a rejecting `onSave` callback to verify the failure message.
+6. At 200% zoom and with narrow layout, confirm labels, focus rings, and clickable areas remain usable. Repeat the visual check in Windows forced-colors mode and with reduced motion enabled. Check selected RTL navigation icons in an RTL application page; do not mirror every drawing.
+7. For an application using `LazySoliteIcon`, throttle or block an icon chunk in browser developer tools, then change `name`. Confirm the old drawing disappears, the loading placeholder stays decorative, the control retains its name, and the correct drawing and ref appear when the request completes. Test request failure with your application's error boundary.
+8. Save the filled record and any failed announcements separately from automated test output. Resolve failures or document the remaining limitation before describing that software combination as manually checked.

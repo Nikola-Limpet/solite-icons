@@ -69,3 +69,35 @@ Pair the icon with a text label using flex or inline-flex. Let the parent contro
 ```
 
 Avoid putting fixed margins inside a reusable icon component. The same glyph should work in buttons, navigation, and tables.
+
+## Non-scaling strokes in the candidate
+
+The unpublished 0.3.0 candidate adds `nonScalingStroke`. [Install the local candidate](/installation#preview-the-local-030-candidate) before using it.
+
+```tsx
+<ShopIcon size="2rem" strokeWidth={1.75} nonScalingStroke />;
+<ShopIcon className="size-8" nonScalingStroke />;
+```
+
+The prop applies `vectorEffect="non-scaling-stroke"` to each SVG drawing element. Stroke thickness stays fixed while the drawing scales, including when CSS or a string size controls dimensions. With `false`, the existing scaling behavior remains. It does not change the 24px viewBox or add pixel snapping. Check thin details at the actual output size.
+
+## Shared defaults and global CSS
+
+Use the candidate's `SoliteProvider` for `size`, `color`, `strokeWidth`, `nonScalingStroke`, and `className`. Nested providers inherit unspecified values, individual icon props override defaults, and classes append from outer provider to inner provider to icon. [React usage](/react#visual-defaults-with-a-provider) has a complete example. Accessible names and interaction handlers always belong to the individual icon or control.
+
+Every drawing also exposes its canonical name through `data-solite-icon`:
+
+```css
+[data-solite-icon] {
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+```
+
+Solite requires no stylesheet. Keep broad selectors intentional: CSS width and height can override presentation attributes, including the dimensions set by `size`.
+
+## Color modes, motion, and direction
+
+Prefer `currentColor` and semantic text colors for light, dark, and forced-colors modes. Check meaningful non-text contrast against the actual adjacent background. Do not freeze a low-contrast brand color with `forced-color-adjust: none`.
+
+Icons do not animate or mirror automatically. Respect `prefers-reduced-motion` when adding a spinner animation, and mirror only navigation symbols whose meaning follows reading direction. The [accessibility guide](/accessibility#forced-colors-motion-and-rtl) includes CSS and testing guidance.

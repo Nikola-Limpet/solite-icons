@@ -1,6 +1,6 @@
 # Publishing Solite Icons
 
-The `CI` workflow in `.github/workflows/ci.yml` validates the library and builds/typechecks the docs on every push and pull request. Its `Publish npm` job runs only for pushes to `staging` and `main` in `Nikola-Limpet/solite-icons`, after both checks pass. PRs and other branches do not publish.
+The `CI` workflow in `.github/workflows/ci.yml` validates the library with React 18 and 19, runs browser accessibility checks, and builds/typechecks the docs on every push and pull request. Its `Publish npm` job runs only for pushes to `staging` and `main` in `Nikola-Limpet/solite-icons`, after all validation jobs pass. PRs and other branches do not publish.
 
 ## One-time npm setup
 

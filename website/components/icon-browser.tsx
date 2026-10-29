@@ -4,6 +4,7 @@ import { SearchIcon, DownloadIcon, XIcon } from "solite-icons";
 import { icons, iconCategories, type SoliteIconName } from "solite-icons/data";
 import { SoliteIcon } from "solite-icons/dynamic";
 import { CopyButton } from "./copy-button";
+import { findIconNames } from "../lib/collection";
 const entries = Object.keys(icons) as SoliteIconName[];
 const componentName = (name: string) =>
   name
@@ -15,23 +16,17 @@ export function IconBrowser() {
   const [category, setCategory] = useState("");
   const [selected, setSelected] = useState<SoliteIconName>("shop");
   const [size, setSize] = useState(24);
-  const filtered = useMemo(
-    () =>
-      entries.filter((name) => {
-        const match =
-          !category ||
-          (iconCategories[category as keyof typeof iconCategories] as readonly string[]).includes(
-            name,
-          );
-        const query = search.trim().toLowerCase().replaceAll(" ", "-");
-        return (
-          match &&
-          (name.includes(query) ||
-            componentName(name).toLowerCase().includes(query.replaceAll("-", "")))
+  const filtered = useMemo(() => {
+    const matches = findIconNames(search);
+    return entries.filter((name) => {
+      const match =
+        !category ||
+        (iconCategories[category as keyof typeof iconCategories] as readonly string[]).includes(
+          name,
         );
-      }),
-    [search, category],
-  );
+      return match && matches.has(name);
+    });
+  }, [search, category]);
   const name = componentName(selected);
   const code = `import { ${name} } from "solite-icons";\n\n<${name} size={${size}} />`;
   const assetBase = process.env.NEXT_PUBLIC_DOCS_BASE_PATH || "";
@@ -64,7 +59,9 @@ export function IconBrowser() {
         </select>
       </div>
       <div className="browser-summary">
-        <output>{filtered.length} icons</output>
+        <output aria-live="polite" aria-atomic="true">
+          {filtered.length} icons
+        </output>
         <span>Pick an icon to copy its React import.</span>
       </div>
       <div className="browser-layout">

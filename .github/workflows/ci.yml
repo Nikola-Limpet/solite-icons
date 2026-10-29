@@ -7,17 +7,34 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        react: ["18.2.0", "19.2.8"]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
-      - run: npm ci
+      - run: npm ci --ignore-scripts
+      - run: npm install --ignore-scripts --no-save --package-lock=false react@${{ matrix.react }} react-dom@${{ matrix.react }}
       - run: npm run format:check
       - run: npm run check
       - run: npm test
       - run: npm pack --dry-run
+
+  accessibility:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: node node_modules/playwright/cli.js install --with-deps chromium
+      - run: npm run check
+      - run: npm run test:browser
 
   docs:
     runs-on: ubuntu-latest
@@ -30,8 +47,10 @@ jobs:
           cache-dependency-path: |
             package-lock.json
             website/package-lock.json
-      - run: npm ci
-      - run: npm --prefix website ci
+      - run: npm ci --ignore-scripts
+      - run: npm --prefix website ci --ignore-scripts
+      - run: npm --prefix website run postinstall
+      - run: npm run docs:candidate
       - run: npm --prefix website run build
       - run: npm --prefix website run typecheck
       - uses: actions/upload-artifact@v4
@@ -41,7 +60,7 @@ jobs:
 
   publish:
     name: Publish npm
-    needs: [validate, docs]
+    needs: [validate, accessibility, docs]
     if: >-
       github.event_name == 'push' &&
       github.repository == 'Nikola-Limpet/solite-icons' &&

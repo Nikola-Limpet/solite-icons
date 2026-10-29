@@ -1,5 +1,2 @@
-export declare const ArchiveIcon: import("react").ForwardRefExoticComponent<Omit<Omit<import("react").SVGProps<SVGSVGElement>, "ref">, "children" | "dangerouslySetInnerHTML"> & {
-    size?: number | string;
-    title?: string;
-} & import("react").RefAttributes<SVGSVGElement>>;
+export declare const ArchiveIcon: import("../create-icon.js").SoliteIconComponent;
 export default ArchiveIcon;

@@ -16,14 +16,20 @@ cd solite-icons
 npm ci
 npm run build
 npm test
+npx playwright install chromium
+npm run test:browser
 npm run check
 ```
 
 Edit the original geometry in `src/definitions/`, using the shared helpers in `src/geometry.ts`. Keep the 24px grid, rounded caps and joins, and one consistent outline thickness.
 
+Add category, tags, and useful aliases in `src/metadata/`, and register the definition in `src/data.ts`. Aliases improve search without introducing duplicate icon components. Keep additions original and compare them at 16px, 20px, and 24px.
+
 Run `npm run build` and commit the regenerated files. `npm run check` catches stale generated code and assets.
 
 Removing or renaming an icon is a breaking API change. Add new names without changing existing meanings.
+
+The 0.3.0 candidate has 553 icons, including 300 additions. Package checks cover the release total, unchanged baseline geometry, generated exports and assets, metadata, React props, package consumers, tree shaking, and lazy chunking. The Playwright and axe suite checks representative complete controls, accessible names, refs, hydration, and lazy transitions. Set `SOLITE_CHROME_PATH` to use an existing Chromium executable if needed. Report manual assistive-technology checks separately using the [versioned checklist](/accessibility#reproducible-voiceover-and-nvda-checklist).
 
 ## Documentation development
 
@@ -37,12 +43,34 @@ npm --prefix website run dev
 
 The site pins the published npm package `solite-icons@0.2.1` in `website/package.json` and its lockfile. After publishing a new library version, update that dependency and lockfile before updating the previews. The build copies SVG downloads from the installed package, so examples and downloads stay on the same release.
 
+The docs can run and build with the published collection. Follow the preview workflow below to inspect the expanded collection and new APIs. Candidate API code samples require the candidate in the consuming application.
+
+### Preview the unpublished candidate
+
+After the dependency installation above, run from the repository root:
+
+```bash
+npm run docs:candidate
+npm --prefix website run dev
+```
+
+The command builds and packs the local 0.3.0 candidate into `output/` and installs it into the website's `node_modules` without changing the package manifest or registry lockfile. Candidate components, metadata, counts, and downloads must all use this installed archive. Do not point the lockfile at an unpublished registry version.
+
+To restore the locked npm release:
+
+```bash
+npm run docs:restore
+```
+
+This runs `npm ci` in `website/` and restores the published collection for docs development and builds. Use `docs:candidate` again to preview the expanded collection and new APIs. After a real publication, update the website's pinned dependency and lockfile to the registry release, reinstall, and rebuild.
+
 Write guides in `website/content/docs/`. Register their order in `meta.json`. The live demos are React components in `website/components/`.
 
 ## Build a static site
 
 ```bash
 npm --prefix website run build
+npm --prefix website run typecheck
 ```
 
 The output is `website/out/`. It can be hosted by a static file host. For a repository subdirectory such as GitHub Pages:

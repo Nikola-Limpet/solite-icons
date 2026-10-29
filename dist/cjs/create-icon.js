@@ -24,23 +24,28 @@ __export(create_icon_exports, {
 });
 module.exports = __toCommonJS(create_icon_exports);
 var import_react = require("react");
-const IconDrawing = (0, import_react.forwardRef)(function IconDrawing2({ iconName, definition, size = 24, color = "currentColor", strokeWidth = 1.75, title, ...props }, ref) {
+var import_context = require("./context.js");
+const IconDrawing = (0, import_react.forwardRef)(function IconDrawing2({ iconName, definition, size, color, strokeWidth, nonScalingStroke, className, title, ...props }, ref) {
   const id = (0, import_react.useId)();
+  const defaults = (0, import_context.useSoliteDefaults)();
+  const resolvedSize = size ?? defaults.size ?? 24;
+  const fixedStroke = nonScalingStroke ?? defaults.nonScalingStroke ?? false;
   const accessible = Boolean(title || props["aria-label"] || props["aria-labelledby"]);
   const titleId = title ? `${id}-solite-icon-title` : void 0;
   return (0, import_react.createElement)(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
-      width: size,
-      height: size,
+      width: resolvedSize,
+      height: resolvedSize,
       viewBox: "0 0 24 24",
       fill: "none",
-      stroke: color,
-      strokeWidth,
+      stroke: color ?? defaults.color ?? "currentColor",
+      strokeWidth: strokeWidth ?? defaults.strokeWidth ?? 1.75,
       strokeLinecap: "round",
       strokeLinejoin: "round",
       ...props,
+      className: [defaults.className, className].filter(Boolean).join(" ") || void 0,
       ref,
       "data-solite-icon": iconName,
       focusable: "false",
@@ -50,7 +55,11 @@ const IconDrawing = (0, import_react.forwardRef)(function IconDrawing2({ iconNam
     },
     title ? (0, import_react.createElement)("title", { id: titleId }, title) : null,
     ...definition.map(
-      ([tag, attributes], index) => (0, import_react.createElement)(tag, { ...attributes, key: index })
+      ([tag, attributes], index) => (0, import_react.createElement)(tag, {
+        ...attributes,
+        ...fixedStroke ? { vectorEffect: "non-scaling-stroke" } : {},
+        key: index
+      })
     )
   );
 });

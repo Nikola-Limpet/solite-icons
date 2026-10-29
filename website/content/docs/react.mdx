@@ -4,6 +4,8 @@ icon: code
 description: Import named icons and use them in real app components.
 ---
 
+`SoliteProvider`, `SoliteIconComponent`, and `nonScalingStroke` on this page require the unpublished 0.3.0 candidate. [Install it locally](/installation#preview-the-local-030-candidate). npm latest remains 0.2.1.
+
 ## Named imports
 
 Each icon has a PascalCase component name ending in `Icon`.
@@ -34,7 +36,7 @@ Named imports let your production bundler remove unused icons. A direct module i
 import ShopIcon from "solite-icons/icons/shop";
 ```
 
-For a name stored in data or configuration, use the separate [dynamic renderer](/dynamic).
+For a name stored in data or configuration, choose the separate [eager or lazy renderer](/dynamic). Named imports remain the preferred option for a name known in source.
 
 ## Component props
 
@@ -43,11 +45,33 @@ For a name stored in data or configuration, use the separate [dynamic renderer](
 | `size`               | `24`           | Width and height as a number or CSS length |
 | `color`              | `currentColor` | Stroke color                               |
 | `strokeWidth`        | `1.75`         | Outline thickness                          |
+| `nonScalingStroke`   | `false`        | Keep stroke thickness when scaling the SVG |
 | `className`, `style` | none           | CSS styling                                |
 | `title`              | none           | Accessible title with a unique ID          |
 | `ref`                | none           | Reference to the root SVG                  |
 
 Standard SVG props and `aria-*` / `data-*` attributes are forwarded. Explicit `width` and `height` props override `size`.
+
+## Visual defaults with a provider
+
+```tsx
+import { HomeIcon, SearchIcon, SoliteProvider } from "solite-icons";
+
+export function ToolbarIcons() {
+  return (
+    <SoliteProvider size={20} strokeWidth={1.75} className="toolbar-icon">
+      <HomeIcon />
+      <SoliteProvider size={16} nonScalingStroke className="compact-icon">
+        <SearchIcon size={18} className="search-icon" />
+      </SoliteProvider>
+    </SoliteProvider>
+  );
+}
+```
+
+Provider defaults are limited to `size`, `color`, `strokeWidth`, `nonScalingStroke`, and `className`. Nested providers inherit unspecified values; each icon's explicit props override defaults. Here the search icon renders at 18px and receives `toolbar-icon compact-icon search-icon`. Classes append in that order, without utility-class deduplication.
+
+Provider defaults do not include titles, ARIA names, refs, or interaction handlers. Supply those on the individual icon or control. Without a provider, icons keep the defaults in the table above. See [styling](/styling) for non-scaling strokes and global CSS.
 
 ## An icon-only button
 
@@ -75,9 +99,27 @@ export function ShopMark(props: SoliteIconProps) {
 }
 ```
 
+For a component slot, use the TypeScript-only `SoliteIconComponent` type:
+
+```tsx
+import { HomeIcon, type SoliteIconComponent } from "solite-icons";
+
+type NavigationItem = {
+  label: string;
+  href: string;
+  icon: SoliteIconComponent;
+};
+
+const item: NavigationItem = { label: "Home", href: "/", icon: HomeIcon };
+```
+
+The type describes a component that accepts `SoliteIconProps` and a forwarded `SVGSVGElement` ref. It adds no runtime component.
+
 ## Server rendering and Next.js
 
 Icons support server-rendered HTML. The published React modules preserve their `"use client"` boundary for Next.js. Import the components normally; add your own client boundary when your containing component uses hooks or event handlers.
+
+Named and eager icons render synchronously. The candidate lazy entry suspends while its module loads; see [SSR and bundling limits](/dynamic#ssr-and-bundling-limits) before using it for server-rendered content.
 
 ## CommonJS
 

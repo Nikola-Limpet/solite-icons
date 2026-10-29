@@ -8,6 +8,8 @@ description: Add Solite Icons to your project from npm.
 
 Choose the package manager your project already uses.
 
+The commands below install the published **0.2.1 release with 253 icons**. This branch also documents an unpublished **0.3.0 candidate with 553 icons**. Candidate APIs need the local archive workflow below; they are not available from the current npm latest release.
+
 ```bash tab="npm"
 npm install solite-icons
 ```
@@ -50,6 +52,33 @@ npm install solite-icons@0.2.1
 ```
 
 Version 0.2.1 contains 253 icons, including 24 new essentials. An exact version stays unchanged when new releases are published.
+
+## Preview the local 0.3.0 candidate
+
+Clone this repository and check out the candidate branch. Use Node.js 22 or newer for the docs app. From the repository root:
+
+```bash
+npm ci
+npm --prefix website ci
+npm run docs:candidate
+npm --prefix website run dev
+```
+
+`docs:candidate` builds the library, writes its npm archive under `output/`, and installs that archive into the website's `node_modules`. It does not publish the package or change the website's package manifest and registry lockfile. The preview uses the local candidate for React components, metadata, counts, and SVG downloads.
+
+To use that archive in another local application, install its absolute path from that application's directory:
+
+```bash
+npm install /absolute/path/to/solite-icons/output/solite-icons-0.3.0.tgz
+```
+
+Do not use `npm install solite-icons@0.3.0` before that version is published. To restore the docs app's locked public dependency:
+
+```bash
+npm run docs:restore
+```
+
+This runs `npm ci` in `website/` and restores the published collection for docs development and builds. Run `docs:candidate` again to preview the expanded collection and new APIs. After publication, maintainers can update the website dependency and lockfile to the new registry release and rebuild the site.
 
 ## Use without React
 
