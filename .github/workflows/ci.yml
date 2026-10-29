@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - run: npm ci
+      - run: npm ci --ignore-scripts
       - run: npm install --ignore-scripts --no-save --package-lock=false react@${{ matrix.react }} react-dom@${{ matrix.react }}
       - run: npm run format:check
       - run: npm run check
@@ -31,7 +31,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - run: npm ci
+      - run: npm ci --ignore-scripts
       - run: node node_modules/playwright/cli.js install --with-deps chromium
       - run: npm run check
       - run: npm run test:browser
@@ -47,8 +47,9 @@ jobs:
           cache-dependency-path: |
             package-lock.json
             website/package-lock.json
-      - run: npm ci
-      - run: npm --prefix website ci
+      - run: npm ci --ignore-scripts
+      - run: npm --prefix website ci --ignore-scripts
+      - run: npm --prefix website run postinstall
       - run: npm run docs:candidate
       - run: npm --prefix website run build
       - run: npm --prefix website run typecheck
