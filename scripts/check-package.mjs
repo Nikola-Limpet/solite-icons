@@ -4,13 +4,14 @@ import { mkdir, mkdtemp, readFile, writeFile, copyFile, rm } from "node:fs/promi
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { runNpm } from "./npm-cli.mjs";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 process.chdir(root);
 await mkdir("output", { recursive: true });
-execFileSync("npm", ["run", "check"], { stdio: "inherit" });
+runNpm(["run", "check"], { stdio: "inherit" });
 const [packed] = JSON.parse(
-  execFileSync("npm", ["pack", "--ignore-scripts", "--json", "--pack-destination", "output"], {
+  runNpm(["pack", "--ignore-scripts", "--json", "--pack-destination", "output"], {
     encoding: "utf8",
   }),
 );
@@ -20,8 +21,7 @@ try {
     join(directory, "package.json"),
     JSON.stringify({ private: true, type: "module" }),
   );
-  execFileSync(
-    "npm",
+  runNpm(
     [
       "install",
       "--ignore-scripts",

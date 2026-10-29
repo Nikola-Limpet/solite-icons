@@ -1,4 +1,4 @@
-import { execFileSync } from "node:child_process";
+import { runNpm } from "./npm-cli.mjs";
 import { mkdir, readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -7,19 +7,16 @@ const root = new URL("../", import.meta.url);
 process.chdir(fileURLToPath(root));
 const restore = process.argv.includes("--restore");
 if (restore) {
-  execFileSync("npm", ["--prefix", "website", "ci"], { stdio: "inherit" });
+  runNpm(["--prefix", "website", "ci"], { stdio: "inherit" });
   console.log("Restored the docs' locked public npm dependency.");
 } else {
   await mkdir("output", { recursive: true });
-  execFileSync("npm", ["run", "build"], { stdio: "inherit" });
-  const output = execFileSync(
-    "npm",
-    ["pack", "--ignore-scripts", "--json", "--pack-destination", "output"],
-    { encoding: "utf8" },
-  );
+  runNpm(["run", "build"], { stdio: "inherit" });
+  const output = runNpm(["pack", "--ignore-scripts", "--json", "--pack-destination", "output"], {
+    encoding: "utf8",
+  });
   const [{ filename }] = JSON.parse(output);
-  execFileSync(
-    "npm",
+  runNpm(
     [
       "--prefix",
       "website",
