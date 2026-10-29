@@ -308,7 +308,9 @@ To inspect the package artifact:
 npm pack --dry-run
 ```
 
-To publish a new release, update the version and changelog, rebuild, run all checks, inspect the package artifact, and run `npm publish --access public` with an authorized npm account. No automatic publishing is configured.
+Publishing runs through GitHub Actions after the package and docs checks pass. Keep the next stable version in `package.json` and its lockfile, update the changelog, rebuild, and commit generated assets. Push to `staging` to publish a prerelease under `solite-icons@staging`; merge into `main` to publish that target version under `latest`. An already published stable version is skipped, so docs-only merges do not create releases.
+
+The pipeline uses npm trusted publishing and requires a one-time package-owner setup before its first publish. See the [release guide](https://github.com/Nikola-Limpet/solite-icons/blob/main/docs/releases.md) for exact configuration, versioning, artifacts, and retry behavior. The `staging` branch publishes public prereleases; it does not use npm's Staged Packages approval queue.
 
 ## Contribute
 
